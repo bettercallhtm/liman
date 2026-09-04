@@ -1,9 +1,14 @@
-/* Sonuc ekrani: secilen hale gelen ayet, Kur'an'dan bir dua ve uygulamanin
- * kendi notu.
+/* Sonuc ekrani. Uc blok, ucu de ayri etiketli:
  *
- * Notun kutusu bilerek ayrik duruyor ve altinda "ayet ya da hadis degildir"
- * yaziyor. Uygulamanin yazdigi bir cumlenin kutsal metinle ayni gorunmesi
- * kabul edilebilir bir sey degil; bu ayrim tasarimin sus kismi degil, sarti.
+ *   AYET                  Kur'an metni, kaynagiyla
+ *   KUR'AN'DAN BIR DUA    yine Kur'an metni, kaynagiyla
+ *   KENDI SOZLERINLE      o duruma yazilmis Turkce dua — uygulamanin sozu
+ *   NE YAPABILIRSIN       uc somut adim — yine uygulamanin sozu
+ *
+ * Etiketler bu ayrimi tasiyor: hangisinin kutsal metin, hangisinin
+ * uygulamanin kendi cumlesi oldugu bakinca anlasilmali. Alt iki blogun
+ * basligini degistirirken bunu koru — "Kendi sozlerinle" ve "Ne yapabilirsin"
+ * kimseye ayet ya da hadis diye gorunmuyor, tam da bu yuzden secildiler.
  *
  * Kart yazi ekranindan geldiyse `kaynak` dolu gelir: hangi kelimelerin bu
  * hale isaret ettigi ve varsa yakin diger haller gosterilir. Eslestirme
@@ -84,6 +89,12 @@ export default function Kart({
 
   if (!kart) return null;
 
+  /* Eski kayitlarda tek bir "not" vardi; yeni yapida uc oneri ve bir de
+   * "kendi sozlerinle" duasi var. Kaydedilmis eski kartlar acilmaya devam
+   * etsin diye ikisi de esnek okunuyor. */
+  const oneriler = kart.oneriler || (kart.not ? [kart.not] : []);
+  const soz = kart.soz || null;
+
   /* Gorsel paylasimi yalnizca cihazda calisiyor. Web'de ve resme cevirme
    * tutmazsa metin paylasimina dusuyor: sessizce hicbir sey yapmaktansa daha
    * az iyi olani yapmak dogru. */
@@ -156,20 +167,33 @@ export default function Kart({
           okunusGoster={ayarlar.okunusGoster}
         />
 
-        <View
-          style={[
-            stil.not,
-            { backgroundColor: renk.yuzeyIkincil, borderLeftColor: kart.renk }
-          ]}
-        >
-          <Text style={[stil.notBaslik, { color: renk.yaziSilik }]}>
-            KENDİNE HATIRLAT
-          </Text>
-          <Text style={[stil.notMetin, { color: renk.yazi }]}>{kart.not}</Text>
-          <Text style={[stil.notUyari, { color: renk.yaziSilik }]}>
-            Bu cümle uygulamanın kendi notudur; ayet ya da hadis değildir.
-          </Text>
-        </View>
+        {soz ? (
+          <View style={[stil.soz, { backgroundColor: renk.yuzey, borderColor: renk.cizgi }]}>
+            <Text style={[stil.sozBaslik, { color: renk.vurgu }]}>
+              KENDİ SÖZLERİNLE
+            </Text>
+            <Text style={[stil.sozMetin, { color: renk.yazi }]}>{soz}</Text>
+          </View>
+        ) : null}
+
+        {oneriler.length ? (
+          <View
+            style={[
+              stil.oneri,
+              { backgroundColor: renk.yuzeyIkincil, borderLeftColor: kart.renk }
+            ]}
+          >
+            <Text style={[stil.oneriBaslik, { color: renk.yaziSilik }]}>
+              NE YAPABİLİRSİN
+            </Text>
+            {oneriler.map((madde, sira) => (
+              <View key={sira} style={stil.madde}>
+                <Text style={[stil.isaret, { color: kart.renk }]}>—</Text>
+                <Text style={[stil.maddeMetin, { color: renk.yazi }]}>{madde}</Text>
+              </View>
+            ))}
+          </View>
+        ) : null}
 
         <Text style={[stil.meal, { color: renk.yaziSilik }]}>
           Meal: {CEVIRI_ADI}
@@ -233,19 +257,33 @@ const stil = StyleSheet.create({
     marginBottom: 8
   },
   rozetMetin: { fontSize: 12, fontWeight: "600" },
-  not: {
+  soz: {
+    borderWidth: 1,
+    borderRadius: OLCU.yaricap,
+    padding: OLCU.bosluk + 2,
+    marginBottom: OLCU.bosluk
+  },
+  sozBaslik: {
+    fontSize: 11,
+    letterSpacing: 1.6,
+    fontWeight: "600",
+    marginBottom: 12
+  },
+  sozMetin: { fontSize: 16, lineHeight: 27 },
+  oneri: {
     borderLeftWidth: 3,
     borderRadius: OLCU.yaricapKucuk,
     padding: OLCU.bosluk
   },
-  notBaslik: {
+  oneriBaslik: {
     fontSize: 11,
     letterSpacing: 1.6,
     fontWeight: "600",
-    marginBottom: 8
+    marginBottom: 12
   },
-  notMetin: { fontSize: 15, lineHeight: 24 },
-  notUyari: { fontSize: 11, lineHeight: 16, marginTop: 10 },
+  madde: { flexDirection: "row", marginBottom: 10 },
+  isaret: { fontSize: 15, lineHeight: 23, marginRight: 8 },
+  maddeMetin: { flex: 1, fontSize: 15, lineHeight: 23 },
   meal: { fontSize: 12, marginTop: 16, textAlign: "center" },
   altBar: { padding: OLCU.bosluk, paddingTop: 12, borderTopWidth: 1 },
   satir: { flexDirection: "row" }

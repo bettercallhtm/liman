@@ -58,10 +58,13 @@ export function kartUret(halId, sonGosterilen) {
   const onceki = sonGosterilen && sonGosterilen[halId];
   const ayetIndis = onceki ? (onceki.ayetIndis + 1) % hal.ayetler.length : 0;
   const duaIndis = onceki ? (onceki.duaIndis + 1) % hal.dualar.length : 0;
-  /* Not, ayetle birlikte donmesin: ikisi ayni hizada ilerlerse ayni ayet-not
-   * ciftini hep birlikte goruyorsun. Ikisinin toplami daha uzun bir dongu
-   * veriyor. */
-  const notIndis = (ayetIndis + duaIndis) % hal.notlar.length;
+  const sozIndis = ayetIndis % hal.sozler.length;
+
+  /* Oneriler ayetle ayni hizada donmesin: ikisi birlikte ilerlerse ayni
+   * ayet-oneri ucluşunu hep birlikte goruyorsun. Baslangic noktasi ayet ve
+   * dua indislerinin toplami. */
+  const basla = (ayetIndis + duaIndis) % hal.notlar.length;
+  const oneriler = [0, 1, 2].map((i) => hal.notlar[(basla + i) % hal.notlar.length]);
 
   return {
     halId,
@@ -69,7 +72,8 @@ export function kartUret(halId, sonGosterilen) {
     renk: hal.renk,
     ayetGrup: hal.ayetler[ayetIndis],
     duaGrup: hal.dualar[duaIndis],
-    not: hal.notlar[notIndis],
+    soz: hal.sozler[sozIndis],
+    oneriler,
     ayetIndis,
     duaIndis
   };
@@ -102,7 +106,12 @@ export function gununKarti() {
     renk: "#C9A961",
     ayetGrup: [ayet.sure + ":" + ayet.ayet],
     duaGrup: [VERI.girisAyeti],
-    not: "Bugün bir kez oku, sonra telefonu bırak. Okuduğun şeyin işini görmesi için biraz sessizlik gerekiyor.",
+    soz: "Allah'ım, bugün okuduğumu kalbimde bırak. Anladığım kadarını yaşamayı nasip et.",
+    oneriler: [
+      "Bugün bir kez oku, sonra telefonu bırak. Okuduğun şeyin işini görmesi için biraz sessizlik gerekiyor.",
+      "Aklında kalan tek cümleyi bir yere yaz.",
+      "Akşam bir daha bak; sabah okuduğun şey akşam başka geliyor."
+    ],
     ayetIndis: 0,
     duaIndis: 0
   };

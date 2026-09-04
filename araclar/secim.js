@@ -41,6 +41,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["94:5", "94:6"], ["13:28"], ["65:3"], ["2:286"], ["9:51"]],
     dualar: [["20:25", "20:26"], ["3:173"], ["2:201"]],
+    sozler: [
+      "Allah'ım, içimdeki bu daralmayı sen biliyorsun. Göğsümü genişlet, korktuğum şeyle beni imtihan etme. Yarını taşıyacak gücü değil, bugünü geçirecek gücü ver bana.",
+      "Rabbim, aklımdan geçen kötü ihtimalleri senin bilgine bırakıyorum. Elimde olanı yapmayı, olmayanı bırakmayı nasip et."
+    ],
     notlar: [
       "Kaygı geleceği çözmez, sadece bugünü tüketir. Şu an elinde olan tek şey bu nefes.",
       "Bu his bir bilgi değil, bir hava durumu. Geçtiğini daha önce de gördün.",
@@ -58,6 +62,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["9:40"], ["12:86"], ["93:3"], ["93:5"], ["3:139"], ["2:153"]],
     dualar: [["21:87"], ["3:8"], ["2:201"]],
+    sozler: [
+      "Allah'ım, bu ağırlığı taşıyacak gücüm kalmadı. Kalbimi hafiflet, kimseye anlatamadığım bu hüznü sen benden al.",
+      "Rabbim, üzüntümü senden başkasına anlatamıyorum; sen zaten biliyorsun. Bugünü geçirecek kadar sabır, yarına bakacak kadar umut ver."
+    ],
     notlar: [
       "Üzülmek bir arıza değil. Kalbin çalışıyor demek.",
       "Kimseye açıklamak zorunda değilsin. Bir yere bırakman yeter.",
@@ -75,6 +83,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["3:175"], ["20:46"], ["41:30"], ["2:112"], ["9:51"]],
     dualar: [["20:45", "20:46"], ["23:97", "23:98"], ["3:173"]],
+    sozler: [
+      "Allah'ım, korktuğum şeyin şerrinden sana sığınırım. Kalbime güven ver, korkumun her şeyi olduğundan büyük göstermesine izin verme.",
+      "Rabbim, başıma geleceği yalnız sen bilirsin. Korkumu al, yerine sana güvenmeyi koy."
+    ],
     notlar: [
       "Korkunun büyüklüğü tehlikenin büyüklüğü değildir.",
       "En kötü ihtimali yazıya dök. Çoğu zaman kafandakinden küçük çıkar.",
@@ -92,6 +104,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["3:134"], ["41:34"], ["42:43"], ["7:199"], ["25:63"]],
     dualar: [["7:200"], ["59:10"], ["23:97", "23:98"]],
+    sozler: [
+      "Allah'ım, içimdeki bu öfkeyi dindir. Pişman olacağım bir söz söylemekten, geri alamayacağım bir şey yapmaktan beni koru.",
+      "Rabbim, haklı olduğum yerde bile insafımı kaybettirme. Öfkemi sustur, aklımı konuştur."
+    ],
     notlar: [
       "Öfkeliyken verilen kararların hemen hepsi geri alınıyor. Bunu da geri alacaksın.",
       "Şimdi konuşma. On dakika sonra da aynı şeyi düşünüyorsan konuş.",
@@ -109,6 +125,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["50:16"], ["2:186"], ["57:4"], ["9:40"], ["93:3"]],
     dualar: [["21:89"], ["25:74"], ["23:118"]],
+    sozler: [
+      "Allah'ım, kimsenin olmadığı yerde sen varsın. İçimdeki bu boşluğu doldur, beni yalnızlığımla baş başa bırakma.",
+      "Rabbim, bana hayırlı dostlar nasip et. Kimsenin görmediğini senin gördüğünü bilmenin huzurunu kalbime yerleştir."
+    ],
     notlar: [
       "Yalnızlık bazen kalabalığın içinde en yüksek sesle konuşur.",
       "Bugün bir kişiye tek cümle yaz. Cevap gelmese bile sen kapıyı açmış olursun.",
@@ -126,6 +146,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["39:53"], ["20:82"], ["4:110"], ["66:8"], ["3:135"]],
     dualar: [["7:23"], ["28:16"], ["3:16"]],
+    sozler: [
+      "Allah'ım, yaptığımdan pişmanım. Beni bağışla, aynı yere bir daha düşürme. Kırdığım kalpleri onarmayı bana nasip et.",
+      "Rabbim, kendimi affedemiyorum. Sen bağışlayanların en hayırlısısın; beni bağışla, kendimle barışmayı da bana ver."
+    ],
     notlar: [
       "Pişmanlık, dönmek istediğini gösterir. Bu zaten yolun kendisi.",
       "Kendini cezalandırmak telafi değil. Telafi, düzeltebildiğin kısmı düzeltmek.",
@@ -143,6 +167,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["14:7"], ["16:18"], ["2:152"], ["55:13"], ["93:11"]],
     dualar: [["27:19"], ["46:15"], ["2:201"]],
+    sozler: [
+      "Allah'ım, bana verdiklerinin farkında olmayı nasip et. Şükrümü dilimde bırakma, davranışıma geçir.",
+      "Rabbim, sayamadığım nimetlerin için hamdolsun. Elimdekinin kıymetini kaybetmeden bilmeyi öğret bana."
+    ],
     notlar: [
       "Bugün iyi olan şeyi yaz. Kötü gün geldiğinde okuyacaksın.",
       "Minnet, dile getirilmezse unutulur. Bir kişiye teşekkür et.",
@@ -160,6 +188,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["39:53"], ["12:87"], ["94:5", "94:6"], ["65:3"], ["2:214"]],
     dualar: [["3:8"], ["21:87"], ["18:10"]],
+    sozler: [
+      "Allah'ım, benim umudum tükendi ama senin rahmetin tükenmez. Kalbime bir aralık aç, bu karanlıktan çıkacak yolu göster.",
+      "Rabbim, bugünü geçirecek gücü ver. Yarını düşünecek hâlim yok; sen benim yerime bak."
+    ],
     notlar: [
       "\"Hiç\" ve \"asla\" kelimeleri umutsuzluğun kendi sözlüğünden. Senin değil.",
       "Bugünü çözmek zorunda değilsin. Bugünü geçirmek yeter.",
@@ -177,6 +209,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["26:80"], ["17:82"], ["2:155", "2:156", "2:157"], ["10:57"], ["64:11"], ["3:139"]],
     dualar: [["21:83"], ["23:118"], ["2:286"]],
+    sozler: [
+      "Allah'ım, şifa senden. Bedenime şifa, kalbime sabır ver. Bu ağrıyı hafiflet, geçmesini nasip et.",
+      "Rabbim, hasta olmak beni yalnızlaştırmasın. İyileşmeyi, iyileşene kadar da dayanacak sabrı ver."
+    ],
     notlar: [
       "Bugün hiçbir şey üretmemek de bir iş. İyileşmek çalışmaktır.",
       "İlacını al, doktorunu ara. Dua tedbiri kaldırmaz, tedbirin yanına gelir.",
@@ -194,6 +230,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["2:155", "2:156", "2:157"], ["3:185"], ["21:35"], ["89:27", "89:28", "89:29", "89:30"], ["13:23", "13:24"], ["29:57"]],
     dualar: [["2:156"], ["59:10"], ["14:41"]],
+    sozler: [
+      "Allah'ım, kaybettiğimi sana emanet ediyorum. Onu bağışla, rahmetinle kuşat. Bana da onsuz yaşamayı öğret.",
+      "Rabbim, bu acı çok büyük. Kalbimi teselli et; ardından onu hayırla anmayı nasip et."
+    ],
     notlar: [
       "Yasın takvimi yok. Kimse sana \"artık geçmeliydi\" diyemez.",
       "Anmak, tutmak değil. Onu anlatabildiğin kadar anlat.",
@@ -211,6 +251,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["2:153"], ["39:10"], ["70:5"], ["30:60"], ["12:83"]],
     dualar: [["2:250"], ["7:126"], ["40:60"]],
+    sozler: [
+      "Allah'ım, sonucu bilmiyorum ama senin bildiğine güveniyorum. Beklerken sabrımı, sonuç geldiğinde rızamı koru.",
+      "Rabbim, bu bekleyişi hayırla bitir. Hakkımda hayırlıysa kolaylaştır, değilse gönlümü ondan al."
+    ],
     notlar: [
       "Beklemek boş zaman değil. Süre işliyor, sen de.",
       "Sonucu değiştirmeyecek düşünceyi bir kenara bırak.",
@@ -228,6 +272,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["39:18"], ["3:159"], ["65:3"], ["42:10"], ["2:269"], ["9:51"]],
     dualar: [["18:10"], ["20:25", "20:26", "20:27", "20:28"], ["3:8"]],
+    sozler: [
+      "Allah'ım, hangi yolun hayırlı olduğunu bilmiyorum. Kalbimi doğru olana meylettir, yanlış olandan uzaklaştır.",
+      "Rabbim, karar vermek bana ağır geliyor. Doğruyu göster; gösterdiğinde arkasında durma gücünü de ver."
+    ],
     notlar: [
       "İki yol da yaşanabilir. Kötü olan, hiçbirine girmeden beklemek.",
       "Danış. Karar senin ama tek başına verilmesi şart değil.",
@@ -245,6 +293,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["94:5", "94:6"], ["2:286"], ["53:39"], ["18:23", "18:24"], ["3:139"]],
     dualar: [["20:25", "20:26", "20:27", "20:28"], ["20:114"], ["2:201"]],
+    sozler: [
+      "Allah'ım, göğsümü genişlet, işimi kolaylaştır. Öğrendiklerimi ihtiyaç anında hatırlat, yorulduğumda beni ayakta tut.",
+      "Rabbim, elimden geleni yapmayı nasip et; gerisini senden bekliyorum. Sonuç ne olursa hayırlısını ver."
+    ],
     notlar: [
       "Tek bir maddeyi bitir. Liste kendi kendine kısalmaya öyle başlıyor.",
       "Hazırlanmak senin işin, sonuç değil. İkisini karıştırma.",
@@ -262,6 +314,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["42:41", "42:42"], ["14:42"], ["16:126", "16:127"], ["4:148"], ["22:60"], ["4:135"]],
     dualar: [["10:85", "10:86"], ["2:250"], ["40:44"]],
+    sozler: [
+      "Allah'ım, bana yapılanı sen biliyorsun. Hakkımı ver, ama beni de zalimleştirme.",
+      "Rabbim, uğradığım haksızlık kalbimi karartmasın. Adaletini göster; o güne kadar sabrımı koru."
+    ],
     notlar: [
       "Kaydını tut. Duygu unutur, yazı unutmaz.",
       "Hakkını aramak intikam değil. İkisini ayır.",
@@ -279,6 +335,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["65:3"], ["29:60"], ["11:6"], ["51:22"], ["94:5", "94:6"], ["2:186"]],
     dualar: [["28:24"], ["2:201"], ["3:173"]],
+    sozler: [
+      "Allah'ım, sıkıntımı biliyorsun. Beni helâlinden rızıklandır, borcumu ödemeyi nasip et, kimseye muhtaç etme.",
+      "Rabbim, darlığı genişliğe çevir. Elimdekiyle yetinmeyi, eline geçeni bereketli kılmayı ver."
+    ],
     notlar: [
       "Rakamı yaz. Belirsiz borç, gerçek borçtan ağır geliyor.",
       "Bir kişiye söyle. Yalnız taşınan para derdi iki kat ediyor.",
@@ -296,6 +356,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["13:28"], ["89:27", "89:28"], ["48:4"], ["6:82"], ["25:63"]],
     dualar: [["25:74"], ["3:8"], ["20:25", "20:26"]],
+    sozler: [
+      "Allah'ım, kalbimi sakinleştir. Zihnimdeki gürültüyü dindir, bana kendimle baş başa kalabileceğim bir sükûnet ver.",
+      "Rabbim, telaşımı al. Yavaşlamayı, durmayı ve durduğum yerde huzur bulmayı nasip et."
+    ],
     notlar: [
       "Telefonu bırak. Beş dakika hiçbir şey yapma; bu da bir eylem.",
       "Sessizlik boşluk değil, yer açmak.",
@@ -313,6 +377,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["10:58"], ["27:40"], ["93:11"], ["2:152"], ["35:34"], ["14:7"]],
     dualar: [["27:19"], ["14:41"], ["2:201"]],
+    sozler: [
+      "Allah'ım, bu sevinç senden. Şımartma, unutturma; elimden aldığın gün de isyan ettirme.",
+      "Rabbim, bu haberi kalbime hayırlı kıl. Sevincimi paylaşacak insanlar ve sevindirecek fırsatlar nasip et."
+    ],
     notlar: [
       "Sevinci de paylaş. Yalnız yaşanan iyi haber yarısı kadar iyi geliyor.",
       "Bugünü yaz bir yere. Kötü bir gün geldiğinde bunu okuyacaksın.",
@@ -330,6 +398,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["17:80"], ["65:3"], ["3:159"], ["53:39"], ["94:5", "94:6"], ["2:186"]],
     dualar: [["20:25", "20:26", "20:27", "20:28"], ["18:10"], ["23:29"]],
+    sozler: [
+      "Allah'ım, girdiğim bu yeni yolu hayırlı kıl. Beni doğrulukla sok, doğrulukla çıkar.",
+      "Rabbim, yeni başlangıcımda kolaylık ver. İyi insanlar, sabır ve doğru kararlar nasip et."
+    ],
     notlar: [
       "İlk gün herkes acemidir. Acemiliği saklamaya çalışma, sorarak öğren.",
       "Kendine süre tanı. Yeni bir şeye alışmak haftalar sürüyor, günler değil.",
@@ -347,6 +419,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["30:21"], ["46:15"], ["59:10"], ["2:186"], ["13:23", "13:24"], ["40:60"]],
     dualar: [["17:24"], ["14:40", "14:41"], ["25:74"]],
+    sozler: [
+      "Allah'ım, sevdiklerimi koru. Onlara sağlık, huzur ve hayırlı bir ömür ver. Benim göremediğim yerde sen yanlarında ol.",
+      "Rabbim, anne babama merhamet et. Onlara iyilik etmeyi nasip et, kalplerini kırmaktan beni koru."
+    ],
     notlar: [
       "Dua ettiğin kişiye bunu söyle. Duyulduğunu bilmek de iyi geliyor.",
       "Anne baban hayattaysa bugün ara. Duanın yanına ses de gitsin.",
@@ -364,6 +440,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["17:80"], ["65:3"], ["2:186"], ["9:51"], ["29:20"], ["67:15"]],
     dualar: [["43:13", "43:14"], ["23:29"], ["11:41"]],
+    sozler: [
+      "Allah'ım, yolumu aç, yolculuğumu kolaylaştır. Gittiğim yerde hayır bulmayı, döndüğümde sevdiklerime kavuşmayı nasip et.",
+      "Rabbim, bu yolculukta beni ve yanımdakileri koru. Vardığım yeri bereketli kıl."
+    ],
     notlar: [
       "Yola çıkmadan bir haber ver. Seni bekleyen birinin içi rahat etsin.",
       "Acele etme. Vaktinde varmak, erken varmaktan önemli.",
@@ -381,6 +461,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["42:40"], ["7:199"], ["3:134"], ["41:34"], ["15:85"], ["42:43"]],
     dualar: [["59:10"], ["7:23"], ["3:16"]],
+    sozler: [
+      "Allah'ım, kalbimdeki kırgınlığı al. Affetmeyi nasip et; affederken beni küçültme.",
+      "Rabbim, aramı düzeltmeyi nasip et. Ben affedeyim ki sen de beni affet."
+    ],
     notlar: [
       "Affetmek, olanı onaylamak değil. Taşımayı bırakmak.",
       "İlk adımı atmak yenilmek değil. Çoğu küslük iki tarafın da beklemesinden uzuyor.",
@@ -398,6 +482,10 @@ const HALLER = [
     grup: "iyi",
     ayetler: [["40:60"], ["2:186"], ["7:55"], ["21:90"], ["42:19"], ["65:3"]],
     dualar: [["2:201"], ["3:8"], ["25:74"]],
+    sozler: [
+      "Allah'ım, istediğim şeyi biliyorsun. Hakkımda hayırlıysa nasip et; değilse gönlümü ondan al, yerine daha hayırlısını ver.",
+      "Rabbim, duamı işit. Kabul etmeyeceksen beklemeyi ve razı olmayı öğret bana."
+    ],
     notlar: [
       "Ne istediğini net söyle — kendine bile. Belirsiz dilek, belirsiz kalıyor.",
       "Dua ettiğin şey için ayrıca bir adım at. İkisi birbirinin yerine geçmiyor.",
@@ -415,6 +503,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["4:35"], ["49:10"], ["30:21"], ["42:43"], ["4:128"], ["3:159"]],
     dualar: [["25:74"], ["59:10"], ["3:8"]],
+    sozler: [
+      "Allah'ım, aramızı düzelt. Kalplerimizi birbirine ısındır, öfkeyle söylenen sözleri unuttur.",
+      "Rabbim, bu bağı hayırlıysa sürdür; değilse ikimizi de fazla incitmeden ayır."
+    ],
     notlar: [
       "Kazanmak istediğin tartışmayla, kalmak istediğin ilişki çoğu zaman aynı yerde durmuyor.",
       "Ne istediğini söylemeden karşı tarafın anlamasını beklemek, ikinizi de yoruyor.",
@@ -432,6 +524,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["14:39"], ["21:89", "21:90"], ["2:186"], ["40:60"], ["3:40"], ["19:4"]],
     dualar: [["3:38"], ["37:100"], ["25:74"]],
+    sozler: [
+      "Allah'ım, bize hayırlı bir evlat nasip et. Bu bekleyişte kalbimizi kırma, birbirimize düşürme.",
+      "Rabbim, duamızı işit. Bize evlat ver; vermeyeceksen bu bekleyişle yaşamayı öğret ve gönlümüzü ferah tut."
+    ],
     notlar: [
       "Bu bekleyişi anlamayanlara açıklamak zorunda değilsin. \"Ne zaman?\" sorusuna cevap borcun yok.",
       "Eşinle bunu konuşun. Aynı acıyı ayrı ayrı taşımak ikinizi de yalnızlaştırıyor.",
@@ -449,6 +545,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["12:18"], ["8:62"], ["3:186"], ["4:148"], ["4:81"], ["39:36"]],
     dualar: [["3:173"], ["2:250"], ["12:86"]],
+    sozler: [
+      "Allah'ım, güvenim sarsıldı. Kalbimi onar; beni bir daha kimseye güvenemeyecek hâle getirme.",
+      "Rabbim, bana yapılanın hesabını sana bırakıyorum. Kin taşımaktan koru, huzurumu geri ver."
+    ],
     notlar: [
       "Aldatılmak senin eksikliğin değil. Yapan kişinin tercihiydi.",
       "Hemen karar verme. Güven sarsıldığında verilen kararların çoğu öfkenin kararı oluyor.",
@@ -466,6 +566,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["113:1", "113:2", "113:3", "113:4", "113:5"], ["12:67"], ["9:51"], ["65:3"], ["2:255"], ["3:120"]],
     dualar: [["114:1", "114:2", "114:3", "114:4", "114:5", "114:6"], ["23:97", "23:98"], ["3:173"]],
+    sozler: [
+      "Allah'ım, hased edenin şerrinden sana sığınırım. Beni, ailemi ve bana verdiğin nimeti koru.",
+      "Rabbim, elimdekinin kıymetini bilmeyi nasip et. Korkuyla değil, sana güvenerek yaşamayı ver."
+    ],
     notlar: [
       "Sevindiğin her şeyi herkese anlatmak zorunda değilsin. Bu bir tedbir, korku değil.",
       "Kimin ne düşündüğünü kontrol edemezsin; neyi anlattığını edebilirsin.",
@@ -483,6 +587,10 @@ const HALLER = [
     grup: "zor",
     ayetler: [["12:84"], ["12:96"], ["28:13"], ["2:186"], ["12:83"], ["65:3"]],
     dualar: [["12:86"], ["25:74"], ["2:201"]],
+    sozler: [
+      "Allah'ım, özlediğimi koru. Aramızdaki mesafeyi hayra çevir, kavuşmayı nasip et.",
+      "Rabbim, bu özlem kalbimi yormasın. Görüşene kadar ikimize de sabır ve sağlık ver."
+    ],
     notlar: [
       "Özlemek, sevdiğinin devam ettiği anlamına geliyor. Kötü bir şey değil.",
       "Bugün ara. Kısa konuşma da konuşmadır.",
