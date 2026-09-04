@@ -1,4 +1,4 @@
-/* Melce — giris.
+/* Liman — giris.
  *
  * Gezinme icin kutuphane yok: bes ekran ve "hangisi acik" degiskenleri.
  * react-navigation eklemek bu kadar ekran icin paketi buyutmekten baska bir

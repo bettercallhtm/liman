@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Melce",
-    "slug": "melce",
+    "name": "Liman",
+    "slug": "liman",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "melce",
+    "scheme": "liman",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,13 +15,13 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.melce.app",
+      "bundleIdentifier": "com.liman.app",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": "com.melce.app",
+      "package": "com.liman.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0F141C"

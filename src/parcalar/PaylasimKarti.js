@@ -61,7 +61,7 @@ export default function PaylasimKarti({ grup, kartRef }) {
       </View>
 
       <View style={stil.alt}>
-        <Text style={stil.marka}>Melce</Text>
+        <Text style={stil.marka}>Liman</Text>
         <Text style={stil.meallik}>{CEVIRI_ADI} meali</Text>
       </View>
     </View>

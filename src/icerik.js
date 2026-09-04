@@ -91,7 +91,7 @@ export function paylasimMetni(kart) {
   satirlar.push(dualar.map((a) => a.meal).join(" "));
   satirlar.push("— " + grupBasligi(kart.duaGrup));
   satirlar.push("");
-  satirlar.push("Meal: " + CEVIRI_ADI + " · Melce");
+  satirlar.push("Meal: " + CEVIRI_ADI + " · Liman");
   return satirlar.join("\n");
 }
 
