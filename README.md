@@ -1,4 +1,4 @@
-# İnşirah
+# Melce
 
 Yaşadığını yaz ya da hâlini seç; sana uyan ayeti ve Kur'an'dan bir duayı
 getirsin. Android/iOS, Expo (React Native). Tamamen çevrimdışı: sunucu yok,
@@ -153,7 +153,7 @@ yayında olması gerekiyor.
 
 ## Depo
 
-https://github.com/bettercallhtm/insirah (public)
+https://github.com/bettercallhtm/melce (public)
 
 Gizlilik politikası GitHub Pages ile yayında:
-https://bettercallhtm.github.io/insirah/gizlilik.html
+https://bettercallhtm.github.io/melce/gizlilik.html

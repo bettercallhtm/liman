@@ -207,7 +207,7 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
       </Bolum>
 
       <Text style={[stil.dipnot, { color: renk.yaziSilik }]}>
-        İnşirah · Sürüm 1.0.0
+        Melce · Sürüm 1.0.0
       </Text>
     </ScrollView>
   );

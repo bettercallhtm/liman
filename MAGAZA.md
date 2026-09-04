@@ -10,9 +10,9 @@ sınırları; aşarsanız form kabul etmiyor.
 
 ## Uygulama adı (en fazla 30 karakter)
 
-**İnşirah: Ayet ve Dua** — 20 karakter
+**Melce: Ayet ve Dua** — 18 karakter
 
-Kısa hâli "İnşirah" (7 karakter) de kullanılabilir. Uzun hâlin tek
+Kısa hâli "Melce" (5 karakter) de kullanılabilir. Uzun hâlin tek
 sebebi arama: Play'de insanlar "dua" ve "ayet" yazarak arıyor, ikisi de adın
 içinde geçtiğinde bulunma ihtimali artıyor.
 
@@ -31,7 +31,7 @@ Yaşadığını yaz ya da hâlini seç; sana uyan ayet ve dua karşına gelsin.
 ## Tam açıklama (en fazla 4000 karakter)
 
 ```
-Bazı günler ne diyeceğini bilemezsin. İnşirah tam orada işe yarıyor.
+Bazı günler ne diyeceğini bilemezsin. Melce tam orada işe yarıyor.
 
 İki yolu var: başından geçeni kendi cümlelerinle yazarsın, ya da hazır
 hâllerden birini seçersin. İkisinde de sana o hâle dokunan bir ayet ve
@@ -172,7 +172,7 @@ Play her uygulama için **herkese açık bir gizlilik politikası adresi**
 istiyor. **Yayında ve çalışıyor:**
 
 ```
-https://bettercallhtm.github.io/insirah/gizlilik.html
+https://bettercallhtm.github.io/melce/gizlilik.html
 ```
 
 Bu adresi Play Console → App content → Privacy policy alanına yapıştırın.

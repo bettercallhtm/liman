@@ -28,14 +28,14 @@ const EKRANLAR = [
     govde:
       "Yazdığın metin hiçbir sunucuya gönderilmiyor, kaydedilmiyor da — ekrandan çıkınca siliniyor. Hangi ayete denk düştüğü telefonunun içinde hesaplanıyor.",
     alt:
-      "İnşirah hesap açtırmaz, internete bağlanmaz, hiçbir veri toplamaz. Kaydettiklerin yalnızca bu telefonda durur."
+      "Melce hesap açtırmaz, internete bağlanmaz, hiçbir veri toplamaz. Kaydettiklerin yalnızca bu telefonda durur."
   },
   {
     baslik: "Ayetleri\nbiz yazmadık.",
     govde:
       "Uygulamadaki hiçbir ayet ya da dua metni burada üretilmedi; hepsi kaynağından olduğu gibi alındı. Meal Elmalılı Hamdi Yazır'a ait ve uygulamadaki bütün dualar Kur'an'ın kendi duaları.",
     alt:
-      "İnşirah dinî danışmanlık ya da fetva vermez; tıbbi veya psikolojik tedavinin yerine de geçmez."
+      "Melce dinî danışmanlık ya da fetva vermez; tıbbi veya psikolojik tedavinin yerine de geçmez."
   }
 ];
 
