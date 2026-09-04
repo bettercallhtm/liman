@@ -150,18 +150,20 @@ sunucudan gelmiyor, cihaz kimliği üretilmiyor.
 ## Gizlilik politikası
 
 Play her uygulama için **herkese açık bir gizlilik politikası adresi**
-istiyor. Depodaki `gizlilik.html` bunun için hazır.
+istiyor. **Yayında ve çalışıyor:**
 
-GitHub Pages ile yayınlamak en kolayı:
+```
+https://bettercallhtm.github.io/dua-pusulasi/gizlilik.html
+```
 
-1. `dua-pusulasi` deposunu GitHub'a **public** olarak yükleyin (ya da yalnızca
-   bu dosya için ayrı küçük bir depo açın).
-2. Settings → Pages → Source: `main` / root.
-3. Adres: `https://<kullanici-adi>.github.io/dua-pusulasi/gizlilik.html`
-4. Bu adresi Play Console → App content → Privacy policy alanına yapıştırın.
+Bu adresi Play Console → App content → Privacy policy alanına yapıştırın.
 
-> Deponun tamamını public yapacaksanız `*.jks` imza anahtarının içinde
-> olmadığından emin olun — `.gitignore` bunu zaten dışarıda tutuyor.
+Kaynağı depodaki `gizlilik.html`; GitHub Pages `main` dalının kökünden
+yayınlıyor. Dosyayı değiştirip push ederseniz adres bir iki dakika içinde
+kendiliğinden güncelleniyor.
+
+> Depo public. `.gitignore` imza anahtarını (`*.jks`) ve `.env`'i dışarıda
+> tutuyor — yeni bir gizli dosya eklerseniz önce oraya yazın.
 
 ---
 

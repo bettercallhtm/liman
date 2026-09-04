@@ -94,3 +94,10 @@ yayında olması gerekiyor.
   var. Bu uygulama tek bir şey yapıyor.
 - **Seri/streak sayacı.** Kaygılı olduğu için açılan bir uygulamanın
   kullanıcıyı "serini kaybettin" diye suçlaması olacak şey değil.
+
+## Depo
+
+https://github.com/bettercallhtm/dua-pusulasi (public)
+
+Gizlilik politikası GitHub Pages ile yayında:
+https://bettercallhtm.github.io/dua-pusulasi/gizlilik.html
