@@ -201,6 +201,25 @@ kırpmayın, bir sonraki çalıştırma üzerine yazar.
 | `one-cikan-gorsel-1024x500.png` | Play Console → Öne çıkan görsel (1024×500) |
 | `icon.png`, `adaptive-icon.png`, `splash-icon.png` | Uygulamanın kendi içinde |
 
+### Yapay zekâyla üretilmiş öğe beyanı: burada cevap karışık
+
+Play mağaza girişindeki her görsel için yapay zekâyla üretilip üretilmediğini
+soruyor. Bu uygulamada tek tek ayırın:
+
+| Görsel | Beyan | Neden |
+|---|---|---|
+| Uygulama simgesi (512×512) | **Evet** | `araclar/logo.png` ChatGPT'de üretildi; simge o dosyadan kırpılıyor |
+| Özellik grafiği (1024×500) | **Evet** | Aynı kaynak |
+| Ekran görüntüleri | **Hayır** | Uygulamanın kendisinden alınan gerçek kareler |
+
+Kırpma ve ölçekleme işini kodun yapması bunu değiştirmiyor: soruyu belirleyen
+şey, görselin **kökeninin** üretken bir model olması. Debi deposunda aynı
+soruların hepsine "hayır" deniyor çünkü oradaki görsellerin hiçbiri modelden
+çıkmadı — iki depoyu karıştırmayın.
+
+Beyan yanlış doldurulursa politika ihlali sayılıyor; ne eksik ne fazla
+işaretleyin.
+
 ### Ekran görüntüleri (elle alınacak)
 
 Play en az **2**, en fazla 8 telefon ekran görüntüsü istiyor. 1080×1920 alın.
