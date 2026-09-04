@@ -1,7 +1,8 @@
-# Dua Pusulası
+# İnşirah
 
-Ruh hâline göre ayet ve dua gösteren Android/iOS uygulaması. Expo (React
-Native). Tamamen çevrimdışı: sunucu yok, hesap yok, internet izni yok.
+Yaşadığını yaz ya da hâlini seç; sana uyan ayeti ve Kur'an'dan bir duayı
+getirsin. Android/iOS, Expo (React Native). Tamamen çevrimdışı: sunucu yok,
+hesap yok, internet izni yok.
 
 ## En önemli kural
 
@@ -44,6 +45,32 @@ Metinlerin derleme kaynağı alquran.cloud (Tanzil.net derlemesi). Tanzil'in
 kendi kullanım şartları var; ücretli bir sürüm ya da reklam düşünüyorsan önce
 o şartları oku.
 
+## Yazılan metin neden buluta gitmiyor
+
+Uygulamanın ikinci girişi bir metin kutusu: kişi başından geçeni yazıyor,
+uygulama ona uyan hâli buluyor. Bunu bir dil modeline bağlamak daha iyi
+eşleştirirdi — ama insanların en özel cümlelerini başka bir yere göndermek
+gerekirdi. Bu uygulamada bu bir özellik değil, kırmızı çizgi: **yazılan metin
+telefondan çıkmıyor, kaydedilmiyor da.**
+
+Onun yerine `src/veri/sozluk.js` içinde hâl başına kelime kökleri var,
+`src/coz.js` metni sadeleştirip (Türkçe harfler ASCII'ye — çoğu kişi
+"uzgunum" diye yazıyor) kök eşleşmelerini puanlıyor. Kaba bir yöntem, ama
+doğru yerde kaba: eşleşme bulamayınca uydurmuyor, "çıkaramadım, sen seç"
+diyor. Kart da hangi kelimelerin o hâle işaret ettiğini gösteriyor, yanlış
+bulduğunda kullanıcı düzeltebiliyor.
+
+Ağırlıklar önemli: "annem vefat etti çok üzgünüm" cümlesinde hem yas hem
+üzüntü eşleşiyor, ölüm kelimeleri 5 puan aldığı için yas kazanıyor. Sözlüğü
+genişletirken `node` ile birkaç gerçek cümle deneyip sıralamaya bak.
+
+### Kendine zarar işaretleri
+
+`sozluk.js` içindeki `RISK` listesi yakalandığında uygulama ayet yerine
+önce `src/ekranlar/Destek.js` ekranını açıyor: 112 ve 183, suçlamayan bir
+metin, ve isterse devam etme seçeneği. Bu listeyi daraltma — yanlış alarm
+vermek, kaçıran bir sistemden iyidir.
+
 ## Klasörler
 
 ```
@@ -54,11 +81,13 @@ araclar/          derleme öncesi çalışan betikler (uygulamaya girmez)
   sure-adlari.js  114 sûrenin Türkçe adı
 src/
   icerik.js       kart üretimi, günün ayeti, paylaşım metni
+  coz.js          yazılan metni hâle bağlar (cihazda, çevrimdışı)
   depo.js         telefonda saklanan her şey (favoriler, günlük, ayarlar)
   hatirlatici.js  günlük bildirim
   tema.js         renkler
-  ekranlar/       Hal, Kart, Favoriler, Ayarlar
+  ekranlar/       Hal, Yaz, Kart, Destek, Favoriler, Ayarlar
   parcalar/       AyetBloku, Dugme
+  veri/sozluk.js    hâl başına kelime kökleri + risk listesi (elle yazılır)
   veri/icerik.json  ÜRETİLEN DOSYA — elle düzenleme
 ```
 
@@ -85,9 +114,10 @@ yayında olması gerekiyor.
 
 ## Bilinçli olarak yapılmayanlar
 
-- **Yapay zekâ ile dua üretme.** Uygulamanın ismi bunu çağrıştırsa da model
-  ne ayet ne dua metni üretiyor. Uydurma ya da yanlış aktarılmış bir ayet bu
-  uygulamayı bitirir.
+- **Yapay zekâ ile dua üretme.** Model ne ayet ne dua metni üretiyor.
+  Uydurma ya da yanlış aktarılmış bir ayet bu uygulamayı bitirir.
+- **Yazılan metni sunucuya gönderme.** Bkz. yukarısı. Bu, uygulamanın
+  vaadinin bir parçası; "daha iyi eşleştirme" gerekçesiyle bile bozulmaz.
 - **Hesap, bulut, senkronizasyon.** Kayıtlar telefonda. Sunucu yok demek,
   sızdıracak veri yok demek.
 - **Namaz vakti, kıble, Kur'an okuma.** Bunları yapan çok iyi uygulamalar
@@ -97,7 +127,7 @@ yayında olması gerekiyor.
 
 ## Depo
 
-https://github.com/bettercallhtm/dua-pusulasi (public)
+https://github.com/bettercallhtm/insirah (public)
 
 Gizlilik politikası GitHub Pages ile yayında:
-https://bettercallhtm.github.io/dua-pusulasi/gizlilik.html
+https://bettercallhtm.github.io/insirah/gizlilik.html

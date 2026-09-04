@@ -1,9 +1,9 @@
-/* Dua Pusulasi — giris.
+/* İnşirah — giris.
  *
- * Gezinme icin kutuphane yok: dort ekran ve bir "hangisi acik" degiskeni.
+ * Gezinme icin kutuphane yok: bes ekran ve "hangisi acik" degiskenleri.
  * react-navigation eklemek bu kadar ekran icin paketi buyutmekten baska bir
- * ise yaramiyordu. Kart ekrani sekmelerin ustune aciliyor, geri tusu onu
- * kapatiyor. */
+ * ise yaramiyordu. Kart ve destek ekranlari sekmelerin ustune aciliyor, geri
+ * tusu onlari kapatiyor. */
 import React, { useCallback, useEffect, useState } from "react";
 import {
   BackHandler,
@@ -20,10 +20,12 @@ import { StatusBar } from "expo-status-bar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 import Ayarlar from "./src/ekranlar/Ayarlar";
+import Destek from "./src/ekranlar/Destek";
 import Favoriler from "./src/ekranlar/Favoriler";
 import Hal from "./src/ekranlar/Hal";
 import Kart from "./src/ekranlar/Kart";
-import { gununKarti, kartUret, paylasimMetni } from "./src/icerik";
+import Yaz from "./src/ekranlar/Yaz";
+import { gununKarti, haliBul, kartUret, paylasimMetni } from "./src/icerik";
 import {
   ayarlariAl,
   ayarlariYaz,
@@ -42,6 +44,7 @@ import { OLCU, useTema } from "./src/tema";
 
 const SEKMELER = [
   { id: "hal", ad: "Hâlim" },
+  { id: "yaz", ad: "Yaz" },
   { id: "favoriler", ad: "Kayıtlar" },
   { id: "ayarlar", ad: "Ayarlar" }
 ];
@@ -51,6 +54,8 @@ export default function App() {
 
   const [sekme, setSekme] = useState("hal");
   const [kart, setKart] = useState(null);
+  const [kaynak, setKaynak] = useState(null);
+  const [destek, setDestek] = useState(null);
   const [favoriler, setFavoriler] = useState([]);
   const [gunluk, setGunluk] = useState({});
   const [ayarlar, setAyarlar] = useState(VARSAYILAN_AYARLAR);
@@ -76,12 +81,17 @@ export default function App() {
     };
   }, []);
 
-  /* Android'de donanim geri tusu: kart aciksa once onu kapat. */
+  /* Android'de donanim geri tusu: ustteki ekran neyse once onu kapat. */
   useEffect(() => {
     if (Platform.OS !== "android") return undefined;
     const abone = BackHandler.addEventListener("hardwareBackPress", () => {
       if (kart) {
         setKart(null);
+        setKaynak(null);
+        return true;
+      }
+      if (destek) {
+        setDestek(null);
         return true;
       }
       if (sekme !== "hal") {
@@ -91,25 +101,46 @@ export default function App() {
       return false;
     });
     return () => abone.remove();
-  }, [kart, sekme]);
+  }, [kart, destek, sekme]);
 
   const halSec = useCallback(
-    async (halId) => {
+    async (halId, yeniKaynak = null) => {
       const yeni = kartUret(halId, sonGosterilen);
       if (!yeni) return;
       setKart(yeni);
-      const guncel = { ...sonGosterilen, [halId]: { ayetIndis: yeni.ayetIndis, duaIndis: yeni.duaIndis } };
-      setSonGosterilen(guncel);
+      setKaynak(yeniKaynak);
+      setDestek(null);
+      setSonGosterilen({
+        ...sonGosterilen,
+        [halId]: { ayetIndis: yeni.ayetIndis, duaIndis: yeni.duaIndis }
+      });
       await sonGosterileniYaz(halId, yeni.ayetIndis, yeni.duaIndis);
       setGunluk(await gunlugeYaz(halId));
     },
     [sonGosterilen]
   );
 
+  /* Yazi ekraninin sonucunu karta cevirir. En yuksek puanli hal gosteriliyor,
+   * hemen ardindaki iki hal de "yanildiysam buradan degistir" diye kartin
+   * ustune konuyor. */
+  const yazidanKart = useCallback(
+    (sonuc) => {
+      const ilk = sonuc.siralama[0];
+      if (!ilk) return;
+      const digerler = sonuc.siralama
+        .slice(1, 3)
+        .map((s) => haliBul(s.halId))
+        .filter(Boolean)
+        .map((h) => ({ id: h.id, ad: h.ad }));
+      halSec(ilk.halId, { eslesenler: ilk.eslesenler, digerler });
+    },
+    [halSec]
+  );
+
   const yenile = useCallback(() => {
     if (!kart || kart.halId === "gunun") return;
-    halSec(kart.halId);
-  }, [kart, halSec]);
+    halSec(kart.halId, kaynak);
+  }, [kart, kaynak, halSec]);
 
   const favoriMi = kart
     ? favoriler.some((k) => favoriKimlik(k) === favoriKimlik(kart))
@@ -131,42 +162,36 @@ export default function App() {
 
   /* Ayar degisiklikleri tek kapidan geciyor: hatirlatici acilip kapanmasi da,
    * kayitlarin silinmesi de burada. */
-  const ayarDegis = useCallback(
-    async (yeni) => {
-      if (yeni.__hepsiniSil) {
-        await AsyncStorage.multiRemove([
-          "dp.favoriler",
-          "dp.gunluk",
-          "dp.sonGosterilen"
-        ]);
-        setFavoriler([]);
-        setGunluk({});
-        setSonGosterilen({});
-        setKart(null);
-        return;
-      }
+  const ayarDegis = useCallback(async (yeni) => {
+    if (yeni.__hepsiniSil) {
+      await AsyncStorage.multiRemove(["dp.favoriler", "dp.gunluk", "dp.sonGosterilen"]);
+      setFavoriler([]);
+      setGunluk({});
+      setSonGosterilen({});
+      setKart(null);
+      setKaynak(null);
+      return;
+    }
 
-      let sonuc = yeni;
-      if (yeni.hatirlaticiAcik) {
-        const izin = await izinIste();
-        if (!izin) {
-          sonuc = { ...yeni, hatirlaticiAcik: false };
-        } else {
-          const kuruldu = await hatirlaticiyiKur(
-            yeni.hatirlaticiSaat,
-            yeni.hatirlaticiDakika
-          );
-          if (!kuruldu) sonuc = { ...yeni, hatirlaticiAcik: false };
-        }
+    let sonuc = yeni;
+    if (yeni.hatirlaticiAcik) {
+      const izin = await izinIste();
+      if (!izin) {
+        sonuc = { ...yeni, hatirlaticiAcik: false };
       } else {
-        await hatirlaticiyiKapat();
+        const kuruldu = await hatirlaticiyiKur(
+          yeni.hatirlaticiSaat,
+          yeni.hatirlaticiDakika
+        );
+        if (!kuruldu) sonuc = { ...yeni, hatirlaticiAcik: false };
       }
+    } else {
+      await hatirlaticiyiKapat();
+    }
 
-      setAyarlar(sonuc);
-      await ayarlariYaz(sonuc);
-    },
-    []
-  );
+    setAyarlar(sonuc);
+    await ayarlariYaz(sonuc);
+  }, []);
 
   let govde;
   if (kart) {
@@ -174,18 +199,44 @@ export default function App() {
       <Kart
         kart={kart}
         ayarlar={ayarlar}
+        kaynak={kaynak}
         favoriMi={favoriMi}
         onFavori={favoriDegistir}
         onYenile={yenile}
         onPaylas={paylas}
-        onGeri={() => setKart(null)}
+        onHalSec={(halId) => halSec(halId, kaynak)}
+        onGeri={() => {
+          setKart(null);
+          setKaynak(null);
+        }}
+      />
+    );
+  } else if (destek) {
+    govde = (
+      <Destek
+        onDevam={() => {
+          const ilk = destek.siralama[0];
+          halSec(ilk ? ilk.halId : "umutsuzluk", null);
+        }}
+        onGeri={() => setDestek(null)}
+      />
+    );
+  } else if (sekme === "yaz") {
+    govde = (
+      <Yaz
+        onSonuc={yazidanKart}
+        onRisk={(sonuc) => setDestek(sonuc)}
+        onHalSec={(halId) => halSec(halId)}
       />
     );
   } else if (sekme === "favoriler") {
     govde = (
       <Favoriler
         favoriler={favoriler}
-        onAc={(k) => setKart(k)}
+        onAc={(k) => {
+          setKart(k);
+          setKaynak(null);
+        }}
         onSil={async (k) => setFavoriler(await favoriCikar(k))}
       />
     );
@@ -198,17 +249,23 @@ export default function App() {
       <Hal
         gunluk={gunluk}
         onHalSec={halSec}
-        onGununAyeti={() => setKart(gununKarti())}
+        onGununAyeti={() => {
+          setKart(gununKarti());
+          setKaynak(null);
+        }}
+        onYaz={() => setSekme("yaz")}
       />
     );
   }
+
+  const sekmeGizli = Boolean(kart || destek);
 
   return (
     <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]}>
       <StatusBar style={koyuMu ? "light" : "dark"} />
       <View style={stil.icerik}>{govde}</View>
 
-      {kart ? null : (
+      {sekmeGizli ? null : (
         <View
           style={[
             stil.sekmeler,

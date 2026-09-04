@@ -203,7 +203,7 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
       </Bolum>
 
       <Text style={[stil.dipnot, { color: renk.yaziSilik }]}>
-        Dua Pusulası · Sürüm 1.0.0
+        İnşirah · Sürüm 1.0.0
       </Text>
     </ScrollView>
   );

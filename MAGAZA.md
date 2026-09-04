@@ -10,9 +10,9 @@ sınırları; aşarsanız form kabul etmiyor.
 
 ## Uygulama adı (en fazla 30 karakter)
 
-**Dua Pusulası: Ayet ve Dua** — 25 karakter
+**İnşirah: Ayet ve Dua** — 20 karakter
 
-Kısa hâli "Dua Pusulası" (12 karakter) de kullanılabilir. Uzun hâlin tek
+Kısa hâli "İnşirah" (7 karakter) de kullanılabilir. Uzun hâlin tek
 sebebi arama: Play'de insanlar "dua" ve "ayet" yazarak arıyor, ikisi de adın
 içinde geçtiğinde bulunma ihtimali artıyor.
 
@@ -21,34 +21,45 @@ içinde geçtiğinde bulunma ihtimali artıyor.
 ## Kısa açıklama (en fazla 80 karakter)
 
 ```
-Nasıl hissediyorsan ona dokunan bir ayet ve Kur'an'dan bir dua.
+Yaşadığını yaz ya da hâlini seç; sana uyan ayet ve dua karşına gelsin.
 ```
 
-63 karakter.
+69 karakter.
 
 ---
 
 ## Tam açıklama (en fazla 4000 karakter)
 
 ```
-Bazı günler ne diyeceğini bilemezsin. Dua Pusulası tam orada işe yarıyor.
+Bazı günler ne diyeceğini bilemezsin. İnşirah tam orada işe yarıyor.
 
-Nasıl hissettiğini seç — kaygılı, üzgün, öfkeli, yalnız, pişman, minnettar,
-umutsuz, hasta, yasta — sana o hâle dokunan bir ayet ve Kur'an'ın kendi
-dualarından biri gelsin.
+İki yolu var: başından geçeni kendi cümlelerinle yazarsın, ya da hazır
+hâllerden birini seçersin. İkisinde de sana o hâle dokunan bir ayet ve
+Kur'an'ın kendi dualarından biri gelir.
 
 NASIL ÇALIŞIYOR
 
-1. "Bugün nasılsın?" ekranından hâlini seç.
+1. Ne yaşadığını yaz — ya da "Bugün nasılsın?" ekranından hâlini seç.
 2. Karşına bir ayet, bir dua ve kendine hatırlatabileceğin kısa bir cümle
    gelsin.
 3. İçine dokunanı kaydet, istersen paylaş.
 
+YAZDIKLARIN TELEFONUNDAN ÇIKMAZ
+
+Yazma alanına ne yazarsanız yazın, o metin telefonunuzdan hiç çıkmıyor.
+Hangi ayete denk düştüğü uygulamanın içinde hesaplanıyor; hiçbir sunucuya,
+hiçbir yapay zekâ servisine gönderilmiyor. Metin kaydedilmiyor da —
+ekrandan çıkınca siliniyor.
+
 İÇİNDEKİLER
 
-• 16 farklı hâl: kaygı, üzüntü, korku, öfke, yalnızlık, pişmanlık, şükür,
+• Yazarak anlatma: başından geçeni yaz, sana uyan hâli bulsun
+• 22 farklı hâl, ikiye ayrılmış:
+  Zorlanıyorum — kaygı, üzüntü, korku, öfke, yalnızlık, pişmanlık,
   umutsuzluk, hastalık, yas, bekleyiş, kararsızlık, sınav ve iş baskısı,
-  haksızlığa uğramak, maddi sıkıntı, sakinleşme ihtiyacı
+  haksızlığa uğramak, maddi sıkıntı
+  İyi hissediyorum — şükür, sevinç, yeni bir başlangıç, sevdiklerim için,
+  yolculuk, affetmek, bir dileğim var, sakinleşmek
 • Her hâl için birden çok ayet — "Başka bir ayet" dedikçe yenisi geliyor
 • Kur'an'da geçen dualar: Hz. Musa'nın, Hz. Yunus'un, Hz. Eyyûb'un,
   Hz. Zekeriya'nın duaları ve daha fazlası
@@ -136,6 +147,12 @@ bu yüzden orada duruyor — kaldırmayın.
 | Veriler aktarım sırasında şifreleniyor mu? | Uygulanamaz (veri gönderilmiyor) |
 | Kullanıcı verisinin silinmesini isteyebiliyor mu? | Uygulanamaz — ama uygulamada "Kayıtlarımı sil" düğmesi var |
 
+**Yazma alanı bu cevabı değiştirmiyor.** Kullanıcının yazdığı metin hiçbir
+yere gönderilmiyor ve kaydedilmiyor; eşleştirme uygulamanın içindeki kelime
+listesiyle telefonda yapılıyor. Play'in "kullanıcı içeriği" (user-generated
+content) sorusu da **hayır**: o soru kullanıcıların birbirine içerik
+göstermesiyle ilgili, burada öyle bir şey yok.
+
 Bunu böyle doldurabilmemizin sebebi uygulamanın gerçekten hiçbir şey
 göndermemesi: sunucu yok, analitik yok, reklam SDK'sı yok, çökme raporlama
 yok. **Sonradan analitik ya da reklam eklerseniz bu formu güncellemek
@@ -153,7 +170,7 @@ Play her uygulama için **herkese açık bir gizlilik politikası adresi**
 istiyor. **Yayında ve çalışıyor:**
 
 ```
-https://bettercallhtm.github.io/dua-pusulasi/gizlilik.html
+https://bettercallhtm.github.io/insirah/gizlilik.html
 ```
 
 Bu adresi Play Console → App content → Privacy policy alanına yapıştırın.
@@ -184,8 +201,9 @@ Uygulamayı telefona kurup (ya da emülatörde açıp) şu dört ekranı çekin:
 
 1. **Ana ekran** — "Bugün nasılsın?" ve hâl ızgarası
 2. **Bir kart** — "Kaygılıyım" kartı (ayet + dua + not birlikte görünsün)
-3. **Kayıtlar** — birkaç kart kaydedilmiş hâlde
-4. **Ayarlar** — hatırlatıcı ve kaynak bölümü
+3. **Yazma ekranı** — içine bir cümle yazılmış hâlde (gizlilik satırı görünsün)
+4. **Kayıtlar** — birkaç kart kaydedilmiş hâlde
+5. **Ayarlar** — hatırlatıcı ve kaynak bölümü
 
 Ekran görüntüsünün üstüne açıklama yazısı eklemek şart değil; yazısız
 görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
@@ -195,8 +213,9 @@ görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
 ## Sürüm notları (ilk sürüm)
 
 ```
-İlk sürüm. 16 hâl, her hâl için birden çok ayet ve Kur'an'dan dualar,
-günün ayeti, günlük hatırlatıcı ve kayıtlar. Tamamen çevrimdışı.
+İlk sürüm. Yaşadığını yazarak ya da 22 hâlden birini seçerek sana uyan
+ayeti ve Kur'an'dan bir duayı bul. Günün ayeti, günlük hatırlatıcı,
+kayıtlar. Tamamen çevrimdışı — yazdıkların telefonundan çıkmıyor.
 ```
 
 ---

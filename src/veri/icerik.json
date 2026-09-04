@@ -9,6 +9,7 @@
    "ad": "Kaygılıyım",
    "ozet": "İçim daralıyor, kötü bir şey olacak gibi",
    "renk": "#5B7DB1",
+   "grup": "zor",
    "ayetler": [
     [
      "94:5",
@@ -50,6 +51,7 @@
    "ad": "Üzgünüm",
    "ozet": "Ağırlık var, sebebi belli ya da değil",
    "renk": "#6C7A99",
+   "grup": "zor",
    "ayetler": [
     [
      "9:40"
@@ -92,6 +94,7 @@
    "ad": "Korkuyorum",
    "ozet": "Bir şeyden ya da birinden çekiniyorum",
    "renk": "#4E6E8E",
+   "grup": "zor",
    "ayetler": [
     [
      "3:175"
@@ -133,6 +136,7 @@
    "ad": "Öfkeliyim",
    "ozet": "Sinirliyim, içimde bir şey kabarıyor",
    "renk": "#A5615A",
+   "grup": "zor",
    "ayetler": [
     [
      "3:134"
@@ -173,6 +177,7 @@
    "ad": "Yalnızım",
    "ozet": "Kimse yokmuş gibi hissediyorum",
    "renk": "#6A6F8C",
+   "grup": "zor",
    "ayetler": [
     [
      "50:16"
@@ -212,6 +217,7 @@
    "ad": "Pişmanım",
    "ozet": "Yaptığım bir şey içimi kemiriyor",
    "renk": "#7A6A8C",
+   "grup": "zor",
    "ayetler": [
     [
      "39:53"
@@ -251,6 +257,7 @@
    "ad": "Şükrediyorum",
    "ozet": "İçim iyi, minnettarım",
    "renk": "#5E8C6A",
+   "grup": "iyi",
    "ayetler": [
     [
      "14:7"
@@ -290,6 +297,7 @@
    "ad": "Umudum kalmadı",
    "ozet": "Hiçbir şey düzelmeyecek gibi",
    "renk": "#565E7A",
+   "grup": "zor",
    "ayetler": [
     [
      "39:53"
@@ -330,6 +338,7 @@
    "ad": "Hastayım",
    "ozet": "Bedenim ağrıyor, yorgunum",
    "renk": "#4F7C88",
+   "grup": "zor",
    "ayetler": [
     [
      "26:80"
@@ -368,6 +377,7 @@
    "ad": "Birini kaybettim",
    "ozet": "Yas tutuyorum",
    "renk": "#5A6472",
+   "grup": "zor",
    "ayetler": [
     [
      "2:155",
@@ -409,6 +419,7 @@
    "ad": "Bekliyorum",
    "ozet": "Sonucu bilmiyorum, sabrım tükeniyor",
    "renk": "#7A7A8C",
+   "grup": "zor",
    "ayetler": [
     [
      "2:153"
@@ -448,6 +459,7 @@
    "ad": "Karar veremiyorum",
    "ozet": "İki yol var, hangisi bilmiyorum",
    "renk": "#6E7B8C",
+   "grup": "zor",
    "ayetler": [
     [
      "39:18"
@@ -487,6 +499,7 @@
    "ad": "Sınav / iş baskısı",
    "ozet": "Üzerimde yük var, yetiştiremiyorum",
    "renk": "#6B7C5B",
+   "grup": "zor",
    "ayetler": [
     [
      "94:5",
@@ -531,6 +544,7 @@
    "ad": "Haksızlığa uğradım",
    "ozet": "Bana yapılanı hazmedemiyorum",
    "renk": "#8C6B5B",
+   "grup": "zor",
    "ayetler": [
     [
      "42:41",
@@ -570,6 +584,7 @@
    "ad": "Maddi sıkıntım var",
    "ozet": "Borç, geçim, para derdi",
    "renk": "#7C7250",
+   "grup": "zor",
    "ayetler": [
     [
      "65:3"
@@ -606,6 +621,7 @@
    "ad": "Sakinleşmek istiyorum",
    "ozet": "Durulmaya, susmaya ihtiyacım var",
    "renk": "#5F8A8B",
+   "grup": "iyi",
    "ayetler": [
     [
      "13:28"
@@ -640,6 +656,233 @@
     "Telefonu bırak. Beş dakika hiçbir şey yapma; bu da bir eylem.",
     "Sessizlik boşluk değil, yer açmak.",
     "Bugün için yeter. Yarını yarın düşün."
+   ]
+  },
+  {
+   "id": "sevinc",
+   "ad": "Sevinçliyim",
+   "ozet": "İyi bir haber aldım, içim içime sığmıyor",
+   "renk": "#C9A961",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "10:58"
+    ],
+    [
+     "27:40"
+    ],
+    [
+     "93:11"
+    ],
+    [
+     "2:152"
+    ]
+   ],
+   "dualar": [
+    [
+     "27:19"
+    ],
+    [
+     "14:41"
+    ],
+    [
+     "2:201"
+    ]
+   ],
+   "notlar": [
+    "Sevinci de paylaş. Yalnız yaşanan iyi haber yarısı kadar iyi geliyor.",
+    "Bugünü yaz bir yere. Kötü bir gün geldiğinde bunu okuyacaksın.",
+    "Sevindiğin şeyi kimin sayesinde yaşadığını düşün, bir kişiye teşekkür et."
+   ]
+  },
+  {
+   "id": "yeni-baslangic",
+   "ad": "Yeni bir başlangıç",
+   "ozet": "Yeni iş, yeni ev, yeni bir yol",
+   "renk": "#7FA37A",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "17:80"
+    ],
+    [
+     "65:3"
+    ],
+    [
+     "3:159"
+    ],
+    [
+     "53:39"
+    ]
+   ],
+   "dualar": [
+    [
+     "20:25",
+     "20:26",
+     "20:27",
+     "20:28"
+    ],
+    [
+     "18:10"
+    ],
+    [
+     "23:29"
+    ]
+   ],
+   "notlar": [
+    "İlk gün herkes acemidir. Acemiliği saklamaya çalışma, sorarak öğren.",
+    "Kendine süre tanı. Yeni bir şeye alışmak haftalar sürüyor, günler değil.",
+    "Ne olacağını bilmiyor olman kötü gittiği anlamına gelmiyor."
+   ]
+  },
+  {
+   "id": "sevdiklerim",
+   "ad": "Sevdiklerim için",
+   "ozet": "Ailem, dostum, sevdiğim biri için dua etmek istiyorum",
+   "renk": "#8C7BA5",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "30:21"
+    ],
+    [
+     "46:15"
+    ],
+    [
+     "59:10"
+    ],
+    [
+     "2:186"
+    ]
+   ],
+   "dualar": [
+    [
+     "17:24"
+    ],
+    [
+     "14:40",
+     "14:41"
+    ],
+    [
+     "25:74"
+    ]
+   ],
+   "notlar": [
+    "Dua ettiğin kişiye bunu söyle. Duyulduğunu bilmek de iyi geliyor.",
+    "Anne baban hayattaysa bugün ara. Duanın yanına ses de gitsin.",
+    "Uzaktan edilen dua da dua; ama bir mesaj atmak onun yerine geçmiyor."
+   ]
+  },
+  {
+   "id": "yolculuk",
+   "ad": "Yolculuğa çıkıyorum",
+   "ozet": "Yola çıkıyorum ya da bir yere taşınıyorum",
+   "renk": "#6E8FA5",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "17:80"
+    ],
+    [
+     "65:3"
+    ],
+    [
+     "2:186"
+    ],
+    [
+     "9:51"
+    ]
+   ],
+   "dualar": [
+    [
+     "43:13",
+     "43:14"
+    ],
+    [
+     "23:29"
+    ],
+    [
+     "11:41"
+    ]
+   ],
+   "notlar": [
+    "Yola çıkmadan bir haber ver. Seni bekleyen birinin içi rahat etsin.",
+    "Acele etme. Vaktinde varmak, erken varmaktan önemli.",
+    "Gittiğin yer seni değiştirecek; buna açık git."
+   ]
+  },
+  {
+   "id": "affetme",
+   "ad": "Affetmek istiyorum",
+   "ozet": "Küs olduğum biri var, barışmak istiyorum",
+   "renk": "#A58B6E",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "42:40"
+    ],
+    [
+     "7:199"
+    ],
+    [
+     "3:134"
+    ],
+    [
+     "41:34"
+    ]
+   ],
+   "dualar": [
+    [
+     "59:10"
+    ],
+    [
+     "7:23"
+    ],
+    [
+     "3:16"
+    ]
+   ],
+   "notlar": [
+    "Affetmek, olanı onaylamak değil. Taşımayı bırakmak.",
+    "İlk adımı atmak yenilmek değil. Çoğu küslük iki tarafın da beklemesinden uzuyor.",
+    "Hazır değilsen zorlama. Affetmeye niyet etmek de bir başlangıç."
+   ]
+  },
+  {
+   "id": "dilek",
+   "ad": "Bir dileğim var",
+   "ozet": "İstediğim bir şey var, dua etmek istiyorum",
+   "renk": "#B08D57",
+   "grup": "iyi",
+   "ayetler": [
+    [
+     "40:60"
+    ],
+    [
+     "2:186"
+    ],
+    [
+     "7:55"
+    ],
+    [
+     "21:90"
+    ]
+   ],
+   "dualar": [
+    [
+     "2:201"
+    ],
+    [
+     "3:8"
+    ],
+    [
+     "25:74"
+    ]
+   ],
+   "notlar": [
+    "Ne istediğini net söyle — kendine bile. Belirsiz dilek, belirsiz kalıyor.",
+    "Dua ettiğin şey için ayrıca bir adım at. İkisi birbirinin yerine geçmiyor.",
+    "Olmazsa da bir cevaptır. Hemen anlaşılmayabilir."
    ]
   }
  ],
@@ -1552,6 +1795,123 @@
    "arapca": "ٱلَّذِينَ ءَامَنُوا۟ وَلَمْ يَلْبِسُوٓا۟ إِيمَٰنَهُم بِظُلْمٍ أُو۟لَٰٓئِكَ لَهُمُ ٱلْأَمْنُ وَهُم مُّهْتَدُونَ",
    "okunus": "elleẕîne âmenû velem yelbisû îmânehüm biżulmin ülâike lehümü-l'emnü vehüm mühtedûn.",
    "meal": "İman edenler ve imanlarını zulüm ile karıştırmayanlar... İşte güven onlarındır ve doğru yolu bulanlar da onlardır."
+  },
+  "10:58": {
+   "ref": "10:58",
+   "sure": 10,
+   "ayet": 58,
+   "sureAdi": "Yûnus",
+   "arapca": "قُلْ بِفَضْلِ ٱللَّهِ وَبِرَحْمَتِهِۦ فَبِذَٰلِكَ فَلْيَفْرَحُوا۟ هُوَ خَيْرٌۭ مِّمَّا يَجْمَعُونَ",
+   "okunus": "ḳul bifaḍli-llâhi vebiraḥmetihî febiẕâlike felyefraḥû. hüve ḫayrum mimmâ yecmeʿûn.",
+   "meal": "De ki, \"Allah'ın ihsanıyla ve rahmetiyle, yalnızca bunlarla sevinç duysunlar. Bu, onların biriktirip durduklarından daha hayırlıdır.\""
+  },
+  "27:40": {
+   "ref": "27:40",
+   "sure": 27,
+   "ayet": 40,
+   "sureAdi": "Neml",
+   "arapca": "قَالَ ٱلَّذِى عِندَهُۥ عِلْمٌۭ مِّنَ ٱلْكِتَٰبِ أَنَا۠ ءَاتِيكَ بِهِۦ قَبْلَ أَن يَرْتَدَّ إِلَيْكَ طَرْفُكَ ۚ فَلَمَّا رَءَاهُ مُسْتَقِرًّا عِندَهُۥ قَالَ هَٰذَا مِن فَضْلِ رَبِّى لِيَبْلُوَنِىٓ ءَأَشْكُرُ أَمْ أَكْفُرُ ۖ وَمَن شَكَرَ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِۦ ۖ وَمَن كَفَرَ فَإِنَّ رَبِّى غَنِىٌّۭ كَرِيمٌۭ",
+   "okunus": "ḳâle-lleẕî ʿindehû ʿilmüm mine-lkitâbi ene âtîke bihî ḳable ey yertedde ileyke ṭarfük. felemmâ raâhü müsteḳirran ʿindehû ḳâle hâẕâ min faḍli rabbî. liyeblüvenî eeşküru em ekfür. vemen şekera feinnemâ yeşküru linefsih. vemen kefera feinne rabbî ganiyyün kerîm.",
+   "meal": "Kitaptan ilmi olan kimse ise, \"Gözünü açıp kapamadan, ben onu sana getiririm\" dedi. (Süleyman) onu (Melike'nin tahtını) yanıbaşına yerleşivermiş görünce, \"Bu, dedi, şükür mü edeceğim, yoksa nankörlük mü edeceğim diye beni sınamak üzere Rabbimin (gösterdiği) lütfundandır. Şükreden ancak kendisi için şükretmiş olur; nankörlük edene gelince, o bilsin ki Rabbim müstağnidir, çok kerem sahibidir.\""
+  },
+  "17:80": {
+   "ref": "17:80",
+   "sure": 17,
+   "ayet": 80,
+   "sureAdi": "İsrâ",
+   "arapca": "وَقُل رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍۢ وَأَخْرِجْنِى مُخْرَجَ صِدْقٍۢ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًۭا نَّصِيرًۭا",
+   "okunus": "veḳur rabbi edḫilnî müdḫale ṣidḳiv veaḫricnî muḫrace ṣidḳiv vecʿal lî mil ledünke sülṭânen neṣîrâ.",
+   "meal": "(Ey Muhammed!) De ki: \"Rabbim! Beni, takdir ettiğin yere gönül rahatlığı ve huzur içinde koy ve çıkacağım yerden de dürüstlükle ve selametle çıkmamı sağla. Bana katından yardım edici bir kuvvet ver.\""
+  },
+  "23:29": {
+   "ref": "23:29",
+   "sure": 23,
+   "ayet": 29,
+   "sureAdi": "Mü'minûn",
+   "arapca": "وَقُل رَّبِّ أَنزِلْنِى مُنزَلًۭا مُّبَارَكًۭا وَأَنتَ خَيْرُ ٱلْمُنزِلِينَ",
+   "okunus": "veḳur rabbi enzilnî münzelem mübârakev veente ḫayru-lmünzilîn.",
+   "meal": "Ve de ki: \"Rabbim! Beni mübarek bir yere indir. Sen, konuklatanların en hayırlısısın.\""
+  },
+  "30:21": {
+   "ref": "30:21",
+   "sure": 30,
+   "ayet": 21,
+   "sureAdi": "Rûm",
+   "arapca": "وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًۭا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةًۭ وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍۢ لِّقَوْمٍۢ يَتَفَكَّرُونَ",
+   "okunus": "vemin âyâtihî en ḫaleḳa leküm min enfüsiküm ezvâcel liteskünû ileyhâ veceʿale beyneküm meveddetev veraḥmeh. inne fî ẕâlike leâyâtil liḳavmiy yetefekkerûn.",
+   "meal": "Yine O'nun âyetlerindendir ki, sizin için nefislerinizden kendilerine ısınırsınız diye eşler yaratmış, aranıza bir sevgi ve merhamet koymuştur. Şüphesiz ki bunda düşünecek bir kavim için nice ibretler vardır."
+  },
+  "17:24": {
+   "ref": "17:24",
+   "sure": 17,
+   "ayet": 24,
+   "sureAdi": "İsrâ",
+   "arapca": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًۭا",
+   "okunus": "vaḫfiḍ lehümâ cenâḥa-ẕẕülli mine-rraḥmeti veḳur rabbi-rḥamhümâ kemâ rabbeyânî ṣagîrâ.",
+   "meal": "İkisine de acıyarak tevazu kanatlarını indir. Ve şöyle de: \"Ey Rabbim! Onların beni küçükten terbiye edip yetiştirdikleri gibi, sen de kendilerine merhamet et.\""
+  },
+  "14:40": {
+   "ref": "14:40",
+   "sure": 14,
+   "ayet": 40,
+   "sureAdi": "İbrâhim",
+   "arapca": "رَبِّ ٱجْعَلْنِى مُقِيمَ ٱلصَّلَوٰةِ وَمِن ذُرِّيَّتِى ۚ رَبَّنَا وَتَقَبَّلْ دُعَآءِ",
+   "okunus": "rabbi-cʿalnî müḳîme-ṣṣalâti vemin ẕürriyyetî. rabbenâ veteḳabbel düʿâ'.",
+   "meal": "\"Ey Rabbim! Beni ve soyumdan gelecekleri namazını dosdoğru kılanlardan eyle! Ey Rabbimiz! duamı kabul et!"
+  },
+  "43:13": {
+   "ref": "43:13",
+   "sure": 43,
+   "ayet": 13,
+   "sureAdi": "Zuhruf",
+   "arapca": "لِتَسْتَوُۥا۟ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذْكُرُوا۟ نِعْمَةَ رَبِّكُمْ إِذَا ٱسْتَوَيْتُمْ عَلَيْهِ وَتَقُولُوا۟ سُبْحَٰنَ ٱلَّذِى سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ",
+   "okunus": "litestevû ʿalâ żuhûrihî ŝümme teẕkürû niʿmete rabbiküm iẕe-steveytüm ʿaleyhi veteḳûlû sübḥâne-lleẕî seḫḫara lenâ hâẕâ vemâ künnâ lehû muḳrinîn.",
+   "meal": "Siz onların sırtına binip üzerlerine yerleştiğiniz zaman, Rabbinizin nimetini anarak şöyle diyesiniz: \"Bunları bizim hizmetimize veren Allah'ı tenzih ve tesbih ederiz. Yoksa bizim bunlara gücümüz yetmezdi.\""
+  },
+  "43:14": {
+   "ref": "43:14",
+   "sure": 43,
+   "ayet": 14,
+   "sureAdi": "Zuhruf",
+   "arapca": "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
+   "okunus": "veinnâ ilâ rabbinâ lemünḳalibûn.",
+   "meal": "\"Gerçekten biz Rabbimize döneceğiz.\""
+  },
+  "11:41": {
+   "ref": "11:41",
+   "sure": 11,
+   "ayet": 41,
+   "sureAdi": "Hûd",
+   "arapca": "۞ وَقَالَ ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْر۪ىٰهَا وَمُرْسَىٰهَآ ۚ إِنَّ رَبِّى لَغَفُورٌۭ رَّحِيمٌۭ",
+   "okunus": "veḳâle-rkebû fîhâ bismi-llâhi mecrâhâ vemürsâhâ. inne rabbî legafûrur raḥîm.",
+   "meal": "Nuh dedi ki; \"Allah'ın adıyla binin içine. Onun akışı da, duruşu da (O'nun adıyladır). Hiç şüphesiz Rabbim gerçekten çok bağışlayıcı, çok esirgeyicidir."
+  },
+  "42:40": {
+   "ref": "42:40",
+   "sure": 42,
+   "ayet": 40,
+   "sureAdi": "Şûrâ",
+   "arapca": "وَجَزَٰٓؤُا۟ سَيِّئَةٍۢ سَيِّئَةٌۭ مِّثْلُهَا ۖ فَمَنْ عَفَا وَأَصْلَحَ فَأَجْرُهُۥ عَلَى ٱللَّهِ ۚ إِنَّهُۥ لَا يُحِبُّ ٱلظَّٰلِمِينَ",
+   "okunus": "vecezâü seyyietin seyyietüm miŝlühâ. femen ʿafâ veaṣleḥa feecruhû ʿale-llâh. innehû lâ yüḥibbu-żżâlimîn.",
+   "meal": "Bir kötülüğün cezası yine onun gibi bir kötülüktür, ama kim affeder, bağışlarsa onun mükafatı Allah'a aittir. Şüphesiz ki Allah, zalimleri sevmez."
+  },
+  "7:55": {
+   "ref": "7:55",
+   "sure": 7,
+   "ayet": 55,
+   "sureAdi": "A'râf",
+   "arapca": "ٱدْعُوا۟ رَبَّكُمْ تَضَرُّعًۭا وَخُفْيَةً ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُعْتَدِينَ",
+   "okunus": "üdʿû rabbeküm teḍarruʿav veḫufyeh. innehû lâ yüḥibbü-lmüʿtedîn.",
+   "meal": "Rabbinize yalvara yalvara ve gizlice dua edin. Çünkü O, haddi aşanları sevmez."
+  },
+  "21:90": {
+   "ref": "21:90",
+   "sure": 21,
+   "ayet": 90,
+   "sureAdi": "Enbiyâ",
+   "arapca": "فَٱسْتَجَبْنَا لَهُۥ وَوَهَبْنَا لَهُۥ يَحْيَىٰ وَأَصْلَحْنَا لَهُۥ زَوْجَهُۥٓ ۚ إِنَّهُمْ كَانُوا۟ يُسَٰرِعُونَ فِى ٱلْخَيْرَٰتِ وَيَدْعُونَنَا رَغَبًۭا وَرَهَبًۭا ۖ وَكَانُوا۟ لَنَا خَٰشِعِينَ",
+   "okunus": "festecebnâ leh. vevehebnâ lehû yaḥyâ veaṣlaḥnâ lehû zevceh. innehüm kânû yüsâriʿûne fi-lḫayrâti veyedʿûnenâ ragabev verahebâ. vekânû lenâ ḫâşiʿîn.",
+   "meal": "Biz de duasını kabul ile icabet ettik de kendisine Yahya'yı ihsan ettik. Ve eşini (doğum yapmaya) elverişli hale getirdik. Doğrusu onlar iyiliklerde yarışıyorlar, umarak ve korkarak bize yalvarıyorlardı. Bize karşı derin saygı duyuyorlardı."
   }
  }
 }
