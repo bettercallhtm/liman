@@ -12,6 +12,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { grubuAl, grupBasligi } from "../icerik";
 import { OLCU, useTema } from "../tema";
+import { useArapcaYaziTipi } from "../yazitipi";
 
 export default function AyetBloku({
   grup,
@@ -20,6 +21,7 @@ export default function AyetBloku({
   okunusGoster = true
 }) {
   const { renk } = useTema();
+  const arapcaAile = useArapcaYaziTipi();
   const ayetler = grubuAl(grup);
   if (!ayetler.length) return null;
 
@@ -40,7 +42,16 @@ export default function AyetBloku({
       ) : null}
 
       {arapcaGoster ? (
-        <Text style={[stil.arapca, { color: renk.arapca }]}>
+        <Text
+          style={[
+            stil.arapca,
+            { color: renk.arapca },
+            /* Amiri Quran'in harfleri sistem yazi tipinden daha kucuk
+             * oturuyor; yuklenince punto ve satir araligi da buyuyor. */
+            arapcaAile ? stil.arapcaAmiri : null,
+            arapcaAile ? { fontFamily: arapcaAile } : null
+          ]}
+        >
           {ayetler.map((a) => a.arapca).join(" ")}
         </Text>
       ) : null}
@@ -86,6 +97,10 @@ const stil = StyleSheet.create({
     lineHeight: 44,
     textAlign: "right",
     writingDirection: "rtl"
+  },
+  arapcaAmiri: {
+    fontSize: 26,
+    lineHeight: 58
   },
   okunus: {
     fontSize: 13,

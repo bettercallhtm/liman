@@ -23,6 +23,7 @@ import Ayarlar from "./src/ekranlar/Ayarlar";
 import Destek from "./src/ekranlar/Destek";
 import Favoriler from "./src/ekranlar/Favoriler";
 import Hal from "./src/ekranlar/Hal";
+import Karsilama from "./src/ekranlar/Karsilama";
 import Kart from "./src/ekranlar/Kart";
 import Yaz from "./src/ekranlar/Yaz";
 import { gununKarti, haliBul, kartUret, paylasimMetni } from "./src/icerik";
@@ -35,6 +36,8 @@ import {
   favorileriAl,
   gunlugeYaz,
   gunluguAl,
+  karsilamaGoruldu,
+  karsilamayiIsaretle,
   sonGosterileniYaz,
   sonGosterilenleriAl,
   VARSAYILAN_AYARLAR
@@ -60,21 +63,25 @@ export default function App() {
   const [gunluk, setGunluk] = useState({});
   const [ayarlar, setAyarlar] = useState(VARSAYILAN_AYARLAR);
   const [sonGosterilen, setSonGosterilen] = useState({});
+  /* null = daha okunmadi; true/false = karsilama gosterilsin mi */
+  const [karsilamaLazim, setKarsilamaLazim] = useState(null);
 
   useEffect(() => {
     let iptal = false;
     (async () => {
-      const [f, g, a, s] = await Promise.all([
+      const [f, g, a, s, k] = await Promise.all([
         favorileriAl(),
         gunluguAl(),
         ayarlariAl(),
-        sonGosterilenleriAl()
+        sonGosterilenleriAl(),
+        karsilamaGoruldu()
       ]);
       if (iptal) return;
       setFavoriler(f);
       setGunluk(g);
       setAyarlar(a);
       setSonGosterilen(s);
+      setKarsilamaLazim(!k);
     })();
     return () => {
       iptal = true;
@@ -192,6 +199,31 @@ export default function App() {
     setAyarlar(sonuc);
     await ayarlariYaz(sonuc);
   }, []);
+
+  /* Depodan okunana kadar hicbir sey cizme: karsilamayi bir an gosterip
+   * kapatmak, ilk acilisin en kotu hali olurdu. */
+  if (karsilamaLazim === null) {
+    return <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]} />;
+  }
+
+  if (karsilamaLazim) {
+    return (
+      <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]}>
+        <StatusBar style={koyuMu ? "light" : "dark"} />
+        <Karsilama
+          onBitti={async () => {
+            await karsilamayiIsaretle();
+            setKarsilamaLazim(false);
+          }}
+          onHatirlaticiIste={async () => {
+            await ayarDegis({ ...ayarlar, hatirlaticiAcik: true });
+            await karsilamayiIsaretle();
+            setKarsilamaLazim(false);
+          }}
+        />
+      </SafeAreaView>
+    );
+  }
 
   let govde;
   if (kart) {

@@ -64,7 +64,8 @@ ekrandan çıkınca siliniyor.
 • Her hâl için birden çok ayet — "Başka bir ayet" dedikçe yenisi geliyor
 • Kur'an'da geçen dualar: Hz. Musa'nın, Hz. Yunus'un, Hz. Eyyûb'un,
   Hz. Zekeriya'nın duaları ve daha fazlası
-• Arapça metin, okunuşu ve Türkçe meali bir arada
+• Arapça metin Amiri Quran yazı tipiyle, okunuşu ve Türkçe meali bir arada
+• Beğendiğin ayeti görsel olarak paylaş ya da metnini kopyala
 • Günün ayeti
 • İstersen günde bir kez, seçtiğin saatte hatırlatma
 • Kaydettiklerin bir arada
@@ -198,6 +199,8 @@ kendiliğinden güncelleniyor.
 ### Ekran görüntüleri (elle alınacak)
 
 Play en az **2**, en fazla 8 telefon ekran görüntüsü istiyor. 1080×1920 alın.
+İlk açılıştaki karşılama ekranlarından biri de iyi bir kare — uygulamanın
+"yazdıkların telefonundan çıkmaz" sözünü doğrudan gösteriyor.
 Uygulamayı telefona kurup (ya da emülatörde açıp) şu dört ekranı çekin:
 
 1. **Ana ekran** — "Bugün nasılsın?" ve hâl ızgarası

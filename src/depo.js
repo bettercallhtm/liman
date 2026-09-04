@@ -5,6 +5,7 @@
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ANAHTAR = {
+  karsilama: "dp.karsilama",
   favoriler: "dp.favoriler",
   gunluk: "dp.gunluk",
   ayarlar: "dp.ayarlar",
@@ -97,6 +98,18 @@ export async function ayarlariAl() {
 export async function ayarlariYaz(ayarlar) {
   await yaz(ANAHTAR.ayarlar, ayarlar);
   return ayarlar;
+}
+
+/* ---- Karsilama ----
+ * Ilk acilistaki uc ekran bir kere gosterilir. Bayrak "kayitlarimi sil"
+ * ile silinmiyor: kullanici verisi degil, uygulamanin kendi durumu. */
+
+export async function karsilamaGoruldu() {
+  return oku(ANAHTAR.karsilama, false) === true;
+}
+
+export async function karsilamayiIsaretle() {
+  await yaz(ANAHTAR.karsilama, true);
 }
 
 /* ---- Son gosterilen kart ----

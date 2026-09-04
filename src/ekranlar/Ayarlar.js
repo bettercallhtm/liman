@@ -137,6 +137,10 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
           yazılmadı; hepsi kaynağından olduğu gibi alındı. Uygulamadaki dualar
           Kur'an'ın kendi dualarıdır.
         </Text>
+        <Text style={[stil.paragraf, { color: renk.yaziSilik, marginTop: 10 }]}>
+          Arapça yazı tipi: Amiri Quran (Amiri Quran Project Authors), SIL Open
+          Font License 1.1.
+        </Text>
       </Bolum>
 
       <Bolum baslik="SINIRLARIMIZ">

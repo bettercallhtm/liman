@@ -71,9 +71,22 @@ genişletirken `node` ile birkaç gerçek cümle deneyip sıralamaya bak.
 metin, ve isterse devam etme seçeneği. Bu listeyi daraltma — yanlış alarm
 vermek, kaçıran bir sistemden iyidir.
 
+## Cihazda test edilmesi gerekenler
+
+Ekranların çoğu `npm run web` ile doğrulanabiliyor ama **iki yol tarayıcıda
+çalışmıyor ve gerçek telefonda denenmeden bitmiş sayılmaz:**
+
+- **Görsel paylaşma** (`react-native-view-shot` + `expo-sharing`). Web'de
+  `captureRef` yok, o yüzden `Kart.js` metin paylaşımına düşüyor. Telefonda
+  "Paylaş" düğmesinin gerçekten 1080×1350 bir PNG üretip paylaşım ekranını
+  açtığını gör.
+- **Günlük hatırlatıcı** (`expo-notifications`). Bildirimin seçilen saatte
+  geldiğini ancak cihazda görebilirsin.
+
 ## Klasörler
 
 ```
+assets/yazitipi/  Amiri Quran (SIL OFL 1.1) — OFL.txt yanında durmalı
 araclar/          derleme öncesi çalışan betikler (uygulamaya girmez)
   secim.js        hangi ayet hangi hâle — içeriğin omurgası
   ayet-cek.js     metinleri kaynaktan çeker, icerik.json üretir
@@ -85,8 +98,9 @@ src/
   depo.js         telefonda saklanan her şey (favoriler, günlük, ayarlar)
   hatirlatici.js  günlük bildirim
   tema.js         renkler
-  ekranlar/       Hal, Yaz, Kart, Destek, Favoriler, Ayarlar
-  parcalar/       AyetBloku, Dugme
+  yazitipi.js     Arapça yazı tipi (Amiri Quran) yükleyici
+  ekranlar/       Karsilama, Hal, Yaz, Kart, Destek, Favoriler, Ayarlar
+  parcalar/       AyetBloku, Dugme, PaylasimKarti
   veri/sozluk.js    hâl başına kelime kökleri + risk listesi (elle yazılır)
   veri/icerik.json  ÜRETİLEN DOSYA — elle düzenleme
 ```

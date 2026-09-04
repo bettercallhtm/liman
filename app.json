@@ -38,7 +38,9 @@
           "icon": "./assets/bildirim-ikonu.png",
           "color": "#C9A961"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-asset"
     ]
   }
 }

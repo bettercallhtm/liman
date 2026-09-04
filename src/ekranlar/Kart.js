@@ -9,12 +9,23 @@
  * hale isaret ettigi ve varsa yakin diger haller gosterilir. Eslestirme
  * kelimeye bakan basit bir yontem; nasil karar verdigini saklamak yerine
  * gostermek, yanildiginda kullanicinin duzeltebilmesini sagliyor. */
-import React from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import React, { useRef, useState } from "react";
+import {
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
+} from "react-native";
+import * as Clipboard from "expo-clipboard";
+import * as Sharing from "expo-sharing";
+import { captureRef } from "react-native-view-shot";
 
 import AyetBloku from "../parcalar/AyetBloku";
 import Dugme from "../parcalar/Dugme";
-import { CEVIRI_ADI } from "../icerik";
+import PaylasimKarti from "../parcalar/PaylasimKarti";
+import { CEVIRI_ADI, paylasimMetni } from "../icerik";
 import { OLCU, useTema } from "../tema";
 
 function Kaynak({ kaynak, onHalSec }) {
@@ -68,14 +79,63 @@ export default function Kart({
   onGeri
 }) {
   const { renk } = useTema();
+  const gorselRef = useRef(null);
+  const [kopyalandi, setKopyalandi] = useState(false);
+
   if (!kart) return null;
+
+  /* Gorsel paylasimi yalnizca cihazda calisiyor. Web'de ve resme cevirme
+   * tutmazsa metin paylasimina dusuyor: sessizce hicbir sey yapmaktansa daha
+   * az iyi olani yapmak dogru. */
+  async function paylas() {
+    if (Platform.OS !== "web") {
+      try {
+        const adres = await captureRef(gorselRef, {
+          format: "png",
+          quality: 1,
+          width: 1080,
+          height: 1350
+        });
+        if (await Sharing.isAvailableAsync()) {
+          await Sharing.shareAsync(adres, {
+            mimeType: "image/png",
+            dialogTitle: "Ayeti paylaş"
+          });
+          return;
+        }
+      } catch (hata) {
+        /* Asagida metin paylasimina dusuyor. */
+      }
+    }
+    onPaylas();
+  }
+
+  async function kopyala() {
+    try {
+      await Clipboard.setStringAsync(paylasimMetni(kart));
+      setKopyalandi(true);
+      setTimeout(() => setKopyalandi(false), 2000);
+    } catch (hata) {
+      /* Pano kapaliysa yapacak bir sey yok. */
+    }
+  }
 
   return (
     <View style={{ flex: 1, backgroundColor: renk.zemin }}>
+      {/* Paylasilacak gorsel ekranin disinda duruyor; yalnizca resme
+          cevrilmek icin var. */}
+      <View style={stil.gizli} pointerEvents="none">
+        <PaylasimKarti grup={kart.ayetGrup} kartRef={gorselRef} />
+      </View>
+
       <ScrollView
         contentContainerStyle={stil.govde}
         showsVerticalScrollIndicator={false}
       >
+        <Pressable onPress={onGeri} hitSlop={12} style={stil.geri}>
+          <Text style={[stil.geriMetin, { color: renk.yaziSolgun }]}>‹  Geri</Text>
+        </Pressable>
+
         <View style={stil.ust}>
           <View style={[stil.serit4, { backgroundColor: kart.renk }]} />
           <Text style={[stil.halAdi, { color: renk.yaziSolgun }]}>{kart.halAdi}</Text>
@@ -128,9 +188,14 @@ export default function Kart({
           />
         </View>
         <View style={[stil.satir, { marginTop: 10 }]}>
-          <Dugme metin="Paylaş" onPress={onPaylas} tur="duz" genis />
+          <Dugme metin="Paylaş" onPress={paylas} tur="duz" genis />
           <View style={{ width: 10 }} />
-          <Dugme metin="Geri" onPress={onGeri} tur="duz" genis />
+          <Dugme
+            metin={kopyalandi ? "Kopyalandı" : "Kopyala"}
+            onPress={kopyala}
+            tur="duz"
+            genis
+          />
         </View>
       </View>
     </View>
@@ -139,7 +204,10 @@ export default function Kart({
 
 const stil = StyleSheet.create({
   govde: { padding: OLCU.bosluk, paddingBottom: 24 },
-  ust: { marginBottom: OLCU.bosluk, marginTop: 4 },
+  gizli: { position: "absolute", top: -10000, left: 0 },
+  geri: { paddingVertical: 6, marginBottom: 6, alignSelf: "flex-start" },
+  geriMetin: { fontSize: 15, fontWeight: "600" },
+  ust: { marginBottom: OLCU.bosluk },
   serit4: { width: 30, height: 3, borderRadius: 2, marginBottom: 8 },
   halAdi: { fontSize: 14, fontWeight: "600" },
   kaynak: {
