@@ -1,0 +1,1557 @@
+{
+ "uretim": "2026-09-04",
+ "ceviri": "tr.yazir",
+ "girisAyeti": "40:60",
+ "kaynak": "alquran.cloud / Tanzil.net",
+ "haller": [
+  {
+   "id": "kaygi",
+   "ad": "Kaygılıyım",
+   "ozet": "İçim daralıyor, kötü bir şey olacak gibi",
+   "renk": "#5B7DB1",
+   "ayetler": [
+    [
+     "94:5",
+     "94:6"
+    ],
+    [
+     "13:28"
+    ],
+    [
+     "65:3"
+    ],
+    [
+     "2:286"
+    ],
+    [
+     "9:51"
+    ]
+   ],
+   "dualar": [
+    [
+     "20:25",
+     "20:26"
+    ],
+    [
+     "3:173"
+    ],
+    [
+     "2:201"
+    ]
+   ],
+   "notlar": [
+    "Kaygı geleceği çözmez, sadece bugünü tüketir. Şu an elinde olan tek şey bu nefes.",
+    "Bu his bir bilgi değil, bir hava durumu. Geçtiğini daha önce de gördün.",
+    "Yapabileceğin en küçük şeyi yap, gerisini bırak. Yükün tamamı senin değil."
+   ]
+  },
+  {
+   "id": "uzuntu",
+   "ad": "Üzgünüm",
+   "ozet": "Ağırlık var, sebebi belli ya da değil",
+   "renk": "#6C7A99",
+   "ayetler": [
+    [
+     "9:40"
+    ],
+    [
+     "12:86"
+    ],
+    [
+     "93:3"
+    ],
+    [
+     "93:5"
+    ],
+    [
+     "3:139"
+    ],
+    [
+     "2:153"
+    ]
+   ],
+   "dualar": [
+    [
+     "21:87"
+    ],
+    [
+     "3:8"
+    ],
+    [
+     "2:201"
+    ]
+   ],
+   "notlar": [
+    "Üzülmek bir arıza değil. Kalbin çalışıyor demek.",
+    "Kimseye açıklamak zorunda değilsin. Bir yere bırakman yeter.",
+    "Bugün iyi hissetmek zorunda değilsin. Sadece bugünü geçir."
+   ]
+  },
+  {
+   "id": "korku",
+   "ad": "Korkuyorum",
+   "ozet": "Bir şeyden ya da birinden çekiniyorum",
+   "renk": "#4E6E8E",
+   "ayetler": [
+    [
+     "3:175"
+    ],
+    [
+     "20:46"
+    ],
+    [
+     "41:30"
+    ],
+    [
+     "2:112"
+    ],
+    [
+     "9:51"
+    ]
+   ],
+   "dualar": [
+    [
+     "20:45",
+     "20:46"
+    ],
+    [
+     "23:97",
+     "23:98"
+    ],
+    [
+     "3:173"
+    ]
+   ],
+   "notlar": [
+    "Korkunun büyüklüğü tehlikenin büyüklüğü değildir.",
+    "En kötü ihtimali yazıya dök. Çoğu zaman kafandakinden küçük çıkar.",
+    "Korkuyorken de yürünür. Cesaret korkunun yokluğu değil."
+   ]
+  },
+  {
+   "id": "ofke",
+   "ad": "Öfkeliyim",
+   "ozet": "Sinirliyim, içimde bir şey kabarıyor",
+   "renk": "#A5615A",
+   "ayetler": [
+    [
+     "3:134"
+    ],
+    [
+     "41:34"
+    ],
+    [
+     "42:43"
+    ],
+    [
+     "7:199"
+    ],
+    [
+     "25:63"
+    ]
+   ],
+   "dualar": [
+    [
+     "7:200"
+    ],
+    [
+     "59:10"
+    ],
+    [
+     "23:97",
+     "23:98"
+    ]
+   ],
+   "notlar": [
+    "Öfkeliyken verilen kararların hemen hepsi geri alınıyor. Bunu da geri alacaksın.",
+    "Şimdi konuşma. On dakika sonra da aynı şeyi düşünüyorsan konuş.",
+    "Haklı olmak, hemen cevap vermeyi gerektirmiyor."
+   ]
+  },
+  {
+   "id": "yalnizlik",
+   "ad": "Yalnızım",
+   "ozet": "Kimse yokmuş gibi hissediyorum",
+   "renk": "#6A6F8C",
+   "ayetler": [
+    [
+     "50:16"
+    ],
+    [
+     "2:186"
+    ],
+    [
+     "57:4"
+    ],
+    [
+     "9:40"
+    ],
+    [
+     "93:3"
+    ]
+   ],
+   "dualar": [
+    [
+     "21:89"
+    ],
+    [
+     "25:74"
+    ],
+    [
+     "23:118"
+    ]
+   ],
+   "notlar": [
+    "Yalnızlık bazen kalabalığın içinde en yüksek sesle konuşur.",
+    "Bugün bir kişiye tek cümle yaz. Cevap gelmese bile sen kapıyı açmış olursun.",
+    "Kimsenin görmediği yerde de görülüyorsun."
+   ]
+  },
+  {
+   "id": "pismanlik",
+   "ad": "Pişmanım",
+   "ozet": "Yaptığım bir şey içimi kemiriyor",
+   "renk": "#7A6A8C",
+   "ayetler": [
+    [
+     "39:53"
+    ],
+    [
+     "20:82"
+    ],
+    [
+     "4:110"
+    ],
+    [
+     "66:8"
+    ],
+    [
+     "3:135"
+    ]
+   ],
+   "dualar": [
+    [
+     "7:23"
+    ],
+    [
+     "28:16"
+    ],
+    [
+     "3:16"
+    ]
+   ],
+   "notlar": [
+    "Pişmanlık, dönmek istediğini gösterir. Bu zaten yolun kendisi.",
+    "Kendini cezalandırmak telafi değil. Telafi, düzeltebildiğin kısmı düzeltmek.",
+    "Bir kere yeter. Aynı şeyi yüz kere hatırlamak tövbe değil, işkence."
+   ]
+  },
+  {
+   "id": "sukur",
+   "ad": "Şükrediyorum",
+   "ozet": "İçim iyi, minnettarım",
+   "renk": "#5E8C6A",
+   "ayetler": [
+    [
+     "14:7"
+    ],
+    [
+     "16:18"
+    ],
+    [
+     "2:152"
+    ],
+    [
+     "55:13"
+    ],
+    [
+     "93:11"
+    ]
+   ],
+   "dualar": [
+    [
+     "27:19"
+    ],
+    [
+     "46:15"
+    ],
+    [
+     "2:201"
+    ]
+   ],
+   "notlar": [
+    "Bugün iyi olan şeyi yaz. Kötü gün geldiğinde okuyacaksın.",
+    "Minnet, dile getirilmezse unutulur. Bir kişiye teşekkür et.",
+    "İyi anları da kaydet. Hafıza kötüyü kendiliğinden saklıyor zaten."
+   ]
+  },
+  {
+   "id": "umutsuzluk",
+   "ad": "Umudum kalmadı",
+   "ozet": "Hiçbir şey düzelmeyecek gibi",
+   "renk": "#565E7A",
+   "ayetler": [
+    [
+     "39:53"
+    ],
+    [
+     "12:87"
+    ],
+    [
+     "94:5",
+     "94:6"
+    ],
+    [
+     "65:3"
+    ],
+    [
+     "2:214"
+    ]
+   ],
+   "dualar": [
+    [
+     "3:8"
+    ],
+    [
+     "21:87"
+    ],
+    [
+     "18:10"
+    ]
+   ],
+   "notlar": [
+    "\"Hiç\" ve \"asla\" kelimeleri umutsuzluğun kendi sözlüğünden. Senin değil.",
+    "Bugünü çözmek zorunda değilsin. Bugünü geçirmek yeter.",
+    "Bu hâlde büyük karar verme. Karar, sen dinlendikten sonra."
+   ]
+  },
+  {
+   "id": "hastalik",
+   "ad": "Hastayım",
+   "ozet": "Bedenim ağrıyor, yorgunum",
+   "renk": "#4F7C88",
+   "ayetler": [
+    [
+     "26:80"
+    ],
+    [
+     "17:82"
+    ],
+    [
+     "2:155",
+     "2:156",
+     "2:157"
+    ],
+    [
+     "10:57"
+    ]
+   ],
+   "dualar": [
+    [
+     "21:83"
+    ],
+    [
+     "23:118"
+    ],
+    [
+     "2:286"
+    ]
+   ],
+   "notlar": [
+    "Bugün hiçbir şey üretmemek de bir iş. İyileşmek çalışmaktır.",
+    "İlacını al, doktorunu ara. Dua tedbiri kaldırmaz, tedbirin yanına gelir.",
+    "Ağrı geçicidir, sen bugünkü hâlinden ibaret değilsin."
+   ]
+  },
+  {
+   "id": "yas",
+   "ad": "Birini kaybettim",
+   "ozet": "Yas tutuyorum",
+   "renk": "#5A6472",
+   "ayetler": [
+    [
+     "2:155",
+     "2:156",
+     "2:157"
+    ],
+    [
+     "3:185"
+    ],
+    [
+     "21:35"
+    ],
+    [
+     "89:27",
+     "89:28",
+     "89:29",
+     "89:30"
+    ]
+   ],
+   "dualar": [
+    [
+     "2:156"
+    ],
+    [
+     "59:10"
+    ],
+    [
+     "14:41"
+    ]
+   ],
+   "notlar": [
+    "Yasın takvimi yok. Kimse sana \"artık geçmeliydi\" diyemez.",
+    "Anmak, tutmak değil. Onu anlatabildiğin kadar anlat.",
+    "Bugün ağlamak istiyorsan ağla. Bunun için izin gerekmiyor."
+   ]
+  },
+  {
+   "id": "bekleyis",
+   "ad": "Bekliyorum",
+   "ozet": "Sonucu bilmiyorum, sabrım tükeniyor",
+   "renk": "#7A7A8C",
+   "ayetler": [
+    [
+     "2:153"
+    ],
+    [
+     "39:10"
+    ],
+    [
+     "70:5"
+    ],
+    [
+     "30:60"
+    ],
+    [
+     "12:83"
+    ]
+   ],
+   "dualar": [
+    [
+     "2:250"
+    ],
+    [
+     "7:126"
+    ],
+    [
+     "40:60"
+    ]
+   ],
+   "notlar": [
+    "Beklemek boş zaman değil. Süre işliyor, sen de.",
+    "Sonucu değiştirmeyecek düşünceyi bir kenara bırak.",
+    "Kontrol edebildiğin şeyi bugün yap; gerisi zaten senin elinde değildi."
+   ]
+  },
+  {
+   "id": "kararsizlik",
+   "ad": "Karar veremiyorum",
+   "ozet": "İki yol var, hangisi bilmiyorum",
+   "renk": "#6E7B8C",
+   "ayetler": [
+    [
+     "39:18"
+    ],
+    [
+     "3:159"
+    ],
+    [
+     "65:3"
+    ],
+    [
+     "42:10"
+    ]
+   ],
+   "dualar": [
+    [
+     "18:10"
+    ],
+    [
+     "20:25",
+     "20:26",
+     "20:27",
+     "20:28"
+    ],
+    [
+     "3:8"
+    ]
+   ],
+   "notlar": [
+    "İki yol da yaşanabilir. Kötü olan, hiçbirine girmeden beklemek.",
+    "Danış. Karar senin ama tek başına verilmesi şart değil.",
+    "En iyi kararı değil, geri dönülebilir olanı seç."
+   ]
+  },
+  {
+   "id": "sinav",
+   "ad": "Sınav / iş baskısı",
+   "ozet": "Üzerimde yük var, yetiştiremiyorum",
+   "renk": "#6B7C5B",
+   "ayetler": [
+    [
+     "94:5",
+     "94:6"
+    ],
+    [
+     "2:286"
+    ],
+    [
+     "53:39"
+    ],
+    [
+     "18:23",
+     "18:24"
+    ],
+    [
+     "3:139"
+    ]
+   ],
+   "dualar": [
+    [
+     "20:25",
+     "20:26",
+     "20:27",
+     "20:28"
+    ],
+    [
+     "20:114"
+    ],
+    [
+     "2:201"
+    ]
+   ],
+   "notlar": [
+    "Tek bir maddeyi bitir. Liste kendi kendine kısalmaya öyle başlıyor.",
+    "Hazırlanmak senin işin, sonuç değil. İkisini karıştırma.",
+    "Uyu. Uykusuz kafayla çalışılan saatler sayılmıyor."
+   ]
+  },
+  {
+   "id": "haksizlik",
+   "ad": "Haksızlığa uğradım",
+   "ozet": "Bana yapılanı hazmedemiyorum",
+   "renk": "#8C6B5B",
+   "ayetler": [
+    [
+     "42:41",
+     "42:42"
+    ],
+    [
+     "14:42"
+    ],
+    [
+     "16:126",
+     "16:127"
+    ],
+    [
+     "4:148"
+    ]
+   ],
+   "dualar": [
+    [
+     "10:85",
+     "10:86"
+    ],
+    [
+     "2:250"
+    ],
+    [
+     "40:44"
+    ]
+   ],
+   "notlar": [
+    "Kaydını tut. Duygu unutur, yazı unutmaz.",
+    "Hakkını aramak intikam değil. İkisini ayır.",
+    "Sana yapılanın seni kendine benzetmesine izin verme."
+   ]
+  },
+  {
+   "id": "rizik",
+   "ad": "Maddi sıkıntım var",
+   "ozet": "Borç, geçim, para derdi",
+   "renk": "#7C7250",
+   "ayetler": [
+    [
+     "65:3"
+    ],
+    [
+     "29:60"
+    ],
+    [
+     "11:6"
+    ],
+    [
+     "51:22"
+    ]
+   ],
+   "dualar": [
+    [
+     "28:24"
+    ],
+    [
+     "2:201"
+    ],
+    [
+     "3:173"
+    ]
+   ],
+   "notlar": [
+    "Rakamı yaz. Belirsiz borç, gerçek borçtan ağır geliyor.",
+    "Bir kişiye söyle. Yalnız taşınan para derdi iki kat ediyor.",
+    "Bugün küçük bir tedbir al; büyük çözüm bugünün işi değil."
+   ]
+  },
+  {
+   "id": "huzur",
+   "ad": "Sakinleşmek istiyorum",
+   "ozet": "Durulmaya, susmaya ihtiyacım var",
+   "renk": "#5F8A8B",
+   "ayetler": [
+    [
+     "13:28"
+    ],
+    [
+     "89:27",
+     "89:28"
+    ],
+    [
+     "48:4"
+    ],
+    [
+     "6:82"
+    ],
+    [
+     "25:63"
+    ]
+   ],
+   "dualar": [
+    [
+     "25:74"
+    ],
+    [
+     "3:8"
+    ],
+    [
+     "20:25",
+     "20:26"
+    ]
+   ],
+   "notlar": [
+    "Telefonu bırak. Beş dakika hiçbir şey yapma; bu da bir eylem.",
+    "Sessizlik boşluk değil, yer açmak.",
+    "Bugün için yeter. Yarını yarın düşün."
+   ]
+  }
+ ],
+ "ayetler": {
+  "40:60": {
+   "ref": "40:60",
+   "sure": 40,
+   "ayet": 60,
+   "sureAdi": "Gâfir",
+   "arapca": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ ۚ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ",
+   "okunus": "veḳâle rabbükümü-dʿûnî estecib leküm. inne-lleẕîne yestekbirûne ʿan ʿibâdetî seyedḫulûne cehenneme dâḫirîn.",
+   "meal": "Halbuki Rabbiniz: \"Bana yalvarın, dua edin ki size karşılık vereyim. Çünkü bana ibadet etmekten kibirlenip yüz çevirenler yarın horlanmış olarak cehenneme gireceklerdir.\" buyurdu."
+  },
+  "94:5": {
+   "ref": "94:5",
+   "sure": 94,
+   "ayet": 5,
+   "sureAdi": "İnşirâh",
+   "arapca": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+   "okunus": "feinne meʿa-lʿusri yüsrâ.",
+   "meal": "Demek ki, zorlukla beraber bir kolaylık vardır."
+  },
+  "94:6": {
+   "ref": "94:6",
+   "sure": 94,
+   "ayet": 6,
+   "sureAdi": "İnşirâh",
+   "arapca": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
+   "okunus": "inne meʿa-lʿusri yüsrâ.",
+   "meal": "Evet, zorlukla beraber bir kolaylık vardır."
+  },
+  "13:28": {
+   "ref": "13:28",
+   "sure": 13,
+   "ayet": 28,
+   "sureAdi": "Ra'd",
+   "arapca": "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
+   "okunus": "elleẕîne âmenû vetaṭmeinnü ḳulûbühüm biẕikri-llâh. elâ biẕikri-llâhi taṭmeinnü-lḳulûb.",
+   "meal": "Onlar, iman etmiş ve kalbleri Allah zikriyle yatışmış olanlardır. Evet, iyi bilin ki, kalbler Allah'ın zikri ile yatışır."
+  },
+  "65:3": {
+   "ref": "65:3",
+   "sure": 65,
+   "ayet": 3,
+   "sureAdi": "Talâk",
+   "arapca": "وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ ۚ إِنَّ ٱللَّهَ بَٰلِغُ أَمْرِهِۦ ۚ قَدْ جَعَلَ ٱللَّهُ لِكُلِّ شَىْءٍۢ قَدْرًۭا",
+   "okunus": "veyerzuḳhü min ḥayŝü lâ yaḥtesib. vemey yetevekkel ʿale-llâhi fehüve ḥasbüh. inne-llâhe bâligu emrih. ḳad ceʿale-llâhü likülli şey'in ḳadrâ.",
+   "meal": "Ve onu ummadığı yerden rızıklandırır. Kim Allah'a güvenirse O, ona yeter. Allah, emrini yerine getirendir. Allah her şey için bir ölçü koymuştur."
+  },
+  "2:286": {
+   "ref": "2:286",
+   "sure": 2,
+   "ayet": 286,
+   "sureAdi": "Bakara",
+   "arapca": "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًۭا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+   "okunus": "lâ yükellifü-llâhü nefsen illâ vusʿahâ. lehâ mâ kesebet veʿaleyhâ me-ktesebet. rabbenâ lâ tüâḫiẕnâ in nesînâ ev aḫṭa'nâ. rabbenâ velâ taḥmil ʿaleynâ iṣran kemâ ḥameltehû ʿale-lleẕîne min ḳablinâ. rabbenâ velâ tüḥammilnâ mâ lâ ṭâḳate lenâ bih. vaʿfü ʿannâ. vagfir lenâ. verḥamnâ. ente mevlânâ fenṣurnâ ʿale-lḳavmi-lkâfirîn.",
+   "meal": "Allah hiç kimseye gücünün yeteceğinden başka yük yüklemez. Herkesin kazandığı hayır kendisine, yaptığı kötülüğün zararı yine kendisinedir. Ey Rabbimiz, eğer unuttuk ya da yanıldıysak bizi tutup sorguya çekme! Ey Rabbimiz, bize bizden öncekilere yüklediğin gibi ağır yük yükleme! Ey Rabbimiz, bize gücümüzün yetmeyeceği yükü de yükleme! Bağışla bizi, mağfiret et bizi, rahmet et bize! Sensin bizim Mevlamız, kâfir kavimlere karşı yardım et bize."
+  },
+  "9:51": {
+   "ref": "9:51",
+   "sure": 9,
+   "ayet": 51,
+   "sureAdi": "Tevbe",
+   "arapca": "قُل لَّن يُصِيبَنَآ إِلَّا مَا كَتَبَ ٱللَّهُ لَنَا هُوَ مَوْلَىٰنَا ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+   "okunus": "ḳul ley yüṣîbenâ illâ mâ ketebe-llâhü lenâ. hüve mevlânâ. veʿale-llâhi felyetevekkeli-lmü'minûn.",
+   "meal": "De ki: \"Hiçbir zaman bize Allah'ın bizim için takdir ettiğinden başkası dokunmaz. O bizim mevlamızdır. Müminler yalnızca Allah'a tevekkül etsinler.\""
+  },
+  "20:25": {
+   "ref": "20:25",
+   "sure": 20,
+   "ayet": 25,
+   "sureAdi": "Tâhâ",
+   "arapca": "قَالَ رَبِّ ٱشْرَحْ لِى صَدْرِى",
+   "okunus": "ḳâle rabbi-şraḥ lî ṣadrî.",
+   "meal": "Musa dedi ki: \"Ey Rabbim! Benim göğsüme genişlik ver,"
+  },
+  "20:26": {
+   "ref": "20:26",
+   "sure": 20,
+   "ayet": 26,
+   "sureAdi": "Tâhâ",
+   "arapca": "وَيَسِّرْ لِىٓ أَمْرِى",
+   "okunus": "veyessir lî emrî.",
+   "meal": "İşimi kolaylaştır,"
+  },
+  "3:173": {
+   "ref": "3:173",
+   "sure": 3,
+   "ayet": 173,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "ٱلَّذِينَ قَالَ لَهُمُ ٱلنَّاسُ إِنَّ ٱلنَّاسَ قَدْ جَمَعُوا۟ لَكُمْ فَٱخْشَوْهُمْ فَزَادَهُمْ إِيمَٰنًۭا وَقَالُوا۟ حَسْبُنَا ٱللَّهُ وَنِعْمَ ٱلْوَكِيلُ",
+   "okunus": "elleẕîne ḳâle lehümü-nnâsü inne-nnâse ḳad cemeʿû leküm faḫşevhüm fezâdehüm îmânâ. veḳâlû ḥasbüne-llâhü veniʿme-lvekîl.",
+   "meal": "İnsanlar onlara: \"Düşmanlarınız size karşı ordu topladı, onlardan korkun.\" dediklerinde, bu, onların imanını artırdı ve şöyle dediler: \"Allah bize yeter. O ne güzel vekildir\"."
+  },
+  "2:201": {
+   "ref": "2:201",
+   "sure": 2,
+   "ayet": 201,
+   "sureAdi": "Bakara",
+   "arapca": "وَمِنْهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةًۭ وَفِى ٱلْءَاخِرَةِ حَسَنَةًۭ وَقِنَا عَذَابَ ٱلنَّارِ",
+   "okunus": "veminhüm mey yeḳûlü rabbenâ âtinâ fi-ddünyâ ḥasenetev vefi-l'âḫirati ḥasenetev veḳinâ ʿaẕâbe-nnâr.",
+   "meal": "Yine onlardan: \"Ey Rabbimiz! Bize dünyada bir güzellik ve ahirette de bir güzellik ver ve bizi ateş azabından koru!\" diyenler vardır."
+  },
+  "9:40": {
+   "ref": "9:40",
+   "sure": 9,
+   "ayet": 40,
+   "sureAdi": "Tevbe",
+   "arapca": "إِلَّا تَنصُرُوهُ فَقَدْ نَصَرَهُ ٱللَّهُ إِذْ أَخْرَجَهُ ٱلَّذِينَ كَفَرُوا۟ ثَانِىَ ٱثْنَيْنِ إِذْ هُمَا فِى ٱلْغَارِ إِذْ يَقُولُ لِصَٰحِبِهِۦ لَا تَحْزَنْ إِنَّ ٱللَّهَ مَعَنَا ۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيْهِ وَأَيَّدَهُۥ بِجُنُودٍۢ لَّمْ تَرَوْهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُوا۟ ٱلسُّفْلَىٰ ۗ وَكَلِمَةُ ٱللَّهِ هِىَ ٱلْعُلْيَا ۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
+   "okunus": "illâ tenṣurûhü feḳad neṣarahü-llâhü iẕ aḫracehü-lleẕîne keferû ŝâniye-ŝneyni iẕ hümâ fi-lgâri iẕ yeḳûlü liṣâḥibihî lâ taḥzen inne-llâhe meʿanâ. feenzele-llâhü sekînetehû ʿaleyhi veeyyedehû bicünûdil lem teravhâ veceʿale kelimete-lleẕîne keferü-ssüflâ. vekelimetü-llâhi hiye-lʿulyâ. vellâhü ʿazîzün ḥakîm.",
+   "meal": "Eğer siz ona (Peygamber'e) yardım etmezseniz, Allah ona yardım eder. Hani o kâfirler, onu Mekke'den çıkardıkları vakit sadece iki kişiden biri iken, ikisi de mağarada bulundukları sırada arkadaşına \"Üzülme, çünkü Allah bizimledir.\" diyordu. Allah onun kalbine sükûnet ve kuvvet indirmişti ve onu görmediğiniz bir orduyla desteklemişti. Kâfirlerin sözünü alçaltmıştı. Yüce olan Allah'ın kelimesidir. Ve Allah güçlüdür, hikmet sahibidir."
+  },
+  "12:86": {
+   "ref": "12:86",
+   "sure": 12,
+   "ayet": 86,
+   "sureAdi": "Yûsuf",
+   "arapca": "قَالَ إِنَّمَآ أَشْكُوا۟ بَثِّى وَحُزْنِىٓ إِلَى ٱللَّهِ وَأَعْلَمُ مِنَ ٱللَّهِ مَا لَا تَعْلَمُونَ",
+   "okunus": "ḳâle innemâ eşkû beŝŝî veḥuznî ile-llâhi veaʿlemü mine-llâhi mâ lâ taʿlemûn.",
+   "meal": "Dedi ki: \"Ben hüznümü, kederimi ancak Allah'a şikayet ederim ve Allah tarafından sizin bilmediğiniz şeyleri de bilirim.\""
+  },
+  "93:3": {
+   "ref": "93:3",
+   "sure": 93,
+   "ayet": 3,
+   "sureAdi": "Duhâ",
+   "arapca": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+   "okunus": "mâ veddeʿake rabbüke vemâ ḳalâ.",
+   "meal": "Rabbin seni bırakmadı ve darılmadı."
+  },
+  "93:5": {
+   "ref": "93:5",
+   "sure": 93,
+   "ayet": 5,
+   "sureAdi": "Duhâ",
+   "arapca": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+   "okunus": "velesevfe yüʿṭîke rabbüke feterḍâ.",
+   "meal": "Rabbın sana verecek ve sen hoşnut olacaksın."
+  },
+  "3:139": {
+   "ref": "3:139",
+   "sure": 3,
+   "ayet": 139,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "وَلَا تَهِنُوا۟ وَلَا تَحْزَنُوا۟ وَأَنتُمُ ٱلْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
+   "okunus": "velâ tehinû velâ taḥzenû veentümü-l'aʿlevne in küntüm mü'minîn.",
+   "meal": "Gevşemeyin, üzülmeyin, eğer hakikaten inanıyorsanız, muhakkak üstün olan sizsinizdir."
+  },
+  "2:153": {
+   "ref": "2:153",
+   "sure": 2,
+   "ayet": 153,
+   "sureAdi": "Bakara",
+   "arapca": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ",
+   "okunus": "yâ eyyühe-lleẕîne âmenü-steʿînû biṣṣabri veṣṣalâh. inne-llâhe meʿa-ṣṣâbirîn.",
+   "meal": "Ey iman edenler! Sabır ve namazla yardım isteyin. Şüphe yok ki Allah, sabredenlerle beraberdir."
+  },
+  "21:87": {
+   "ref": "21:87",
+   "sure": 21,
+   "ayet": 87,
+   "sureAdi": "Enbiyâ",
+   "arapca": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبًۭا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+   "okunus": "veẕe-nnûni iẕ ẕehebe mügâḍiben feżanne el len naḳdira ʿaleyhi fenâdâ fi-żżulümâti el lâ ilâhe illâ ente sübḥânek. innî küntü mine-żżâlimîn.",
+   "meal": "Zünnun'u (balık sahibi Yunus'u) da hatırla. Hani o, öfkelenerek gitmişti de, bizim kendisini hiçbir zaman sıkıştırmayacağımızı sanmıştı. Fakat sonunda karanlıklar içinde: \"Senden başka ilâh yoktur, sen münezzehsin, Şüphesiz ben haksızlık edenlerden oldum\" diye seslenmişti."
+  },
+  "3:8": {
+   "ref": "3:8",
+   "sure": 3,
+   "ayet": 8,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ",
+   "okunus": "rabbenâ lâ tüzig ḳulûbenâ baʿde iẕ hedeytenâ veheb lenâ mil ledünke raḥmeh. inneke ente-lvehhâb.",
+   "meal": "Ey Rabbimiz! Bize ihsan ettiğin hidayetten sonra kalblerimizi haktan saptırma, bize kendi katından rahmet ihsan eyle! Şüphesiz ki, Sen bol ihsan sahibisin."
+  },
+  "3:175": {
+   "ref": "3:175",
+   "sure": 3,
+   "ayet": 175,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "إِنَّمَا ذَٰلِكُمُ ٱلشَّيْطَٰنُ يُخَوِّفُ أَوْلِيَآءَهُۥ فَلَا تَخَافُوهُمْ وَخَافُونِ إِن كُنتُم مُّؤْمِنِينَ",
+   "okunus": "innemâ ẕâlikümü-şşeyṭânü yüḫavvifü evliyâeh. felâ teḫâfûhüm veḫâfûni in küntüm mü'minîn.",
+   "meal": "(Size o haberi getiren) ancak şeytandır, (sadece) kendi dostlarını korkutabilir. Onlardan korkmayın, eğer mümin iseniz benden korkun."
+  },
+  "20:46": {
+   "ref": "20:46",
+   "sure": 20,
+   "ayet": 46,
+   "sureAdi": "Tâhâ",
+   "arapca": "قَالَ لَا تَخَافَآ ۖ إِنَّنِى مَعَكُمَآ أَسْمَعُ وَأَرَىٰ",
+   "okunus": "ḳâle lâ teḫâfâ innenî meʿakümâ esmeʿu veerâ.",
+   "meal": "Allah buyurdu ki: \"Korkmayın, zira ben sizinle beraberim, işitir ve görürüm.\""
+  },
+  "41:30": {
+   "ref": "41:30",
+   "sure": 41,
+   "ayet": 30,
+   "sureAdi": "Fussilet",
+   "arapca": "إِنَّ ٱلَّذِينَ قَالُوا۟ رَبُّنَا ٱللَّهُ ثُمَّ ٱسْتَقَٰمُوا۟ تَتَنَزَّلُ عَلَيْهِمُ ٱلْمَلَٰٓئِكَةُ أَلَّا تَخَافُوا۟ وَلَا تَحْزَنُوا۟ وَأَبْشِرُوا۟ بِٱلْجَنَّةِ ٱلَّتِى كُنتُمْ تُوعَدُونَ",
+   "okunus": "inne-lleẕîne ḳâlû rabbüne-llâhü ŝümme-steḳâmû tetenezzelü ʿaleyhimü-lmelâiketü ellâ teḫâfû velâ taḥzenû veebşirû bilcenneti-lletî küntüm tûʿadûn.",
+   "meal": "\"Rabbimiz Allah'tır\" deyip, sonra da doğrulukta devam edenlere gelince, onların üzerine melekler iner ve derler ki: \"Korkmayın, üzülmeyin, size vaad edilen cennetle sevinin.\""
+  },
+  "2:112": {
+   "ref": "2:112",
+   "sure": 2,
+   "ayet": 112,
+   "sureAdi": "Bakara",
+   "arapca": "بَلَىٰ مَنْ أَسْلَمَ وَجْهَهُۥ لِلَّهِ وَهُوَ مُحْسِنٌۭ فَلَهُۥٓ أَجْرُهُۥ عِندَ رَبِّهِۦ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+   "okunus": "belâ men esleme vechehû lillâhi vehüve muḥsinün felehû ecruhû ʿinde rabbih. velâ ḫavfün ʿaleyhim velâ hüm yaḥzenûn.",
+   "meal": "Hayır, hayır! Kim özü iyilik dolu olarak yüzünü Allah'a tertemiz döndürür ve teslim ederse, işte onun Rabbi katında ecri vardır. Onlara hiçbir korku yoktur ve onlar mahzun da olacak değiller."
+  },
+  "20:45": {
+   "ref": "20:45",
+   "sure": 20,
+   "ayet": 45,
+   "sureAdi": "Tâhâ",
+   "arapca": "قَالَا رَبَّنَآ إِنَّنَا نَخَافُ أَن يَفْرُطَ عَلَيْنَآ أَوْ أَن يَطْغَىٰ",
+   "okunus": "ḳâlâ rabbenâ innenâ neḫâfü ey yefruṭa ʿaleynâ ev ey yaṭgâ.",
+   "meal": "(Musa ile Harun) \"Rabbimiz! Onun bize kötülük yapmasından veya azgınlığını artırmasından korkarız\" dediler."
+  },
+  "23:97": {
+   "ref": "23:97",
+   "sure": 23,
+   "ayet": 97,
+   "sureAdi": "Mü'minûn",
+   "arapca": "وَقُل رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ",
+   "okunus": "veḳur rabbi eʿûẕü bike min hemezâti-şşeyâṭîn.",
+   "meal": "Ve de ki: Rabbim! Şeytanların kışkırtmalarından sana sığınırım!"
+  },
+  "23:98": {
+   "ref": "23:98",
+   "sure": 23,
+   "ayet": 98,
+   "sureAdi": "Mü'minûn",
+   "arapca": "وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+   "okunus": "veeʿûẕü bike rabbi ey yaḥḍurûn.",
+   "meal": "Onların yanımda bulunmalarından da sana sığınırım."
+  },
+  "3:134": {
+   "ref": "3:134",
+   "sure": 3,
+   "ayet": 134,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ وَٱلضَّرَّآءِ وَٱلْكَٰظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ ۗ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ",
+   "okunus": "elleẕîne yünfiḳûne fi-sserrâi veḍḍarrâi velkâżimîne-lgayża velʿâfîne ʿani-nnâs. vellâhü yüḥibbü-lmuḥsinîn.",
+   "meal": "O (Allah'tan hakkıyla korka)nlar, bollukta ve darlıkta Allah için harcarlar, öfkelerini yutarlar, insanları affederler. Allah iyilik edenleri sever."
+  },
+  "41:34": {
+   "ref": "41:34",
+   "sure": 41,
+   "ayet": 34,
+   "sureAdi": "Fussilet",
+   "arapca": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌۭ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌۭ",
+   "okunus": "velâ testevi-lḥasenetü vele-sseyyieh. idfaʿ billetî hiye aḥsenü feiẕe-lleẕî beyneke vebeynehû ʿadâvetün keennehû veliyyün ḥamîm.",
+   "meal": "Hem iyilik de bir değildir, kötülük de. Kötülüğü en güzel bir şekilde sav. O zaman seninle kendi arasında bir düşmanlık olan kişinin, sanki samimi bir dost gibi olduğunu görürsün."
+  },
+  "42:43": {
+   "ref": "42:43",
+   "sure": 42,
+   "ayet": 43,
+   "sureAdi": "Şûrâ",
+   "arapca": "وَلَمَن صَبَرَ وَغَفَرَ إِنَّ ذَٰلِكَ لَمِنْ عَزْمِ ٱلْأُمُورِ",
+   "okunus": "velemen ṣabera vegafera inne ẕâlike lemin ʿazmi-l'ümûr.",
+   "meal": "Her kim de sabreder ve kusuru bağışlarsa, işte bu elbette azmedilecek işlerdendir."
+  },
+  "7:199": {
+   "ref": "7:199",
+   "sure": 7,
+   "ayet": 199,
+   "sureAdi": "A'râf",
+   "arapca": "خُذِ ٱلْعَفْوَ وَأْمُرْ بِٱلْعُرْفِ وَأَعْرِضْ عَنِ ٱلْجَٰهِلِينَ",
+   "okunus": "ḫuẕi-lʿafve ve'mür bilʿurfi veaʿriḍ ʿani-lcâhilîn.",
+   "meal": "Sen yine de affa sarıl, iyiliği emret ve cahillerden yüz çevir."
+  },
+  "25:63": {
+   "ref": "25:63",
+   "sure": 25,
+   "ayet": 63,
+   "sureAdi": "Furkân",
+   "arapca": "وَعِبَادُ ٱلرَّحْمَٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًۭا وَإِذَا خَاطَبَهُمُ ٱلْجَٰهِلُونَ قَالُوا۟ سَلَٰمًۭا",
+   "okunus": "veʿibâdü-rraḥmâni-lleẕîne yemşûne ʿale-l'arḍi hevnev veiẕâ ḫâṭabehümü-lcâhilûne ḳâlû selâmâ.",
+   "meal": "O çok merhametli Allah'ın (has) kulları onlardır ki, yeryüzünde tevazu ile yürürler ve cahil kimseler kendilerine laf attığı zaman (incitmeksizin) \"selam\" derler (geçerler)."
+  },
+  "7:200": {
+   "ref": "7:200",
+   "sure": 7,
+   "ayet": 200,
+   "sureAdi": "A'râf",
+   "arapca": "وَإِمَّا يَنزَغَنَّكَ مِنَ ٱلشَّيْطَٰنِ نَزْغٌۭ فَٱسْتَعِذْ بِٱللَّهِ ۚ إِنَّهُۥ سَمِيعٌ عَلِيمٌ",
+   "okunus": "veimmâ yenzeganneke mine-şşeyṭâni nezgun festeʿiẕ billâh. innehû semîʿun ʿalîm.",
+   "meal": "Eğer şeytandan bir vesvese, bir gıcık gelirse hemen Allah'a sığın. Muhakkak ki, Allah hakkıyla işiten, kemaliyle bilendir."
+  },
+  "59:10": {
+   "ref": "59:10",
+   "sure": 59,
+   "ayet": 10,
+   "sureAdi": "Haşr",
+   "arapca": "وَٱلَّذِينَ جَآءُو مِنۢ بَعْدِهِمْ يَقُولُونَ رَبَّنَا ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّۭا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌۭ رَّحِيمٌ",
+   "okunus": "velleẕîne câû mim baʿdihim yeḳûlûne rabbene-gfir lenâ veliiḫvânine-lleẕîne sebeḳûnâ bil'îmâni velâ tecʿal fî ḳulûbinâ gillel lilleẕîne âmenû rabbenâ inneke raûfür raḥîm.",
+   "meal": "Onlardan sonra gelenler derler ki: \"Rabbimiz, bizi ve bizden önce inanan kardeşlerimizi bağışla, kalplerimizde inananlara karşı bir kin bırakma! Rabbimiz! Sen çok şefkatli, çok merhametlisin!\""
+  },
+  "50:16": {
+   "ref": "50:16",
+   "sure": 50,
+   "ayet": 16,
+   "sureAdi": "Kâf",
+   "arapca": "وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ",
+   "okunus": "veleḳad ḫalaḳne-l'insâne venaʿlemü mâ tüvesvisü bihî nefsüh. venaḥnü aḳrabü ileyhi min ḥabli-lverîd.",
+   "meal": "Andolsun insanı biz yarattık ve nefsinin kendisine fısıldadıklarını biliriz. Ve biz ona şah damarından daha yakınız."
+  },
+  "2:186": {
+   "ref": "2:186",
+   "sure": 2,
+   "ayet": 186,
+   "sureAdi": "Bakara",
+   "arapca": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ",
+   "okunus": "veiẕâ seeleke ʿibâdî ʿannî feinnî ḳarîb. ücîbü daʿvete-ddâʿi iẕâ deʿâni felyestecîbû lî velyü'minû bî leʿallehüm yerşüdûn.",
+   "meal": "Şayet kullarım, sana benden sordularsa, gerçekten ben çok yakınımdır. Bana dua edince, duacının duasını kabul ederim. O halde onlar da benim davetime koşsunlar ve bana hakkıyla iman etsinler ki, doğru yola gidebilsinler."
+  },
+  "57:4": {
+   "ref": "57:4",
+   "sure": 57,
+   "ayet": 4,
+   "sureAdi": "Hadîd",
+   "arapca": "هُوَ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍۢ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ ۚ يَعْلَمُ مَا يَلِجُ فِى ٱلْأَرْضِ وَمَا يَخْرُجُ مِنْهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعْرُجُ فِيهَا ۖ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌۭ",
+   "okunus": "hüve-lleẕî ḫaleḳa-ssemâvâti vel'arḍa fî sitteti eyyâmin ŝümme-stevâ ʿale-lʿarş. yaʿlemü mâ yelicü fi-l'arḍi vemâ yaḫrucü minhâ vemâ yenzilü mine-ssemâi vemâ yaʿrucü fîhâ. vehüve meʿaküm eyne mâ küntüm. vellâhü bimâ taʿmelûne beṣîr.",
+   "meal": "O'dur ki gökleri ve yeri altı günde yarattı. Sonra arş üzerine istivâ etti (hükümran oldu). Yere gireni, ondan çıkanı, gökten ineni, ona çıkanı bilir. Nerede olsanız O sizinle beraberdir. Allah yaptıklarınızı görmektedir."
+  },
+  "21:89": {
+   "ref": "21:89",
+   "sure": 21,
+   "ayet": 89,
+   "sureAdi": "Enbiyâ",
+   "arapca": "وَزَكَرِيَّآ إِذْ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرْنِى فَرْدًۭا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ",
+   "okunus": "vezekeriyyâ iẕ nâdâ rabbehû rabbi lâ teẕernî ferdev veente ḫayru-lvâriŝîn.",
+   "meal": "Zekeriya da hani Rabbine: \"Rabbim! Beni tek başıma bırakma, sen varislerin en hayırlısısın\" diye nida etmişti."
+  },
+  "25:74": {
+   "ref": "25:74",
+   "sure": 25,
+   "ayet": 74,
+   "sureAdi": "Furkân",
+   "arapca": "وَٱلَّذِينَ يَقُولُونَ رَبَّنَا هَبْ لَنَا مِنْ أَزْوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعْيُنٍۢ وَٱجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+   "okunus": "velleẕîne yeḳûlûne rabbenâ heb lenâ min ezvâcinâ veẕürriyyâtinâ ḳurrate aʿyüniv vecʿalnâ lilmütteḳîne imâmâ.",
+   "meal": "Ve onlar ki: \"Ey Rabbimiz! Bize gözümüzü aydınlatacak eşler ve zürriyetler bağışla ve bizi takva sahiplerine önder kıl\" derler."
+  },
+  "23:118": {
+   "ref": "23:118",
+   "sure": 23,
+   "ayet": 118,
+   "sureAdi": "Mü'minûn",
+   "arapca": "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+   "okunus": "veḳur rabbi-gfir verḥam veente ḫayru-rrâḥimîn.",
+   "meal": "Resulüm! De ki: \"Rabbim, bağışla ve merhamet et! Sen merhametlilerin en iyisisin.\""
+  },
+  "39:53": {
+   "ref": "39:53",
+   "sure": 39,
+   "ayet": 53,
+   "sureAdi": "Zümer",
+   "arapca": "۞ قُلْ يَٰعِبَادِىَ ٱلَّذِينَ أَسْرَفُوا۟ عَلَىٰٓ أَنفُسِهِمْ لَا تَقْنَطُوا۟ مِن رَّحْمَةِ ٱللَّهِ ۚ إِنَّ ٱللَّهَ يَغْفِرُ ٱلذُّنُوبَ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+   "okunus": "ḳul yâ ʿibâdîye-lleẕîne esrafû ʿalâ enfüsihim lâ taḳneṭû mir raḥmeti-llâh. inne-llâhe yagfiru-ẕẕünûbe cemîʿâ. innehû hüve-lgafûru-rraḥîm.",
+   "meal": "De ki: \"Ey haddi aşarak nefislerine karşı israf etmiş olan kullarım! Allah'ın rahmetinden ümid kesmeyin. Çünkü Allah, bütün günahları bağışlar. Şüphesiz ki O, çok bağışlayıcıdır, çok merhamet edicidir.\""
+  },
+  "20:82": {
+   "ref": "20:82",
+   "sure": 20,
+   "ayet": 82,
+   "sureAdi": "Tâhâ",
+   "arapca": "وَإِنِّى لَغَفَّارٌۭ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَٰلِحًۭا ثُمَّ ٱهْتَدَىٰ",
+   "okunus": "veinnî legaffârul limen tâbe veâmene veʿamile ṣâliḥan ŝümme-htedâ.",
+   "meal": "Bununla beraber, şüphe yok ki ben, tevbe eden, iman edip salih amel işleyen, sonra da hak yolda sebat gösteren kimse için çok bağışlayıcıyım."
+  },
+  "4:110": {
+   "ref": "4:110",
+   "sure": 4,
+   "ayet": 110,
+   "sureAdi": "Nisâ",
+   "arapca": "وَمَن يَعْمَلْ سُوٓءًا أَوْ يَظْلِمْ نَفْسَهُۥ ثُمَّ يَسْتَغْفِرِ ٱللَّهَ يَجِدِ ٱللَّهَ غَفُورًۭا رَّحِيمًۭا",
+   "okunus": "vemey yaʿmel sûen ev yażlim nefsehû ŝümme yestagfiri-llâhe yecidi-llâhe gafûrar raḥîmâ.",
+   "meal": "Kim bir kötülük işler, yahut nefsine zulmeder, sonra da Allah'tan bağışlanmasını dilerse, Allah'ı bağışlayıcı ve esirgeyici bulur."
+  },
+  "66:8": {
+   "ref": "66:8",
+   "sure": 66,
+   "ayet": 8,
+   "sureAdi": "Tahrîm",
+   "arapca": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ تُوبُوٓا۟ إِلَى ٱللَّهِ تَوْبَةًۭ نَّصُوحًا عَسَىٰ رَبُّكُمْ أَن يُكَفِّرَ عَنكُمْ سَيِّـَٔاتِكُمْ وَيُدْخِلَكُمْ جَنَّٰتٍۢ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ يَوْمَ لَا يُخْزِى ٱللَّهُ ٱلنَّبِىَّ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ ۖ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَٰنِهِمْ يَقُولُونَ رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآ ۖ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ",
+   "okunus": "yâ eyyühe-lleẕîne âmenû tûbû ile-llâhi tevbeten neṣûḥâ. ʿasâ rabbüküm ey yükeffira ʿanküm seyyiâtiküm veyüdḫileküm cennâtin tecrî min taḥtihe-l'enhâru yevme lâ yuḫzi-llâhü-nnebiyye velleẕîne âmenû meʿah. nûruhüm yesʿâ beyne eydîhim vebieymânihim yeḳûlûne rabbenâ etmim lenâ nûranâ vagfir lenâ. inneke ʿalâ külli şey'in ḳadîr.",
+   "meal": "Ey iman edenler! Samimi bir tevbe ile Allah'a dönün. Umulur ki Rabbiniz sizin kötülüklerinizi örter, Peygamber'i ve onunla birlikte iman edenleri utandırmayacağı günde Allah sizi, içlerinden ırmaklar akan cennetlere sokar. Çünkü onların nurları, önlerinde ve yanlarında koşar da, \"Ey Rabbimiz! Nurumuzu tamamla, bizi bağışla, çünkü sen her şeye kâdirsin.\" derler."
+  },
+  "3:135": {
+   "ref": "3:135",
+   "sure": 3,
+   "ayet": 135,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "وَٱلَّذِينَ إِذَا فَعَلُوا۟ فَٰحِشَةً أَوْ ظَلَمُوٓا۟ أَنفُسَهُمْ ذَكَرُوا۟ ٱللَّهَ فَٱسْتَغْفَرُوا۟ لِذُنُوبِهِمْ وَمَن يَغْفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمْ يُصِرُّوا۟ عَلَىٰ مَا فَعَلُوا۟ وَهُمْ يَعْلَمُونَ",
+   "okunus": "velleẕîne iẕâ feʿalû fâḥişeten ev żalemû enfüsehüm ẕekerü-llâhe festagferû liẕünûbihim. vemey yagfiru-ẕẕünûbe ille-llâh. velem yüṣirrû ʿalâ mâ feʿalû vehüm yaʿlemûn.",
+   "meal": "Ve onlar çirkin bir günah işledikleri, yahut nefislerine zulmettikleri zaman Allah'ı hatırlayarak hemen günahlarının bağışlanmasını dilerler. Allah'tan başka günahları kim bağışlayabilir? Bir de onlar, bile bile, işledikleri (günah) üzerinde ısrar etmezler."
+  },
+  "7:23": {
+   "ref": "7:23",
+   "sure": 7,
+   "ayet": 23,
+   "sureAdi": "A'râf",
+   "arapca": "قَالَا رَبَّنَا ظَلَمْنَآ أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ ٱلْخَٰسِرِينَ",
+   "okunus": "ḳâlâ rabbenâ żalemnâ enfüsenâ veil lem tagfir lenâ veterḥamnâ lenekûnenne mine-lḫâsirîn.",
+   "meal": "Dediler ki: \"Ey Rabbimiz! Biz kendimize zulmettik, eğer bizi bağışlamaz ve bize rahmetinle muamele etmezsen muhakkak ziyana uğrayacaklardan oluruz!\""
+  },
+  "28:16": {
+   "ref": "28:16",
+   "sure": 28,
+   "ayet": 16,
+   "sureAdi": "Kasas",
+   "arapca": "قَالَ رَبِّ إِنِّى ظَلَمْتُ نَفْسِى فَٱغْفِرْ لِى فَغَفَرَ لَهُۥٓ ۚ إِنَّهُۥ هُوَ ٱلْغَفُورُ ٱلرَّحِيمُ",
+   "okunus": "ḳâle rabbi innî żalemtü nefsî fagfir lî fegafera leh. innehû hüve-lgafûru-rraḥîm.",
+   "meal": "Musa, \"Rabbim! Doğrusu kendimi ziyana uğrattım. Beni bağışla!\" dedi; Allah da, onu bağışladı. Çünkü, çok bağışlayıcı, çok merhamet edici olan ancak O'dur."
+  },
+  "3:16": {
+   "ref": "3:16",
+   "sure": 3,
+   "ayet": 16,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "ٱلَّذِينَ يَقُولُونَ رَبَّنَآ إِنَّنَآ ءَامَنَّا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ ٱلنَّارِ",
+   "okunus": "elleẕîne yeḳûlûne rabbenâ innenâ âmennâ fagfir lenâ ẕünûbenâ veḳinâ ʿaẕâbe-nnâr.",
+   "meal": "Onlar ki, \"Ey Rabbimiz! Biz inandık, iman getirdik, artık bizim suçlarımızı bağışla ve bizi ateş azabından koru!\" derler."
+  },
+  "14:7": {
+   "ref": "14:7",
+   "sure": 14,
+   "ayet": 7,
+   "sureAdi": "İbrâhim",
+   "arapca": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌۭ",
+   "okunus": "veiẕ teeẕẕene rabbüküm lein şekertüm leezîdenneküm velein kefertüm inne ʿaẕâbî leşedîd.",
+   "meal": "Ve hatırlayın ki Rabbiniz size şöyle bildirmişti: Yüceliğim hakkı için şükrederseniz elbette size (nimetimi) artırırım ve eğer nankörlük ederseniz hiç şüphesiz azabım çok şiddetlidir."
+  },
+  "16:18": {
+   "ref": "16:18",
+   "sure": 16,
+   "ayet": 18,
+   "sureAdi": "Nahl",
+   "arapca": "وَإِن تَعُدُّوا۟ نِعْمَةَ ٱللَّهِ لَا تُحْصُوهَآ ۗ إِنَّ ٱللَّهَ لَغَفُورٌۭ رَّحِيمٌۭ",
+   "okunus": "vein teʿuddû niʿmete-llâhi lâ tuḥṣûhâ. inne-llâhe legafûrur raḥîm.",
+   "meal": "Halbuki Allah'ın nimetlerini teker teker saymaya kalkışsanız, onları sayamazsınız. Muhakkak ki Allah çok bağışlayıcıdır, çok merhametlidir."
+  },
+  "2:152": {
+   "ref": "2:152",
+   "sure": 2,
+   "ayet": 152,
+   "sureAdi": "Bakara",
+   "arapca": "فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ",
+   "okunus": "feẕkürûnî eẕkürküm veşkürû lî velâ tekfürûn.",
+   "meal": "O halde beni anın, ben de sizi anayım. Bana şükredin de nankörlük etmeyin."
+  },
+  "55:13": {
+   "ref": "55:13",
+   "sure": 55,
+   "ayet": 13,
+   "sureAdi": "Rahmân",
+   "arapca": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+   "okunus": "febieyyi âlâi rabbikümâ tükeẕẕibân.",
+   "meal": "Şimdi Rabbinizin hangi nimetlerini yalanlıyorsunuz?"
+  },
+  "93:11": {
+   "ref": "93:11",
+   "sure": 93,
+   "ayet": 11,
+   "sureAdi": "Duhâ",
+   "arapca": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+   "okunus": "veemmâ biniʿmeti rabbike feḥaddiŝ.",
+   "meal": "Fakat Rabbinin nimetini anlat da anlat."
+  },
+  "27:19": {
+   "ref": "27:19",
+   "sure": 27,
+   "ayet": 19,
+   "sureAdi": "Neml",
+   "arapca": "فَتَبَسَّمَ ضَاحِكًۭا مِّن قَوْلِهَا وَقَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَدْخِلْنِى بِرَحْمَتِكَ فِى عِبَادِكَ ٱلصَّٰلِحِينَ",
+   "okunus": "fetebesseme ḍâḥikem min ḳavlihâ veḳâle rabbi evziʿnî en eşküra niʿmeteke-lletî enʿamte ʿaleyye veʿalâ vâlideyye veen aʿmele ṣâliḥan terḍâhü veedḫilnî biraḥmetike fî ʿibâdike-ṣṣâliḥîn.",
+   "meal": "(Süleyman) onun sözüne gülümseyerek dedi ki: \"Ey Rabbim! Bana ve ana babama verdiğin nimete şükretmemi ve hoşnut olacağın iyi iş yapmamı gönlüme getir. Rahmetinle, beni iyi kulların arasına kat.\""
+  },
+  "46:15": {
+   "ref": "46:15",
+   "sure": 46,
+   "ayet": 15,
+   "sureAdi": "Ahkâf",
+   "arapca": "وَوَصَّيْنَا ٱلْإِنسَٰنَ بِوَٰلِدَيْهِ إِحْسَٰنًا ۖ حَمَلَتْهُ أُمُّهُۥ كُرْهًۭا وَوَضَعَتْهُ كُرْهًۭا ۖ وَحَمْلُهُۥ وَفِصَٰلُهُۥ ثَلَٰثُونَ شَهْرًا ۚ حَتَّىٰٓ إِذَا بَلَغَ أَشُدَّهُۥ وَبَلَغَ أَرْبَعِينَ سَنَةًۭ قَالَ رَبِّ أَوْزِعْنِىٓ أَنْ أَشْكُرَ نِعْمَتَكَ ٱلَّتِىٓ أَنْعَمْتَ عَلَىَّ وَعَلَىٰ وَٰلِدَىَّ وَأَنْ أَعْمَلَ صَٰلِحًۭا تَرْضَىٰهُ وَأَصْلِحْ لِى فِى ذُرِّيَّتِىٓ ۖ إِنِّى تُبْتُ إِلَيْكَ وَإِنِّى مِنَ ٱلْمُسْلِمِينَ",
+   "okunus": "veveṣṣayne-l'insâne bivâlideyhi iḥsânâ. ḥamelethü ümmühû kürhev veveḍaʿathü kürhâ. veḥamlühû vefiṣâlühû ŝelâŝûne şehrâ. ḥattâ iẕâ belega eşüddehû vebelega erbeʿîne seneten ḳâle rabbi evziʿnî en eşküra niʿmeteke-lletî enʿamte ʿaleyye veʿalâ vâlideyye veen aʿmele ṣâliḥan tarḍâhü veaṣliḥ lî fî ẕürriyyetî. innî tübtü ileyke veinnî mine-lmüslimîn.",
+   "meal": "Biz insana ana ve babasına iyilik yapmayı tavsiye ettik. Anası onu zahmetle karnında taşıdı ve zahmetle doğurdu. Onun ana karnında taşınması ile sütten kesilme süresi otuz aydır. Nihayet insan olgunluk çağına ulaşıp, kırk yaşına geldiğinde der ki: \"Ey Rabbim! Bana ve ana babama ihsan ettiğin nimetlerine şükretmemi ve senin hoşnut olacağın salih amel işlememi ilham et. Benim neslimden gelenleri de salih kimseler kıl. Doğrusu ben tevbe edip sana yöneldim. Ve ben gerçekten müslümanlardanım.\""
+  },
+  "12:87": {
+   "ref": "12:87",
+   "sure": 12,
+   "ayet": 87,
+   "sureAdi": "Yûsuf",
+   "arapca": "يَٰبَنِىَّ ٱذْهَبُوا۟ فَتَحَسَّسُوا۟ مِن يُوسُفَ وَأَخِيهِ وَلَا تَا۟يْـَٔسُوا۟ مِن رَّوْحِ ٱللَّهِ ۖ إِنَّهُۥ لَا يَا۟يْـَٔسُ مِن رَّوْحِ ٱللَّهِ إِلَّا ٱلْقَوْمُ ٱلْكَٰفِرُونَ",
+   "okunus": "yâ benîye-ẕhebû feteḥassesû miy yûsüfe veeḫîhi velâ tey'esû mir ravḥi-llâh. innehû lâ yey'esü mir ravḥi-llâhi ille-lḳavmü-lkâfirûn.",
+   "meal": "\"Ey oğullarım, gidin, Yusuf'u ve kardeşini araştırın. Allah'ın rahmetinden ümit kesmeyin; zira kâfir kavimden başkası Allah'ın rahmetinden ümit kesmez.\""
+  },
+  "2:214": {
+   "ref": "2:214",
+   "sure": 2,
+   "ayet": 214,
+   "sureAdi": "Bakara",
+   "arapca": "أَمْ حَسِبْتُمْ أَن تَدْخُلُوا۟ ٱلْجَنَّةَ وَلَمَّا يَأْتِكُم مَّثَلُ ٱلَّذِينَ خَلَوْا۟ مِن قَبْلِكُم ۖ مَّسَّتْهُمُ ٱلْبَأْسَآءُ وَٱلضَّرَّآءُ وَزُلْزِلُوا۟ حَتَّىٰ يَقُولَ ٱلرَّسُولُ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ مَتَىٰ نَصْرُ ٱللَّهِ ۗ أَلَآ إِنَّ نَصْرَ ٱللَّهِ قَرِيبٌۭ",
+   "okunus": "em ḥasibtüm en tedḫulü-lcennete velemmâ ye'tiküm meŝelü-lleẕîne ḫalev min ḳabliküm. messethümü-lbe'sâü veḍḍarrâü vezülzilû ḥattâ yeḳûle-rrasûlü velleẕîne âmenû meʿahû metâ naṣru-llâh. elâ inne naṣra-llâhi ḳarîb.",
+   "meal": "Yoksa siz, kendinizden önce gelip geçenlerin hali (uğradıkları sıkıntılar) başınıza gelmeden cennete girivereceğinizi mi sandınız? Onlara öyle yoksulluklar, öyle sıkıntılar dokundu ve öyle sarsıldılar ki, hatta peygamber ve beraberinde iman edenler: \"Allah'ın yardımı ne zaman?\" derlerdi. Bak işte! Gerçekten Allah'ın yardımı yakındır."
+  },
+  "18:10": {
+   "ref": "18:10",
+   "sure": 18,
+   "ayet": 10,
+   "sureAdi": "Kehf",
+   "arapca": "إِذْ أَوَى ٱلْفِتْيَةُ إِلَى ٱلْكَهْفِ فَقَالُوا۟ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةًۭ وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًۭا",
+   "okunus": "iẕ eve-lfityetü ile-lkehfi feḳâlû rabbenâ âtinâ mil ledünke raḥmetev veheyyi' lenâ min emrinâ raşedâ.",
+   "meal": "O gençler mağaraya sığınınca şöyle dediler: \"Rabbimiz! Bize katından bir rahmet ver ve bizim için şu işimizden bir kurtuluş yolu hazırla.\""
+  },
+  "26:80": {
+   "ref": "26:80",
+   "sure": 26,
+   "ayet": 80,
+   "sureAdi": "Şuarâ",
+   "arapca": "وَإِذَا مَرِضْتُ فَهُوَ يَشْفِينِ",
+   "okunus": "veiẕâ meriḍtü fehüve yeşfîn.",
+   "meal": "\"Hastalandığım zaman bana O, şifâ verir.\""
+  },
+  "17:82": {
+   "ref": "17:82",
+   "sure": 17,
+   "ayet": 82,
+   "sureAdi": "İsrâ",
+   "arapca": "وَنُنَزِّلُ مِنَ ٱلْقُرْءَانِ مَا هُوَ شِفَآءٌۭ وَرَحْمَةٌۭ لِّلْمُؤْمِنِينَ ۙ وَلَا يَزِيدُ ٱلظَّٰلِمِينَ إِلَّا خَسَارًۭا",
+   "okunus": "venünezzilü mine-lḳur'âni mâ hüve şifâüv veraḥmetül lilmü'minîne velâ yezîdu-żżâlimîne illâ ḫasârâ.",
+   "meal": "Biz Kur'ân'dan, iman edenler için bir şifa ve rahmet kaynağı olan âyetler indiriyoruz. Zalimlerin de ancak zararını artırır."
+  },
+  "2:155": {
+   "ref": "2:155",
+   "sure": 2,
+   "ayet": 155,
+   "sureAdi": "Bakara",
+   "arapca": "وَلَنَبْلُوَنَّكُم بِشَىْءٍۢ مِّنَ ٱلْخَوْفِ وَٱلْجُوعِ وَنَقْصٍۢ مِّنَ ٱلْأَمْوَٰلِ وَٱلْأَنفُسِ وَٱلثَّمَرَٰتِ ۗ وَبَشِّرِ ٱلصَّٰبِرِينَ",
+   "okunus": "veleneblüvenneküm bişey'im mine-lḫavfi velcûʿi venaḳṣim mine-l'emvâli vel'enfüsi veŝŝemerât. vebeşşiri-ṣṣâbirîn.",
+   "meal": "Çaresiz biz sizi biraz korku, biraz açlık, biraz da mallardan, canlardan ve ürünlerden eksiltme ile imtihan edeceğiz. Müjdele o sabredenleri!"
+  },
+  "2:156": {
+   "ref": "2:156",
+   "sure": 2,
+   "ayet": 156,
+   "sureAdi": "Bakara",
+   "arapca": "ٱلَّذِينَ إِذَآ أَصَٰبَتْهُم مُّصِيبَةٌۭ قَالُوٓا۟ إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ",
+   "okunus": "elleẕîne iẕâ eṣâbethüm müṣîbetün ḳâlû innâ lillâhi veinnâ ileyhi râciʿûn.",
+   "meal": "Onlar başlarına bir musibet geldiği zaman: \"Biz Allah'a aidiz ve sonunda O'na döneceğiz.\" derler."
+  },
+  "2:157": {
+   "ref": "2:157",
+   "sure": 2,
+   "ayet": 157,
+   "sureAdi": "Bakara",
+   "arapca": "أُو۟لَٰٓئِكَ عَلَيْهِمْ صَلَوَٰتٌۭ مِّن رَّبِّهِمْ وَرَحْمَةٌۭ ۖ وَأُو۟لَٰٓئِكَ هُمُ ٱلْمُهْتَدُونَ",
+   "okunus": "ülâike ʿaleyhim ṣalevâtüm mir rabbihim veraḥmetüv veülâike hümü-lmühtedûn.",
+   "meal": "İşte onlar var ya, Rablerinden, mağfiretler ve rahmet onlaradır. İşte hidayete erenler de onlardır."
+  },
+  "10:57": {
+   "ref": "10:57",
+   "sure": 10,
+   "ayet": 57,
+   "sureAdi": "Yûnus",
+   "arapca": "يَٰٓأَيُّهَا ٱلنَّاسُ قَدْ جَآءَتْكُم مَّوْعِظَةٌۭ مِّن رَّبِّكُمْ وَشِفَآءٌۭ لِّمَا فِى ٱلصُّدُورِ وَهُدًۭى وَرَحْمَةٌۭ لِّلْمُؤْمِنِينَ",
+   "okunus": "yâ eyyühe-nnâsü ḳad câetküm mevʿiżatüm mir rabbiküm veşifâül limâ fi-ṣṣudûri vehüdev veraḥmetül lilmü'minîn.",
+   "meal": "Ey insanlar! Size Rabbinizden bir öğüt, gönüller derdine bir şifa, müminlere bir hidayet ve rahmet geldi."
+  },
+  "21:83": {
+   "ref": "21:83",
+   "sure": 21,
+   "ayet": 83,
+   "sureAdi": "Enbiyâ",
+   "arapca": "۞ وَأَيُّوبَ إِذْ نَادَىٰ رَبَّهُۥٓ أَنِّى مَسَّنِىَ ٱلضُّرُّ وَأَنتَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+   "okunus": "veeyyûbe iẕ nâdâ rabbehû ennî messeniye-ḍḍurru veente erḥamü-rrâḥimîn.",
+   "meal": "Eyyûb da: \"Başıma bir bela geldi, (sana sığındım), sen merhametlilerin en merhametlisisin\" diye Rabbine nida etti."
+  },
+  "3:185": {
+   "ref": "3:185",
+   "sure": 3,
+   "ayet": 185,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ ٱلْقِيَٰمَةِ ۖ فَمَن زُحْزِحَ عَنِ ٱلنَّارِ وَأُدْخِلَ ٱلْجَنَّةَ فَقَدْ فَازَ ۗ وَمَا ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا مَتَٰعُ ٱلْغُرُورِ",
+   "okunus": "küllü nefsin ẕâiḳatü-lmevt. veinnemâ tüveffevne ücûraküm yevme-lḳiyâmeh. femen zuḥziḥa ʿani-nnâri veüdḫile-lcennete feḳad fâz. veme-lḥayâtü-ddünyâ illâ metâʿu-lgurûr.",
+   "meal": "Her canlı ölümü tadacaktır. Kıyamet günü ecirleriniz size eksiksiz olarak verilecektir. Kim cehennemden uzaklaştırılıp cennete konursa o, gerçekten kurtuluşa ermiştir. Dünya hayatı, aldatıcı zevkten başka birşey değildir."
+  },
+  "21:35": {
+   "ref": "21:35",
+   "sure": 21,
+   "ayet": 35,
+   "sureAdi": "Enbiyâ",
+   "arapca": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَنَبْلُوكُم بِٱلشَّرِّ وَٱلْخَيْرِ فِتْنَةًۭ ۖ وَإِلَيْنَا تُرْجَعُونَ",
+   "okunus": "küllü nefsin ẕâiḳatü-lmevt. veneblûküm bişşerri velḫayri fitneh. veileynâ türceʿûn.",
+   "meal": "Her nefis ölümü tadacaktır. Sizi bir imtihan olarak kötülük ve iyilikle deneyeceğiz. Hepiniz de sonunda bize döndürüleceksiniz."
+  },
+  "89:27": {
+   "ref": "89:27",
+   "sure": 89,
+   "ayet": 27,
+   "sureAdi": "Fecr",
+   "arapca": "يَٰٓأَيَّتُهَا ٱلنَّفْسُ ٱلْمُطْمَئِنَّةُ",
+   "okunus": "yâ eyyetühe-nnefsü-lmuṭmeinneh.",
+   "meal": "Ey, Rabbine, itaat edip huzura eren nefis!"
+  },
+  "89:28": {
+   "ref": "89:28",
+   "sure": 89,
+   "ayet": 28,
+   "sureAdi": "Fecr",
+   "arapca": "ٱرْجِعِىٓ إِلَىٰ رَبِّكِ رَاضِيَةًۭ مَّرْضِيَّةًۭ",
+   "okunus": "irciʿî ilâ rabbiki râḍiyetem merḍiyyeh.",
+   "meal": "Hem hoşnut edici, hem de hoşnut edilmiş olarak Rabbine dön."
+  },
+  "89:29": {
+   "ref": "89:29",
+   "sure": 89,
+   "ayet": 29,
+   "sureAdi": "Fecr",
+   "arapca": "فَٱدْخُلِى فِى عِبَٰدِى",
+   "okunus": "fedḫulî fî ʿibâdî.",
+   "meal": "Kullarımın arasına gir."
+  },
+  "89:30": {
+   "ref": "89:30",
+   "sure": 89,
+   "ayet": 30,
+   "sureAdi": "Fecr",
+   "arapca": "وَٱدْخُلِى جَنَّتِى",
+   "okunus": "vedḫulî cennetî.",
+   "meal": "Cennetime gir."
+  },
+  "14:41": {
+   "ref": "14:41",
+   "sure": 14,
+   "ayet": 41,
+   "sureAdi": "İbrâhim",
+   "arapca": "رَبَّنَا ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ ٱلْحِسَابُ",
+   "okunus": "rabbene-gfir lî velivâlideyye velilmü'minîne yevme yeḳûmü-lḥisâb.",
+   "meal": "\"Ey Rabbimiz! Herkesin hesaba çekileceği günde beni, anababamı ve müminleri bağışla!\""
+  },
+  "39:10": {
+   "ref": "39:10",
+   "sure": 39,
+   "ayet": 10,
+   "sureAdi": "Zümer",
+   "arapca": "قُلْ يَٰعِبَادِ ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ رَبَّكُمْ ۚ لِلَّذِينَ أَحْسَنُوا۟ فِى هَٰذِهِ ٱلدُّنْيَا حَسَنَةٌۭ ۗ وَأَرْضُ ٱللَّهِ وَٰسِعَةٌ ۗ إِنَّمَا يُوَفَّى ٱلصَّٰبِرُونَ أَجْرَهُم بِغَيْرِ حِسَابٍۢ",
+   "okunus": "ḳul yâ ʿibâdi-lleẕîne âmenü-tteḳû rabbeküm. lilleẕîne aḥsenû fî hâẕihi-ddünyâ ḥaseneh. vearḍu-llâhi vâsiʿah. innemâ yüveffe-ṣṣâbirûne ecrahüm bigayri ḥisâb.",
+   "meal": "Ey Muhammed! Tarafımdan söyle: \"Ey iman eden kullarım! Rabbinizden korkun. Bu dünyada güzellik yapanlara bir güzellik vardır. Allah'ın yeryüzü geniştir. Ancak sabredenlere mükafatları hesapsız ödenecektir.\""
+  },
+  "70:5": {
+   "ref": "70:5",
+   "sure": 70,
+   "ayet": 5,
+   "sureAdi": "Meâric",
+   "arapca": "فَٱصْبِرْ صَبْرًۭا جَمِيلًا",
+   "okunus": "faṣbir ṣabran cemîlâ.",
+   "meal": "O halde güzel bir sabır ile sabret."
+  },
+  "30:60": {
+   "ref": "30:60",
+   "sure": 30,
+   "ayet": 60,
+   "sureAdi": "Rûm",
+   "arapca": "فَٱصْبِرْ إِنَّ وَعْدَ ٱللَّهِ حَقٌّۭ ۖ وَلَا يَسْتَخِفَّنَّكَ ٱلَّذِينَ لَا يُوقِنُونَ",
+   "okunus": "faṣbir inne vaʿde-llâhi ḥaḳḳuv velâ yesteḫiffenneke-lleẕîne lâ yûḳinûn.",
+   "meal": "Şimdi sen sabret. Çünkü Allah'ın vaadi mutlaka haktır. Sakın imanı sağlam olmayanlar seni hafifliğe sevketmesinler."
+  },
+  "12:83": {
+   "ref": "12:83",
+   "sure": 12,
+   "ayet": 83,
+   "sureAdi": "Yûsuf",
+   "arapca": "قَالَ بَلْ سَوَّلَتْ لَكُمْ أَنفُسُكُمْ أَمْرًۭا ۖ فَصَبْرٌۭ جَمِيلٌ ۖ عَسَى ٱللَّهُ أَن يَأْتِيَنِى بِهِمْ جَمِيعًا ۚ إِنَّهُۥ هُوَ ٱلْعَلِيمُ ٱلْحَكِيمُ",
+   "okunus": "ḳâle bel sevvelet leküm enfüsüküm emrâ. feṣabrun cemîl. ʿasa-llâhü ey ye'tiyenî bihim cemîʿâ. innehû hüve-lʿalîmü-lḥakîm.",
+   "meal": "Babaları dedi ki: \"Hayır, sizi nefisleriniz altadıp bir işe sürüklemiş. Artık bana güzel güzel sabretmek düşüyor. Belki Allah hepsini birden bana geri getirir. Çünkü O, her şeyi bilir, hüküm ve hikmet sahibidir.\""
+  },
+  "2:250": {
+   "ref": "2:250",
+   "sure": 2,
+   "ayet": 250,
+   "sureAdi": "Bakara",
+   "arapca": "وَلَمَّا بَرَزُوا۟ لِجَالُوتَ وَجُنُودِهِۦ قَالُوا۟ رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًۭا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+   "okunus": "velemmâ berazû licâlûte vecünûdihî ḳâlû rabbenâ efrig ʿaleynâ ṣabrav veŝebbit aḳdâmenâ venṣurnâ ʿale-lḳavmi-lkâfirîn.",
+   "meal": "Calut ve ordusuna karşı savaş meydanına çıktıkları zaman da şöyle dediler: \"Ey Rabbimiz! Üzerlerimize sabır dök, ayaklarımızı sabit tut ve kâfirler topluluğuna karşı bize yardım et!\""
+  },
+  "7:126": {
+   "ref": "7:126",
+   "sure": 7,
+   "ayet": 126,
+   "sureAdi": "A'râf",
+   "arapca": "وَمَا تَنقِمُ مِنَّآ إِلَّآ أَنْ ءَامَنَّا بِـَٔايَٰتِ رَبِّنَا لَمَّا جَآءَتْنَا ۚ رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًۭا وَتَوَفَّنَا مُسْلِمِينَ",
+   "okunus": "vemâ tenḳimü minnâ illâ en âmennâ biâyâti rabbinâ lemmâ câetnâ. rabbenâ efrig ʿaleynâ ṣabrav veteveffenâ müslimîn.",
+   "meal": "\"Senin bize kızman da sırf Rabbimizin âyetleri gelince onlara iman etmemizden dolayıdır. Ey Rabbimiz! Üzerimize sabır yağdır ve canımızı müslüman olarak al.\" derler."
+  },
+  "39:18": {
+   "ref": "39:18",
+   "sure": 39,
+   "ayet": 18,
+   "sureAdi": "Zümer",
+   "arapca": "ٱلَّذِينَ يَسْتَمِعُونَ ٱلْقَوْلَ فَيَتَّبِعُونَ أَحْسَنَهُۥٓ ۚ أُو۟لَٰٓئِكَ ٱلَّذِينَ هَدَىٰهُمُ ٱللَّهُ ۖ وَأُو۟لَٰٓئِكَ هُمْ أُو۟لُوا۟ ٱلْأَلْبَٰبِ",
+   "okunus": "elleẕîne yestemiʿûne-lḳavle feyettebiʿûne aḥseneh. ülâike-lleẕîne hedâhümü-llâhü veülâike hüm ülü-l'elbâb.",
+   "meal": "O kullarımı ki, onlar sözü dinlerler, sonra da en güzeline uyarlar. İşte onlar, Allah'ın kendilerine hidayet verdiği kimselerdir. İşte temiz akıllılar da onlardır."
+  },
+  "3:159": {
+   "ref": "3:159",
+   "sure": 3,
+   "ayet": 159,
+   "sureAdi": "Âl-i İmrân",
+   "arapca": "فَبِمَا رَحْمَةٍۢ مِّنَ ٱللَّهِ لِنتَ لَهُمْ ۖ وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ ۖ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُتَوَكِّلِينَ",
+   "okunus": "febimâ raḥmetim mine-llâhi linte lehüm. velev künte feżżan galîża-lḳalbi lenfeḍḍû min ḥavlik. faʿfü ʿanhüm vestagfir lehüm veşâvirhüm fi-l'emr. feiẕâ ʿazemte fetevekkel ʿale-llâh. inne-llâhe yüḥibbü-lmütevekkilîn.",
+   "meal": "Sen (o zaman), sırf Allah'ın rahmetiyle onlara karşı yumuşak davrandın. Eğer kaba, katı yürekli olsaydın, onlar senin etrafından dağılıp giderlerdi. Artık onları sen bağışla, onlar için Allah'dan mağfiret dile. (Yapacağın) işlerde onlara da danış, bir kere de azmettin mi, artık Allah'a dayan. Muhakkak ki Allah kendine dayanıp güvenenleri sever."
+  },
+  "42:10": {
+   "ref": "42:10",
+   "sure": 42,
+   "ayet": 10,
+   "sureAdi": "Şûrâ",
+   "arapca": "وَمَا ٱخْتَلَفْتُمْ فِيهِ مِن شَىْءٍۢ فَحُكْمُهُۥٓ إِلَى ٱللَّهِ ۚ ذَٰلِكُمُ ٱللَّهُ رَبِّى عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ",
+   "okunus": "veme-ḫteleftüm fîhi min şey'in feḥukmühû ile-llâh. ẕâlikümü-llâhü rabbî ʿaleyhi tevekkelt. veileyhi ünîb.",
+   "meal": "Hakkında ihtilafa düştüğünüz herhangi bir şeyin hükmü Allah'a aittir. İşte benim Rabbim olan Allah budur. Ben yalnız O'na güvendim ve yalnız O'na yöneliyorum."
+  },
+  "20:27": {
+   "ref": "20:27",
+   "sure": 20,
+   "ayet": 27,
+   "sureAdi": "Tâhâ",
+   "arapca": "وَٱحْلُلْ عُقْدَةًۭ مِّن لِّسَانِى",
+   "okunus": "vaḥlül ʿuḳdetem mil lisânî.",
+   "meal": "Dilimden düğümü çöz"
+  },
+  "20:28": {
+   "ref": "20:28",
+   "sure": 20,
+   "ayet": 28,
+   "sureAdi": "Tâhâ",
+   "arapca": "يَفْقَهُوا۟ قَوْلِى",
+   "okunus": "yefḳahû ḳavlî.",
+   "meal": "Ki, sözümü iyi anlasınlar."
+  },
+  "53:39": {
+   "ref": "53:39",
+   "sure": 53,
+   "ayet": 39,
+   "sureAdi": "Necm",
+   "arapca": "وَأَن لَّيْسَ لِلْإِنسَٰنِ إِلَّا مَا سَعَىٰ",
+   "okunus": "veel leyse lil'insâni illâ mâ seʿâ.",
+   "meal": "Doğrusu insana çalışmasından başka bir şey yoktur."
+  },
+  "18:23": {
+   "ref": "18:23",
+   "sure": 18,
+   "ayet": 23,
+   "sureAdi": "Kehf",
+   "arapca": "وَلَا تَقُولَنَّ لِشَا۟ىْءٍ إِنِّى فَاعِلٌۭ ذَٰلِكَ غَدًا",
+   "okunus": "velâ teḳûlenne lişey'in innî fâʿilün ẕâlike gadâ.",
+   "meal": "Hiçbir şey için, Allah'ın dilemesi dışında: \"Ben yarın onu yapacağım deme\""
+  },
+  "18:24": {
+   "ref": "18:24",
+   "sure": 18,
+   "ayet": 24,
+   "sureAdi": "Kehf",
+   "arapca": "إِلَّآ أَن يَشَآءَ ٱللَّهُ ۚ وَٱذْكُر رَّبَّكَ إِذَا نَسِيتَ وَقُلْ عَسَىٰٓ أَن يَهْدِيَنِ رَبِّى لِأَقْرَبَ مِنْ هَٰذَا رَشَدًۭا",
+   "okunus": "illâ ey yeşâe-llâh. veẕkür rabbeke iẕâ nesîte veḳul ʿasâ ey yehdiyeni rabbî liaḳrabe min hâẕâ raşedâ.",
+   "meal": "Ancak Allah dilerse (yapacağım de). Ve unuttuğun vakit Allah'ı an ve \"Umarım Rabbim beni, doğruya daha yakın olana eriştirir.\" de."
+  },
+  "20:114": {
+   "ref": "20:114",
+   "sure": 20,
+   "ayet": 114,
+   "sureAdi": "Tâhâ",
+   "arapca": "فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۗ وَلَا تَعْجَلْ بِٱلْقُرْءَانِ مِن قَبْلِ أَن يُقْضَىٰٓ إِلَيْكَ وَحْيُهُۥ ۖ وَقُل رَّبِّ زِدْنِى عِلْمًۭا",
+   "okunus": "feteʿâle-llâhü-lmelikü-lḥaḳḳ. velâ taʿcel bilḳur'âni min ḳabli ey yuḳḍâ ileyke vaḥyüh. veḳur rabbi zidnî ʿilmâ.",
+   "meal": "Hükmü her yerde geçerli gerçek hükümdar olan Allah yücedir. (Ey Muhammed!) Kur'ân sana vahyedilirken, vahiy bitmeden önce (unutma korkusu ile) Kur'ân'ı okumada acele etme; \"Rabbim! benim ilmimi artır\" de."
+  },
+  "42:41": {
+   "ref": "42:41",
+   "sure": 42,
+   "ayet": 41,
+   "sureAdi": "Şûrâ",
+   "arapca": "وَلَمَنِ ٱنتَصَرَ بَعْدَ ظُلْمِهِۦ فَأُو۟لَٰٓئِكَ مَا عَلَيْهِم مِّن سَبِيلٍ",
+   "okunus": "velemeni-nteṣara baʿde żulmihî feülâike mâ ʿaleyhim min sebîl.",
+   "meal": "Zulme uğradıktan sonra hakkını alan kimseye gelince, işte onların aleyhinde ceza vermek için herhangi bir yol yoktur."
+  },
+  "42:42": {
+   "ref": "42:42",
+   "sure": 42,
+   "ayet": 42,
+   "sureAdi": "Şûrâ",
+   "arapca": "إِنَّمَا ٱلسَّبِيلُ عَلَى ٱلَّذِينَ يَظْلِمُونَ ٱلنَّاسَ وَيَبْغُونَ فِى ٱلْأَرْضِ بِغَيْرِ ٱلْحَقِّ ۚ أُو۟لَٰٓئِكَ لَهُمْ عَذَابٌ أَلِيمٌۭ",
+   "okunus": "inneme-ssebîlü ʿale-lleẕîne yażlimûne-nnâse veyebgûne fi-l'arḍi bigayri-lḥaḳḳ. ülâike lehüm ʿaẕâbün elîm.",
+   "meal": "Yol ancak insanlara zulmedenler ve yeryüzünde haksız yere taşkınlık edenler aleyhinedir. İşte onlar için acı bir azap vardır."
+  },
+  "14:42": {
+   "ref": "14:42",
+   "sure": 14,
+   "ayet": 42,
+   "sureAdi": "İbrâhim",
+   "arapca": "وَلَا تَحْسَبَنَّ ٱللَّهَ غَٰفِلًا عَمَّا يَعْمَلُ ٱلظَّٰلِمُونَ ۚ إِنَّمَا يُؤَخِّرُهُمْ لِيَوْمٍۢ تَشْخَصُ فِيهِ ٱلْأَبْصَٰرُ",
+   "okunus": "velâ taḥsebenne-llâhe gâfilen ʿammâ yaʿmelu-żżâlimûne. innemâ yü'eḫḫiruhüm liyevmin teşḫaṣu fîhi-l'ebṣâr.",
+   "meal": "Ey Peygamber! Sakın zalimlerin yaptıklarından Allah'ın gâfil olduğunu sanma! Ancak Allah, onların cezalarını, gözlerin dışa fırlayacağı güne erteler."
+  },
+  "16:126": {
+   "ref": "16:126",
+   "sure": 16,
+   "ayet": 126,
+   "sureAdi": "Nahl",
+   "arapca": "وَإِنْ عَاقَبْتُمْ فَعَاقِبُوا۟ بِمِثْلِ مَا عُوقِبْتُم بِهِۦ ۖ وَلَئِن صَبَرْتُمْ لَهُوَ خَيْرٌۭ لِّلصَّٰبِرِينَ",
+   "okunus": "vein ʿâḳabtüm feʿâḳibû bimiŝli mâ ʿûḳibtüm bih. velein ṣabertüm lehüve ḫayrul liṣṣâbirîn.",
+   "meal": "Eğer (bir suçtan dolayı) ceza verecek olursanız size yapılan azab ve cezanın misli ile ceza verin. Ama sabrederseniz, elbette o, sabredenler için daha hayırlıdır."
+  },
+  "16:127": {
+   "ref": "16:127",
+   "sure": 16,
+   "ayet": 127,
+   "sureAdi": "Nahl",
+   "arapca": "وَٱصْبِرْ وَمَا صَبْرُكَ إِلَّا بِٱللَّهِ ۚ وَلَا تَحْزَنْ عَلَيْهِمْ وَلَا تَكُ فِى ضَيْقٍۢ مِّمَّا يَمْكُرُونَ",
+   "okunus": "vaṣbir vemâ ṣabruke illâ billâhi velâ taḥzen ʿaleyhim velâ tekü fî ḍayḳim mimmâ yemkürûn.",
+   "meal": "(Ey Peygamber!) Sabret! Sabrın da ancak Allah'ın yardımı iledir. Onlardan dolayı üzülme! Kurdukları tuzaklardan telaş edip sıkıntıya düşme!"
+  },
+  "4:148": {
+   "ref": "4:148",
+   "sure": 4,
+   "ayet": 148,
+   "sureAdi": "Nisâ",
+   "arapca": "۞ لَّا يُحِبُّ ٱللَّهُ ٱلْجَهْرَ بِٱلسُّوٓءِ مِنَ ٱلْقَوْلِ إِلَّا مَن ظُلِمَ ۚ وَكَانَ ٱللَّهُ سَمِيعًا عَلِيمًا",
+   "okunus": "lâ yüḥibbü-llâhü-lcehra bissûi mine-lḳavli illâ men żulim. vekâne-llâhü semîʿan ʿalîmâ.",
+   "meal": "Allah, zulme uğrayanların dışında, çirkin sözün açıkça söylenmesinden hoşlanmaz. Allah her şeyi hakkıyla işiten, hakkıyla bilendir."
+  },
+  "10:85": {
+   "ref": "10:85",
+   "sure": 10,
+   "ayet": 85,
+   "sureAdi": "Yûnus",
+   "arapca": "فَقَالُوا۟ عَلَى ٱللَّهِ تَوَكَّلْنَا رَبَّنَا لَا تَجْعَلْنَا فِتْنَةًۭ لِّلْقَوْمِ ٱلظَّٰلِمِينَ",
+   "okunus": "feḳâlû ʿale-llâhi tevekkelnâ. rabbenâ lâ tecʿalnâ fitnetel lilḳavmi-żżâlimîn.",
+   "meal": "Onlar da: \"Biz Allah'a güvendik. Ey Rabbimiz, bizi o zalim kavmin fitnesine uğratma!\" dediler."
+  },
+  "10:86": {
+   "ref": "10:86",
+   "sure": 10,
+   "ayet": 86,
+   "sureAdi": "Yûnus",
+   "arapca": "وَنَجِّنَا بِرَحْمَتِكَ مِنَ ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+   "okunus": "veneccinâ biraḥmetike mine-lḳavmi-lkâfirîn.",
+   "meal": "\"Bizi rahmetinle o kâfir kavmin elinden kurtar!\""
+  },
+  "40:44": {
+   "ref": "40:44",
+   "sure": 40,
+   "ayet": 44,
+   "sureAdi": "Gâfir",
+   "arapca": "فَسَتَذْكُرُونَ مَآ أَقُولُ لَكُمْ ۚ وَأُفَوِّضُ أَمْرِىٓ إِلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ بَصِيرٌۢ بِٱلْعِبَادِ",
+   "okunus": "feseteẕkürûne mâ eḳûlü leküm. veüfevviḍu emrî ile-llâh. inne-llâhe beṣîrum bilʿibâd.",
+   "meal": "\"Siz benim söylediklerimi sonra anlayacaksınız. Ben işimi Allah'a havale ediyorum. Şüphesiz Allah, kullarını görür, gözetir.\""
+  },
+  "29:60": {
+   "ref": "29:60",
+   "sure": 29,
+   "ayet": 60,
+   "sureAdi": "Ankebût",
+   "arapca": "وَكَأَيِّن مِّن دَآبَّةٍۢ لَّا تَحْمِلُ رِزْقَهَا ٱللَّهُ يَرْزُقُهَا وَإِيَّاكُمْ ۚ وَهُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
+   "okunus": "vekeeyyim min dâbbetil lâ taḥmilü rizḳahâ. allâhü yerzüḳuhâ veiyyâküm. vehüve-ssemîʿu-lʿalîm.",
+   "meal": "Nice hayvanlar var ki, rızkını (biriktirip yanında) taşımıyor. Çünkü onların da, sizin de rızkınızı Allah veriyor. O, her şeyi işitir ve bilir."
+  },
+  "11:6": {
+   "ref": "11:6",
+   "sure": 11,
+   "ayet": 6,
+   "sureAdi": "Hûd",
+   "arapca": "۞ وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۚ كُلٌّۭ فِى كِتَٰبٍۢ مُّبِينٍۢ",
+   "okunus": "vemâ min dâbbetin fi-l'arḍi illâ ʿale-llâhi rizḳuhâ veyaʿlemü müsteḳarrahâ vemüstevdeʿahâ. küllün fî kitâbim mübîn.",
+   "meal": "Yeryüzünde rızkı Allah'a ait olmayan hiçbir canlı yoktur. O, onların karar kıldıkları yerleri de, emaneten durdukları yerleri de bilir. Onların hepsi apaçık bir kitaptadır."
+  },
+  "51:22": {
+   "ref": "51:22",
+   "sure": 51,
+   "ayet": 22,
+   "sureAdi": "Zâriyât",
+   "arapca": "وَفِى ٱلسَّمَآءِ رِزْقُكُمْ وَمَا تُوعَدُونَ",
+   "okunus": "vefi-ssemâi rizḳuküm vemâ tûʿadûn.",
+   "meal": "Sizin rızkınız da size vaad edilen sevap ve ceza da göktedir."
+  },
+  "28:24": {
+   "ref": "28:24",
+   "sure": 28,
+   "ayet": 24,
+   "sureAdi": "Kasas",
+   "arapca": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّى لِمَآ أَنزَلْتَ إِلَىَّ مِنْ خَيْرٍۢ فَقِيرٌۭ",
+   "okunus": "feseḳâ lehümâ ŝümme tevellâ ile-żżilli feḳâle rabbi innî limâ enzelte ileyye min ḫayrin feḳîr.",
+   "meal": "Bunun üzerine Musa, onların davarlarını suladı. Sonra gölgeye çekildi ve \"Rabbim! Doğrusu bana indireceğin her hayra muhtacım\" dedi."
+  },
+  "48:4": {
+   "ref": "48:4",
+   "sure": 48,
+   "ayet": 4,
+   "sureAdi": "Fetih",
+   "arapca": "هُوَ ٱلَّذِىٓ أَنزَلَ ٱلسَّكِينَةَ فِى قُلُوبِ ٱلْمُؤْمِنِينَ لِيَزْدَادُوٓا۟ إِيمَٰنًۭا مَّعَ إِيمَٰنِهِمْ ۗ وَلِلَّهِ جُنُودُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمًۭا",
+   "okunus": "hüve-lleẕî enzele-ssekînete fî ḳulûbi-lmü'minîne liyezdâdû îmânem meʿa îmânihim. velillâhi cünûdü-ssemâvâti vel'arḍ. vekâne-llâhü ʿalîmen ḥakîmâ.",
+   "meal": "İmanlarına iman katsınlar diye müminlerin kalplerine güven indiren O'dur. Göklerin ve yerin orduları Allah'ındır. Allah bilendir, herşeyi hikmetle yapandır."
+  },
+  "6:82": {
+   "ref": "6:82",
+   "sure": 6,
+   "ayet": 82,
+   "sureAdi": "En'âm",
+   "arapca": "ٱلَّذِينَ ءَامَنُوا۟ وَلَمْ يَلْبِسُوٓا۟ إِيمَٰنَهُم بِظُلْمٍ أُو۟لَٰٓئِكَ لَهُمُ ٱلْأَمْنُ وَهُم مُّهْتَدُونَ",
+   "okunus": "elleẕîne âmenû velem yelbisû îmânehüm biżulmin ülâike lehümü-l'emnü vehüm mühtedûn.",
+   "meal": "İman edenler ve imanlarını zulüm ile karıştırmayanlar... İşte güven onlarındır ve doğru yolu bulanlar da onlardır."
+  }
+ }
+}

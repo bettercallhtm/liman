@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Dua Pusulası",
+    "slug": "dua-pusulasi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "duapusulasi",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F141C"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.duapusulasi.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.duapusulasi.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F141C"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/bildirim-ikonu.png",
+          "color": "#C9A961"
+        }
+      ]
+    ]
+  }
+}
