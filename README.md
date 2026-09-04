@@ -138,6 +138,21 @@ Play Console'a girecek bütün metinler ve formlar `MAGAZA.md` içinde.
 Gizlilik politikası sayfası `gizlilik.html` — Play zorunlu tutuyor, bir yerde
 yayında olması gerekiyor.
 
+### EAS projesi
+
+**Kuruldu** (4 Eylül 2026): proje `@getdebi/liman`,
+https://expo.dev/accounts/getdebi/projects/liman. `eas init`, `app.json`
+içine `owner` ve `extra.eas.projectId` alanlarını kendisi yazdı; ikisine de
+elle dokunmayın.
+
+Proje **kişisel `getdebi` hesabında**, Debi'nin bulunduğu `getdebi-app`
+kuruluşunda değil. Aynı Expo girişinin altında iki ayrı hesap var; Liman'ın
+Debi ile bir ilgisi yok, o yüzden ayrı duruyor.
+
+```bash
+eas build -p android --profile production   # .aab üretir
+```
+
 ## Bilinçli olarak yapılmayanlar
 
 - **Yapay zekâ ile dua üretme.** Model ne ayet ne dua metni üretiyor.

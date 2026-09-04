@@ -188,7 +188,12 @@ kendiliğinden güncelleniyor.
 
 ## Görseller
 
-`npm run gorselleri-uret` hepsini `assets/` altına üretiyor:
+`npm run gorselleri-uret` hepsini `assets/` altına üretiyor. Hepsinin kaynağı
+tek dosya: **`araclar/logo.png`** — iki panelli marka görseli (solda krem
+zeminli el yazısı kelime markası, sağda lacivert zeminli serif simge). Betik
+panelleri kendisi bulup her ölçü için gereken parçayı kırpıyor. Logo
+değişirse o dosyayı değiştirip betiği tekrar çalıştırın; PNG'leri elle
+kırpmayın, bir sonraki çalıştırma üzerine yazar.
 
 | Dosya | Nerede kullanılıyor |
 |---|---|
@@ -199,15 +204,18 @@ kendiliğinden güncelleniyor.
 ### Ekran görüntüleri (elle alınacak)
 
 Play en az **2**, en fazla 8 telefon ekran görüntüsü istiyor. 1080×1920 alın.
-İlk açılıştaki karşılama ekranlarından biri de iyi bir kare — uygulamanın
-"yazdıkların telefonundan çıkmaz" sözünü doğrudan gösteriyor.
-Uygulamayı telefona kurup (ya da emülatörde açıp) şu dört ekranı çekin:
+Çekilenler **`magaza-gorselleri/`** klasörüne konuyor (klasörde adlandırma
+düzenini anlatan bir `BENIOKU.md` var). Uygulamayı telefona kurup (ya da
+emülatörde açıp) şu beş ekranı çekin:
 
 1. **Ana ekran** — "Bugün nasılsın?" ve hâl ızgarası
 2. **Bir kart** — "Kaygılıyım" kartı (ayet + dua + not birlikte görünsün)
 3. **Yazma ekranı** — içine bir cümle yazılmış hâlde (gizlilik satırı görünsün)
 4. **Kayıtlar** — birkaç kart kaydedilmiş hâlde
 5. **Ayarlar** — hatırlatıcı ve kaynak bölümü
+
+Üçüncü kare önemli: uygulamanın "yazdıkların telefonundan çıkmaz" sözünü
+mağaza sayfasında doğrudan gösteren tek kare o.
 
 Ekran görüntüsünün üstüne açıklama yazısı eklemek şart değil; yazısız
 görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.

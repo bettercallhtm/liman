@@ -11,7 +11,7 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0F141C"
+      "backgroundColor": "#08294A"
     },
     "ios": {
       "supportsTablet": true,
@@ -24,7 +24,7 @@
       "package": "com.liman.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0F141C"
+        "backgroundColor": "#08294A"
       },
       "permissions": []
     },
@@ -41,6 +41,12 @@
       ],
       "expo-font",
       "expo-asset"
-    ]
+    ],
+    "owner": "getdebi",
+    "extra": {
+      "eas": {
+        "projectId": "4947df9e-edfe-40b5-b0cc-b035890033f5"
+      }
+    }
   }
 }
