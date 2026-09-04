@@ -253,6 +253,11 @@ kullanıcısı** ve **14 gün kesintisiz** test istiyor.
 
 - [ ] `npm run ayetleri-cek` çalıştırıldı, `icerik.json` güncel
 - [ ] `npm run derleme-kontrol` hatasız
+- [ ] **Hedef API düzeyi Play'in istediği eşiği karşılıyor.** 4 Eylül 2026'da
+      Debi'de bu gerçekten patladı: Console `.aab`'ı "hedeflediği API düzeyi
+      35, olması gereken en düşük 36" diyerek reddetti. Sebep Expo SDK 53'ün
+      API 35 hedeflemesiydi; çözüm SDK 54'e yükseltmek oldu. Bu depo da aynı
+      gün 54'e alındı. Eşik değişken — Console uyarı verirse SDK'yı yükseltin
 - [ ] Gerçek telefonda açıldı: kart geliyor, kaydetme çalışıyor, hatırlatıcı
       kuruluyor
 - [ ] Gizlilik politikası adresi yayında ve açılıyor
