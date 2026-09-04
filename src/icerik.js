@@ -58,7 +58,10 @@ export function kartUret(halId, sonGosterilen) {
   const onceki = sonGosterilen && sonGosterilen[halId];
   const ayetIndis = onceki ? (onceki.ayetIndis + 1) % hal.ayetler.length : 0;
   const duaIndis = onceki ? (onceki.duaIndis + 1) % hal.dualar.length : 0;
-  const notIndis = ayetIndis % hal.notlar.length;
+  /* Not, ayetle birlikte donmesin: ikisi ayni hizada ilerlerse ayni ayet-not
+   * ciftini hep birlikte goruyorsun. Ikisinin toplami daha uzun bir dongu
+   * veriyor. */
+  const notIndis = (ayetIndis + duaIndis) % hal.notlar.length;
 
   return {
     halId,

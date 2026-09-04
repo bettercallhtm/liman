@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "ayetleri-cek": "node araclar/ayet-cek.js",
     "gorselleri-uret": "node araclar/gorsel-uret.js",
-    "derleme-kontrol": "expo export --platform android"
+    "derleme-kontrol": "expo export --platform android",
+    "coz-dene": "node araclar/coz-dene.js"
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.5",

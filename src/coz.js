@@ -9,6 +9,10 @@
  * cumlelerini baska bir yere gondermek gerekirdi. Kelime sozlugu daha kaba
  * ama dogru yerde kaba: eslesme bulamadiginda uyduruyor degil, "cikaramadim,
  * sen sec" diyor.
+ *
+ * Sozlugu degistirdikten sonra `npm run coz-dene` calistir: gercek cumlelerle
+ * kurulmus bir test listesi var, bir agirligi degistirirken baska bir cumleyi
+ * bozdugunu orada goruyorsun.
  */
 import { RISK, SOZLUK } from "./veri/sozluk";
 
@@ -23,6 +27,16 @@ const HARFLER = {
   "Ü": "u", "ü": "u", "Ö": "o", "ö": "o", "Ç": "c", "ç": "c",
   "Â": "a", "â": "a", "Î": "i", "î": "i", "Û": "u", "û": "u"
 };
+
+/* Olumsuzluk isaretleri. Turkce'de olumsuzluk eslestigimiz kelimeden SONRA
+ * geliyor: "kaygim yok", "uzgun degilim", "hasta degilim". Bu yuzden bir
+ * eslesme bulundugunda ardindaki iki kelimeye bakiliyor; olumsuzluk varsa o
+ * eslesme sayilmiyor.
+ *
+ * "kimsem yok" gibi maddeler bundan etkilenmiyor, cunku onlar zaten cok
+ * kelimeli madde olarak yaziliyor ve olumsuzluk kontrolu maddenin bittigi
+ * yerden SONRAYA bakiyor. */
+const OLUMSUZ = ["degil", "yok"];
 
 export function sadelestir(metin) {
   if (!metin) return "";
@@ -40,18 +54,42 @@ function maddeyiAyir(madde) {
   return { kok: sadelestir(parcalar[0]), agirlik: Number(parcalar[1]) || 1 };
 }
 
-/* Bosluklu madde metnin icinde aynen aranir; tek kelimelik madde ise bir
- * kelimenin BASI olmali. "uzul" maddesi "uzuldum"u yakalar ama "guzul"u
- * yakalamaz. */
-function eslesiyorMu(kok, metin, kelimeler) {
-  if (kok.includes(" ")) return metin.includes(kok);
-  return kelimeler.some((kelime) => kelime.startsWith(kok));
+function olumsuzlanmisMi(kelimeler, indis) {
+  for (let i = indis; i < Math.min(indis + 2, kelimeler.length); i++) {
+    if (OLUMSUZ.some((ek) => kelimeler[i].startsWith(ek))) return true;
+  }
+  return false;
+}
+
+/* Bir maddenin metinde gecip gecmedigi.
+ *
+ * Tek kelimelik madde bir kelimenin BASI olmali: "uzul" maddesi "uzuldum"u
+ * yakalar, "guzul"u yakalamaz. Cok kelimelik madde ardisik kelimelere
+ * oturmali; son kelimesi ek alabilir, oncekiler tam eslesir. Iki durumda da
+ * maddeden sonraki kelimelerde olumsuzluk varsa eslesme sayilmiyor. */
+function eslesmeVarMi(kok, kelimeler) {
+  const parcalar = kok.split(" ");
+
+  for (let i = 0; i <= kelimeler.length - parcalar.length; i++) {
+    let tuttu = true;
+    for (let j = 0; j < parcalar.length; j++) {
+      const sonMu = j === parcalar.length - 1;
+      const uyuyor = sonMu
+        ? kelimeler[i + j].startsWith(parcalar[j])
+        : kelimeler[i + j] === parcalar[j];
+      if (!uyuyor) {
+        tuttu = false;
+        break;
+      }
+    }
+    if (tuttu && !olumsuzlanmisMi(kelimeler, i + parcalar.length)) return true;
+  }
+  return false;
 }
 
 export function riskVarMi(metin) {
-  const sade = sadelestir(metin);
-  const kelimeler = sade.split(" ");
-  return RISK.some((madde) => eslesiyorMu(sadelestir(madde), sade, kelimeler));
+  const kelimeler = sadelestir(metin).split(" ");
+  return RISK.some((madde) => eslesmeVarMi(sadelestir(madde), kelimeler));
 }
 
 /* Metni cozer.
@@ -73,7 +111,7 @@ export function metniCoz(metin) {
     const eslesenler = [];
     for (const madde of maddeler) {
       const { kok, agirlik } = maddeyiAyir(madde);
-      if (eslesiyorMu(kok, sade, kelimeler)) {
+      if (eslesmeVarMi(kok, kelimeler)) {
         puan += agirlik;
         eslesenler.push(kok);
       }
@@ -81,7 +119,11 @@ export function metniCoz(metin) {
     if (puan > 0) siralama.push({ halId, puan, eslesenler });
   }
 
-  siralama.sort((a, b) => b.puan - a.puan);
+  /* Puan esitse daha cok ayri kelimeyle eslesen kazanir: tek bir agir
+   * kelimeye dayanan eslesme, uc ayri kelimenin isaret ettiginden zayif. */
+  siralama.sort(
+    (a, b) => b.puan - a.puan || b.eslesenler.length - a.eslesenler.length
+  );
 
   return {
     durum: siralama.length ? "bulundu" : "bulunamadi",

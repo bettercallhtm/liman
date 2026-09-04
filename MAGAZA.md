@@ -54,10 +54,11 @@ ekrandan çıkınca siliniyor.
 İÇİNDEKİLER
 
 • Yazarak anlatma: başından geçeni yaz, sana uyan hâli bulsun
-• 22 farklı hâl, ikiye ayrılmış:
+• 27 farklı hâl, ikiye ayrılmış:
   Zorlanıyorum — kaygı, üzüntü, korku, öfke, yalnızlık, pişmanlık,
   umutsuzluk, hastalık, yas, bekleyiş, kararsızlık, sınav ve iş baskısı,
-  haksızlığa uğramak, maddi sıkıntı
+  haksızlığa uğramak, maddi sıkıntı, ilişki sorunları, çocuk beklemek,
+  güvenin sarsılması, kıskanılma endişesi, özlem
   İyi hissediyorum — şükür, sevinç, yeni bir başlangıç, sevdiklerim için,
   yolculuk, affetmek, bir dileğim var, sakinleşmek
 • Her hâl için birden çok ayet — "Başka bir ayet" dedikçe yenisi geliyor
@@ -213,7 +214,7 @@ görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
 ## Sürüm notları (ilk sürüm)
 
 ```
-İlk sürüm. Yaşadığını yazarak ya da 22 hâlden birini seçerek sana uyan
+İlk sürüm. Yaşadığını yazarak ya da 27 hâlden birini seçerek sana uyan
 ayeti ve Kur'an'dan bir duayı bul. Günün ayeti, günlük hatırlatıcı,
 kayıtlar. Tamamen çevrimdışı — yazdıkların telefonundan çıkmıyor.
 ```

@@ -91,6 +91,17 @@ src/
   veri/icerik.json  ÜRETİLEN DOSYA — elle düzenleme
 ```
 
+## İçerik ölçüleri
+
+27 hâl · 156 ayet · 152 ayet grubu · 162 not · 456 kart bileşimi.
+
+Her hâlde en az 5 ayet grubu, 3 dua ve 6 not var. Bunlar keyfi sayılar değil:
+"Başka bir ayet"e arka arkaya basan biri başa dönmeden en az beş kart
+görmeli, yoksa uygulama sığ hissettiriyor. Ayet/dua/not sayıları da bilerek
+aynı değil — 5, 3 ve 6 birlikte döndüğünde aynı üçlü çok daha geç tekrarlıyor.
+
+Bir hâle ayet eklerken bu ölçüyü koru.
+
 ## Komutlar
 
 ```bash
@@ -99,6 +110,7 @@ npm start                 # Expo Go ile telefonda
 npm run web               # ekranları bilgisayarda görmek için
 npm run ayetleri-cek      # icerik.json'u yeniden üret
 npm run gorselleri-uret   # simgeleri yeniden üret
+npm run coz-dene          # sözlük testleri (yazma özelliği)
 npm run derleme-kontrol   # Android paketi derleniyor mu
 ```
 
