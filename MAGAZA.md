@@ -234,9 +234,18 @@ kayıtlar. Tamamen çevrimdışı — yazdıkların telefonundan çıkmıyor.
 
 ## Yayın zinciri
 
-Bu hesapta zaten bilinen bir kural: **kişisel geliştirici hesabıyla** açılan
-yeni uygulamalarda Play, üretime çıkmadan önce kapalı testte **12 test
+Bu hesapta zaten bilinen bir kural: 13 Kasım 2023'ten sonra açılmış **kişisel
+geliştirici hesaplarında** Play, üretime çıkmadan önce kapalı testte **12 test
 kullanıcısı** ve **14 gün kesintisiz** test istiyor.
+
+**Bu kural uygulama başına işliyor.** Debi aynı hesapta bu testi tamamlamış
+olsa bile Liman'ı muaf tutmuyor — Liman kendi kapalı testini, kendi 14 gününü
+doldurmak zorunda. Muaf olan tek şey, üretim erişimini almış bir uygulamanın
+sonraki **güncellemeleri**.
+
+İyi haber: testçilerin yeni kişiler olması gerekmiyor. **Aynı 12 kişi hem
+Debi'de hem Liman'da sayılıyor** ve iki parkur paralel yürüyebiliyor, yani iki
+14 günü arka arkaya beklemek gerekmiyor.
 
 1. Tester listesini şimdiden topla (14-15 Gmail adresi; biri düşerse 12'nin
    altına inme).
