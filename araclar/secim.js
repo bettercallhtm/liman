@@ -40,7 +40,7 @@ const HALLER = [
     renk: "#5B7DB1",
     grup: "zor",
     ayetler: [["94:5", "94:6"], ["13:28"], ["65:3"], ["2:286"], ["9:51"], ["3:160"], ["8:10"], ["33:3"], ["64:13"], ["12:64"], ["39:38"]],
-    dualar: [["20:25", "20:26"], ["3:173"], ["2:201"]],
+    dualar: [["20:25", "20:26"], ["3:173"], ["2:201"], ["3:8"], ["21:87"], ["18:10"]],
     sozler: [
       "Allah'ım, içimdeki bu daralmayı sen biliyorsun. Göğsümü genişlet, korktuğum şeyle beni imtihan etme. Yarını taşıyacak gücü değil, bugünü geçirecek gücü ver bana.",
       "Rabbim, aklımdan geçen kötü ihtimalleri senin bilgine bırakıyorum. Elimde olanı yapmayı, olmayanı bırakmayı nasip et."
@@ -61,7 +61,7 @@ const HALLER = [
     renk: "#6C7A99",
     grup: "zor",
     ayetler: [["9:40"], ["12:86"], ["93:3"], ["93:5"], ["3:139"], ["2:153"], ["15:97", "15:98"], ["28:7"], ["10:62"], ["35:34"], ["21:83", "21:84"]],
-    dualar: [["21:87"], ["3:8"], ["2:201"]],
+    dualar: [["21:87"], ["3:8"], ["2:201"], ["23:118"], ["3:16"]],
     sozler: [
       "Allah'ım, bu ağırlığı taşıyacak gücüm kalmadı. Kalbimi hafiflet, kimseye anlatamadığım bu hüznü sen benden al.",
       "Rabbim, üzüntümü senden başkasına anlatamıyorum; sen zaten biliyorsun. Bugünü geçirecek kadar sabır, yarına bakacak kadar umut ver."
@@ -82,7 +82,7 @@ const HALLER = [
     renk: "#4E6E8E",
     grup: "zor",
     ayetler: [["3:175"], ["20:46"], ["41:30"], ["2:112"], ["9:51"], ["33:39"], ["2:38"], ["46:13"], ["27:62"], ["6:17"], ["35:2"]],
-    dualar: [["20:45", "20:46"], ["23:97", "23:98"], ["3:173"]],
+    dualar: [["20:45", "20:46"], ["23:97", "23:98"], ["3:173"], ["10:85", "10:86"], ["2:286"]],
     sozler: [
       "Allah'ım, korktuğum şeyin şerrinden sana sığınırım. Kalbime güven ver, korkumun her şeyi olduğundan büyük göstermesine izin verme.",
       "Rabbim, başıma geleceği yalnız sen bilirsin. Korkumu al, yerine sana güvenmeyi koy."
@@ -103,7 +103,7 @@ const HALLER = [
     renk: "#A5615A",
     grup: "zor",
     ayetler: [["3:134"], ["41:34"], ["42:43"], ["7:199"], ["25:63"], ["42:37"], ["23:96"], ["28:54"], ["13:22"], ["41:35"]],
-    dualar: [["7:200"], ["59:10"], ["23:97", "23:98"]],
+    dualar: [["7:200"], ["59:10"], ["23:97", "23:98"], ["3:8"], ["3:147"]],
     sozler: [
       "Allah'ım, içimdeki bu öfkeyi dindir. Pişman olacağım bir söz söylemekten, geri alamayacağım bir şey yapmaktan beni koru.",
       "Rabbim, haklı olduğum yerde bile insafımı kaybettirme. Öfkemi sustur, aklımı konuştur."
@@ -124,7 +124,7 @@ const HALLER = [
     renk: "#6A6F8C",
     grup: "zor",
     ayetler: [["50:16"], ["2:186"], ["57:4"], ["9:40"], ["93:3"], ["58:7"], ["6:59"], ["93:6", "93:7", "93:8"], ["3:103"], ["39:36"]],
-    dualar: [["21:89"], ["25:74"], ["23:118"]],
+    dualar: [["21:89"], ["25:74"], ["23:118"], ["21:87"], ["3:8"]],
     sozler: [
       "Allah'ım, kimsenin olmadığı yerde sen varsın. İçimdeki bu boşluğu doldur, beni yalnızlığımla baş başa bırakma.",
       "Rabbim, bana hayırlı dostlar nasip et. Kimsenin görmediğini senin gördüğünü bilmenin huzurunu kalbime yerleştir."
@@ -145,7 +145,7 @@ const HALLER = [
     renk: "#7A6A8C",
     grup: "zor",
     ayetler: [["39:53"], ["20:82"], ["4:110"], ["66:8"], ["3:135"], ["25:70"], ["42:25"], ["9:104"], ["40:3"], ["2:160"], ["11:3"]],
-    dualar: [["7:23"], ["28:16"], ["3:16"]],
+    dualar: [["7:23"], ["28:16"], ["3:16"], ["3:147"], ["23:118"]],
     sozler: [
       "Allah'ım, yaptığımdan pişmanım. Beni bağışla, aynı yere bir daha düşürme. Kırdığım kalpleri onarmayı bana nasip et.",
       "Rabbim, kendimi affedemiyorum. Sen bağışlayanların en hayırlısısın; beni bağışla, kendimle barışmayı da bana ver."
@@ -166,7 +166,7 @@ const HALLER = [
     renk: "#5E8C6A",
     grup: "iyi",
     ayetler: [["14:7"], ["16:18"], ["2:152"], ["55:13"], ["93:11"], ["31:12"], ["16:78"], ["2:172"], ["39:66"], ["17:70"], ["30:50"]],
-    dualar: [["27:19"], ["46:15"], ["2:201"]],
+    dualar: [["27:19"], ["46:15"], ["2:201"], ["14:40", "14:41"]],
     sozler: [
       "Allah'ım, bana verdiklerinin farkında olmayı nasip et. Şükrümü dilimde bırakma, davranışıma geçir.",
       "Rabbim, sayamadığım nimetlerin için hamdolsun. Elimdekinin kıymetini kaybetmeden bilmeyi öğret bana."
@@ -187,7 +187,7 @@ const HALLER = [
     renk: "#565E7A",
     grup: "zor",
     ayetler: [["39:53"], ["12:87"], ["94:5", "94:6"], ["65:3"], ["2:214"], ["15:56"], ["29:69"], ["93:4"], ["57:22", "57:23"], ["42:28"]],
-    dualar: [["3:8"], ["21:87"], ["18:10"]],
+    dualar: [["3:8"], ["21:87"], ["18:10"], ["12:86"], ["2:286"]],
     sozler: [
       "Allah'ım, benim umudum tükendi ama senin rahmetin tükenmez. Kalbime bir aralık aç, bu karanlıktan çıkacak yolu göster.",
       "Rabbim, bugünü geçirecek gücü ver. Yarını düşünecek hâlim yok; sen benim yerime bak."
@@ -208,7 +208,7 @@ const HALLER = [
     renk: "#4F7C88",
     grup: "zor",
     ayetler: [["26:80"], ["17:82"], ["2:155", "2:156", "2:157"], ["10:57"], ["64:11"], ["3:139"], ["16:69"], ["6:17"], ["27:62"], ["94:5", "94:6"]],
-    dualar: [["21:83"], ["23:118"], ["2:286"]],
+    dualar: [["21:83"], ["23:118"], ["2:286"], ["2:201"], ["21:87"]],
     sozler: [
       "Allah'ım, şifa senden. Bedenime şifa, kalbime sabır ver. Bu ağrıyı hafiflet, geçmesini nasip et.",
       "Rabbim, hasta olmak beni yalnızlaştırmasın. İyileşmeyi, iyileşene kadar da dayanacak sabrı ver."
@@ -229,7 +229,7 @@ const HALLER = [
     renk: "#5A6472",
     grup: "zor",
     ayetler: [["2:155", "2:156", "2:157"], ["3:185"], ["21:35"], ["89:27", "89:28", "89:29", "89:30"], ["13:23", "13:24"], ["29:57"], ["39:42"], ["23:15", "23:16"], ["40:39"], ["3:145"]],
-    dualar: [["2:156"], ["59:10"], ["14:41"]],
+    dualar: [["2:156"], ["59:10"], ["14:41"], ["3:16"], ["23:118"]],
     sozler: [
       "Allah'ım, kaybettiğimi sana emanet ediyorum. Onu bağışla, rahmetinle kuşat. Bana da onsuz yaşamayı öğret.",
       "Rabbim, bu acı çok büyük. Kalbimi teselli et; ardından onu hayırla anmayı nasip et."
@@ -250,7 +250,7 @@ const HALLER = [
     renk: "#7A7A8C",
     grup: "zor",
     ayetler: [["2:153"], ["39:10"], ["70:5"], ["30:60"], ["12:83"], ["11:115"], ["52:48"], ["2:45"], ["103:1", "103:2", "103:3"], ["94:7", "94:8"]],
-    dualar: [["2:250"], ["7:126"], ["40:60"]],
+    dualar: [["2:250"], ["7:126"], ["40:60"], ["21:87"], ["3:8"]],
     sozler: [
       "Allah'ım, sonucu bilmiyorum ama senin bildiğine güveniyorum. Beklerken sabrımı, sonuç geldiğinde rızamı koru.",
       "Rabbim, bu bekleyişi hayırla bitir. Hakkımda hayırlıysa kolaylaştır, değilse gönlümü ondan al."
@@ -271,7 +271,7 @@ const HALLER = [
     renk: "#6E7B8C",
     grup: "zor",
     ayetler: [["39:18"], ["3:159"], ["65:3"], ["42:10"], ["2:269"], ["9:51"], ["42:38"], ["17:36"], ["39:9"], ["33:3"]],
-    dualar: [["18:10"], ["20:25", "20:26", "20:27", "20:28"], ["3:8"]],
+    dualar: [["18:10"], ["20:25", "20:26", "20:27", "20:28"], ["3:8"], ["1:6", "1:7"], ["2:201"]],
     sozler: [
       "Allah'ım, hangi yolun hayırlı olduğunu bilmiyorum. Kalbimi doğru olana meylettir, yanlış olandan uzaklaştır.",
       "Rabbim, karar vermek bana ağır geliyor. Doğruyu göster; gösterdiğinde arkasında durma gücünü de ver."
@@ -292,7 +292,7 @@ const HALLER = [
     renk: "#6B7C5B",
     grup: "zor",
     ayetler: [["94:5", "94:6"], ["2:286"], ["53:39"], ["18:23", "18:24"], ["3:139"], ["92:5", "92:6", "92:7"], ["87:8"], ["9:105"], ["13:11"], ["2:45"], ["39:9"]],
-    dualar: [["20:25", "20:26", "20:27", "20:28"], ["20:114"], ["2:201"]],
+    dualar: [["20:25", "20:26", "20:27", "20:28"], ["20:114"], ["2:201"], ["3:147"], ["3:8"]],
     sozler: [
       "Allah'ım, göğsümü genişlet, işimi kolaylaştır. Öğrendiklerimi ihtiyaç anında hatırlat, yorulduğumda beni ayakta tut.",
       "Rabbim, elimden geleni yapmayı nasip et; gerisini senden bekliyorum. Sonuç ne olursa hayırlısını ver."
@@ -313,7 +313,7 @@ const HALLER = [
     renk: "#8C6B5B",
     grup: "zor",
     ayetler: [["42:41", "42:42"], ["14:42"], ["16:126", "16:127"], ["4:148"], ["22:60"], ["4:135"], ["5:8"], ["21:47"], ["4:40"], ["42:39"]],
-    dualar: [["10:85", "10:86"], ["2:250"], ["40:44"]],
+    dualar: [["10:85", "10:86"], ["2:250"], ["40:44"], ["3:173"], ["23:118"]],
     sozler: [
       "Allah'ım, bana yapılanı sen biliyorsun. Hakkımı ver, ama beni de zalimleştirme.",
       "Rabbim, uğradığım haksızlık kalbimi karartmasın. Adaletini göster; o güne kadar sabrımı koru."
@@ -334,7 +334,7 @@ const HALLER = [
     renk: "#7C7250",
     grup: "zor",
     ayetler: [["65:3"], ["29:60"], ["11:6"], ["51:22"], ["94:5", "94:6"], ["2:186"], ["17:30"], ["34:39"], ["30:37"], ["20:132"], ["3:27"]],
-    dualar: [["28:24"], ["2:201"], ["3:173"]],
+    dualar: [["28:24"], ["2:201"], ["3:173"], ["5:114"], ["40:44"]],
     sozler: [
       "Allah'ım, sıkıntımı biliyorsun. Beni helâlinden rızıklandır, borcumu ödemeyi nasip et, kimseye muhtaç etme.",
       "Rabbim, darlığı genişliğe çevir. Elimdekiyle yetinmeyi, eline geçeni bereketli kılmayı ver."
@@ -355,7 +355,7 @@ const HALLER = [
     renk: "#5F8A8B",
     grup: "iyi",
     ayetler: [["13:28"], ["89:27", "89:28"], ["48:4"], ["6:82"], ["25:63"], ["16:97"], ["20:130"], ["76:25", "76:26"], ["3:191"], ["39:23"]],
-    dualar: [["25:74"], ["3:8"], ["20:25", "20:26"]],
+    dualar: [["25:74"], ["3:8"], ["20:25", "20:26"], ["23:118"], ["2:201"]],
     sozler: [
       "Allah'ım, kalbimi sakinleştir. Zihnimdeki gürültüyü dindir, bana kendimle baş başa kalabileceğim bir sükûnet ver.",
       "Rabbim, telaşımı al. Yavaşlamayı, durmayı ve durduğum yerde huzur bulmayı nasip et."
@@ -376,7 +376,7 @@ const HALLER = [
     renk: "#C9A961",
     grup: "iyi",
     ayetler: [["10:58"], ["27:40"], ["93:11"], ["2:152"], ["35:34"], ["14:7"], ["108:1"], ["55:60"], ["16:97"], ["3:174"]],
-    dualar: [["27:19"], ["14:41"], ["2:201"]],
+    dualar: [["27:19"], ["14:41"], ["2:201"], ["46:15"]],
     sozler: [
       "Allah'ım, bu sevinç senden. Şımartma, unutturma; elimden aldığın gün de isyan ettirme.",
       "Rabbim, bu haberi kalbime hayırlı kıl. Sevincimi paylaşacak insanlar ve sevindirecek fırsatlar nasip et."
@@ -397,7 +397,7 @@ const HALLER = [
     renk: "#7FA37A",
     grup: "iyi",
     ayetler: [["17:80"], ["65:3"], ["3:159"], ["53:39"], ["94:5", "94:6"], ["2:186"], ["2:148"], ["87:8"], ["29:69"], ["30:50"], ["6:125"]],
-    dualar: [["20:25", "20:26", "20:27", "20:28"], ["18:10"], ["23:29"]],
+    dualar: [["20:25", "20:26", "20:27", "20:28"], ["18:10"], ["23:29"], ["2:201"], ["3:8"]],
     sozler: [
       "Allah'ım, girdiğim bu yeni yolu hayırlı kıl. Beni doğrulukla sok, doğrulukla çıkar.",
       "Rabbim, yeni başlangıcımda kolaylık ver. İyi insanlar, sabır ve doğru kararlar nasip et."
@@ -418,7 +418,7 @@ const HALLER = [
     renk: "#8C7BA5",
     grup: "iyi",
     ayetler: [["30:21"], ["46:15"], ["59:10"], ["2:186"], ["13:23", "13:24"], ["40:60"], ["17:23"], ["31:14"], ["25:54"], ["52:21"], ["40:8"]],
-    dualar: [["17:24"], ["14:40", "14:41"], ["25:74"]],
+    dualar: [["17:24"], ["14:40", "14:41"], ["25:74"], ["2:201"], ["23:118"]],
     sozler: [
       "Allah'ım, sevdiklerimi koru. Onlara sağlık, huzur ve hayırlı bir ömür ver. Benim göremediğim yerde sen yanlarında ol.",
       "Rabbim, anne babama merhamet et. Onlara iyilik etmeyi nasip et, kalplerini kırmaktan beni koru."
@@ -439,7 +439,7 @@ const HALLER = [
     renk: "#6E8FA5",
     grup: "iyi",
     ayetler: [["17:80"], ["65:3"], ["2:186"], ["9:51"], ["29:20"], ["67:15"], ["16:8"], ["36:41", "36:42"], ["71:19", "71:20"], ["27:62"], ["12:64"]],
-    dualar: [["43:13", "43:14"], ["23:29"], ["11:41"]],
+    dualar: [["43:13", "43:14"], ["23:29"], ["11:41"], ["2:201"], ["3:8"]],
     sozler: [
       "Allah'ım, yolumu aç, yolculuğumu kolaylaştır. Gittiğim yerde hayır bulmayı, döndüğümde sevdiklerime kavuşmayı nasip et.",
       "Rabbim, bu yolculukta beni ve yanımdakileri koru. Vardığım yeri bereketli kıl."
@@ -460,7 +460,7 @@ const HALLER = [
     renk: "#A58B6E",
     grup: "iyi",
     ayetler: [["42:40"], ["7:199"], ["3:134"], ["41:34"], ["15:85"], ["42:43"], ["2:263"], ["4:149"], ["3:133"], ["42:37"]],
-    dualar: [["59:10"], ["7:23"], ["3:16"]],
+    dualar: [["59:10"], ["7:23"], ["3:16"], ["3:147"], ["23:118"]],
     sozler: [
       "Allah'ım, kalbimdeki kırgınlığı al. Affetmeyi nasip et; affederken beni küçültme.",
       "Rabbim, aramı düzeltmeyi nasip et. Ben affedeyim ki sen de beni affet."
@@ -481,7 +481,7 @@ const HALLER = [
     renk: "#B08D57",
     grup: "iyi",
     ayetler: [["40:60"], ["2:186"], ["7:55"], ["21:90"], ["42:19"], ["65:3"], ["27:62"], ["14:34"], ["11:90"], ["40:65"], ["94:7", "94:8"]],
-    dualar: [["2:201"], ["3:8"], ["25:74"]],
+    dualar: [["2:201"], ["3:8"], ["25:74"], ["18:10"], ["21:87"]],
     sozler: [
       "Allah'ım, istediğim şeyi biliyorsun. Hakkımda hayırlıysa nasip et; değilse gönlümü ondan al, yerine daha hayırlısını ver.",
       "Rabbim, duamı işit. Kabul etmeyeceksen beklemeyi ve razı olmayı öğret bana."
@@ -502,7 +502,7 @@ const HALLER = [
     renk: "#96707F",
     grup: "zor",
     ayetler: [["4:35"], ["49:10"], ["30:21"], ["42:43"], ["4:128"], ["3:159"], ["49:11", "49:12"], ["4:114"], ["2:263"], ["42:37"]],
-    dualar: [["25:74"], ["59:10"], ["3:8"]],
+    dualar: [["25:74"], ["59:10"], ["3:8"], ["2:201"], ["23:118"]],
     sozler: [
       "Allah'ım, aramızı düzelt. Kalplerimizi birbirine ısındır, öfkeyle söylenen sözleri unuttur.",
       "Rabbim, bu bağı hayırlıysa sürdür; değilse ikimizi de fazla incitmeden ayır."
@@ -523,7 +523,7 @@ const HALLER = [
     renk: "#8FA58C",
     grup: "zor",
     ayetler: [["14:39"], ["21:89", "21:90"], ["2:186"], ["40:60"], ["3:40"], ["19:4"], ["18:46"], ["19:5", "19:6"], ["11:73"], ["25:54"]],
-    dualar: [["3:38"], ["37:100"], ["25:74"]],
+    dualar: [["3:38"], ["37:100"], ["25:74"], ["14:40"], ["46:15"]],
     sozler: [
       "Allah'ım, bize hayırlı bir evlat nasip et. Bu bekleyişte kalbimizi kırma, birbirimize düşürme.",
       "Rabbim, duamızı işit. Bize evlat ver; vermeyeceksen bu bekleyişle yaşamayı öğret ve gönlümüzü ferah tut."
@@ -544,7 +544,7 @@ const HALLER = [
     renk: "#7C6A6A",
     grup: "zor",
     ayetler: [["12:18"], ["8:62"], ["3:186"], ["4:148"], ["4:81"], ["39:36"], ["49:6"], ["4:58"], ["61:2", "61:3"], ["16:91"], ["33:70"]],
-    dualar: [["3:173"], ["2:250"], ["12:86"]],
+    dualar: [["3:173"], ["2:250"], ["12:86"], ["10:85", "10:86"], ["40:44"]],
     sozler: [
       "Allah'ım, güvenim sarsıldı. Kalbimi onar; beni bir daha kimseye güvenemeyecek hâle getirme.",
       "Rabbim, bana yapılanın hesabını sana bırakıyorum. Kin taşımaktan koru, huzurumu geri ver."
@@ -565,7 +565,7 @@ const HALLER = [
     renk: "#6C8497",
     grup: "zor",
     ayetler: [["113:1", "113:2", "113:3", "113:4", "113:5"], ["12:67"], ["9:51"], ["65:3"], ["2:255"], ["3:120"], ["10:107"], ["35:2"], ["41:36"], ["7:201"], ["12:64"]],
-    dualar: [["114:1", "114:2", "114:3", "114:4", "114:5", "114:6"], ["23:97", "23:98"], ["3:173"]],
+    dualar: [["114:1", "114:2", "114:3", "114:4", "114:5", "114:6"], ["23:97", "23:98"], ["3:173"], ["2:201"], ["3:8"]],
     sozler: [
       "Allah'ım, hased edenin şerrinden sana sığınırım. Beni, ailemi ve bana verdiğin nimeti koru.",
       "Rabbim, elimdekinin kıymetini bilmeyi nasip et. Korkuyla değil, sana güvenerek yaşamayı ver."
@@ -586,7 +586,7 @@ const HALLER = [
     renk: "#7E88A5",
     grup: "zor",
     ayetler: [["12:84"], ["12:96"], ["28:13"], ["2:186"], ["12:83"], ["65:3"], ["12:93"], ["12:99"], ["28:10"], ["94:5", "94:6"], ["12:87"]],
-    dualar: [["12:86"], ["25:74"], ["2:201"]],
+    dualar: [["12:86"], ["25:74"], ["2:201"], ["3:8"], ["21:87"]],
     sozler: [
       "Allah'ım, özlediğimi koru. Aramızdaki mesafeyi hayra çevir, kavuşmayı nasip et.",
       "Rabbim, bu özlem kalbimi yormasın. Görüşene kadar ikimize de sabır ve sağlık ver."
