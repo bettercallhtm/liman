@@ -166,7 +166,7 @@ const HALLER = [
     renk: "#5E8C6A",
     grup: "iyi",
     ayetler: [["14:7"], ["16:18"], ["2:152"], ["55:13"], ["93:11"], ["31:12"], ["16:78"], ["2:172"], ["39:66"], ["17:70"], ["30:50"]],
-    dualar: [["27:19"], ["46:15"], ["2:201"], ["14:40", "14:41"]],
+    dualar: [["27:19"], ["46:15"], ["2:201"], ["14:40", "14:41"], ["17:24"], ["3:8"]],
     sozler: [
       "Allah'ım, bana verdiklerinin farkında olmayı nasip et. Şükrümü dilimde bırakma, davranışıma geçir.",
       "Rabbim, sayamadığım nimetlerin için hamdolsun. Elimdekinin kıymetini kaybetmeden bilmeyi öğret bana."
@@ -376,7 +376,7 @@ const HALLER = [
     renk: "#C9A961",
     grup: "iyi",
     ayetler: [["10:58"], ["27:40"], ["93:11"], ["2:152"], ["35:34"], ["14:7"], ["108:1"], ["55:60"], ["16:97"], ["3:174"]],
-    dualar: [["27:19"], ["14:41"], ["2:201"], ["46:15"]],
+    dualar: [["27:19"], ["14:41"], ["2:201"], ["46:15"], ["25:74"], ["3:8"]],
     sozler: [
       "Allah'ım, bu sevinç senden. Şımartma, unutturma; elimden aldığın gün de isyan ettirme.",
       "Rabbim, bu haberi kalbime hayırlı kıl. Sevincimi paylaşacak insanlar ve sevindirecek fırsatlar nasip et."

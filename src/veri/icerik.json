@@ -491,6 +491,12 @@
     [
      "14:40",
      "14:41"
+    ],
+    [
+     "17:24"
+    ],
+    [
+     "3:8"
     ]
    ],
    "sozler": [
@@ -1207,6 +1213,12 @@
     ],
     [
      "46:15"
+    ],
+    [
+     "25:74"
+    ],
+    [
+     "3:8"
     ]
    ],
    "sozler": [
@@ -2878,6 +2890,15 @@
    "okunus": "rabbene-gfir lî velivâlideyye velilmü'minîne yevme yeḳûmü-lḥisâb.",
    "meal": "\"Ey Rabbimiz! Herkesin hesaba çekileceği günde beni, anababamı ve müminleri bağışla!\""
   },
+  "17:24": {
+   "ref": "17:24",
+   "sure": 17,
+   "ayet": 24,
+   "sureAdi": "İsrâ",
+   "arapca": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًۭا",
+   "okunus": "vaḫfiḍ lehümâ cenâḥa-ẕẕülli mine-rraḥmeti veḳur rabbi-rḥamhümâ kemâ rabbeyânî ṣagîrâ.",
+   "meal": "İkisine de acıyarak tevazu kanatlarını indir. Ve şöyle de: \"Ey Rabbim! Onların beni küçükten terbiye edip yetiştirdikleri gibi, sen de kendilerine merhamet et.\""
+  },
   "12:87": {
    "ref": "12:87",
    "sure": 12,
@@ -3876,15 +3897,6 @@
    "arapca": "رَبَّنَا وَأَدْخِلْهُمْ جَنَّٰتِ عَدْنٍ ٱلَّتِى وَعَدتَّهُمْ وَمَن صَلَحَ مِنْ ءَابَآئِهِمْ وَأَزْوَٰجِهِمْ وَذُرِّيَّٰتِهِمْ ۚ إِنَّكَ أَنتَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
    "okunus": "rabbenâ veedḫilhüm cennâti ʿadnini-lletî veʿattehüm vemen ṣaleḥa min âbâihim veezvâcihim veẕürriyyâtihim. inneke ente-lʿazîzü-lḥakîm.",
    "meal": "\"Ey Rabbimiz! Hem onları, hem onların atalarından, zevcelerinden ve zürriyetlerinden iyi olanları kendilerine vaad buyurduğun Adn cennetlerine koy. Şüphesiz çok güçlü, hüküm ve hikmet sahibi olan sensin.\""
-  },
-  "17:24": {
-   "ref": "17:24",
-   "sure": 17,
-   "ayet": 24,
-   "sureAdi": "İsrâ",
-   "arapca": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًۭا",
-   "okunus": "vaḫfiḍ lehümâ cenâḥa-ẕẕülli mine-rraḥmeti veḳur rabbi-rḥamhümâ kemâ rabbeyânî ṣagîrâ.",
-   "meal": "İkisine de acıyarak tevazu kanatlarını indir. Ve şöyle de: \"Ey Rabbim! Onların beni küçükten terbiye edip yetiştirdikleri gibi, sen de kendilerine merhamet et.\""
   },
   "29:20": {
    "ref": "29:20",
