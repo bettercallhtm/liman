@@ -25,7 +25,7 @@ import { OLCU, useTema } from "../tema";
  * araclar/logo-banner-uret.js. Sabit olcu veriyoruz — yuzde genislik +
  * aspectRatio bu ortamda guvenilmez cizim veriyordu. */
 const LOGO = require("../../assets/logo-banner.png");
-const LOGO_ORAN = 1.701;
+const LOGO_ORAN = 1.698;
 const LOGO_GEN = Math.min(Dimensions.get("window").width - OLCU.bosluk * 2, 540);
 const LOGO_YUK = Math.round(LOGO_GEN / LOGO_ORAN);
 
@@ -127,13 +127,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
       contentContainerStyle={stil.govde}
       showsVerticalScrollIndicator={false}
     >
-      <View style={stil.ust}>
-        <Image
-          source={LOGO}
-          style={[stil.logo, { borderColor: renk.cizgi }]}
-          resizeMode="cover"
-          accessibilityLabel="Liman"
-        />
+      <View style={stil.ustBar}>
         <Pressable
           onPress={() => tercihiDegistir(koyuMu ? "acik" : "koyu")}
           accessibilityRole="button"
@@ -151,6 +145,15 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
             {koyuMu ? "☀" : "☾"}
           </Text>
         </Pressable>
+      </View>
+
+      <View style={stil.ust}>
+        <Image
+          source={LOGO}
+          style={[stil.logo, { tintColor: renk.vurgu }]}
+          resizeMode="contain"
+          accessibilityLabel="Liman"
+        />
       </View>
       <Text style={[stil.selam, { color: renk.yaziSolgun }]}>
         {selamlama(new Date().getHours())}
@@ -231,17 +234,10 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 
 const stil = StyleSheet.create({
   govde: { padding: OLCU.bosluk, paddingBottom: 40 },
-  ust: { width: LOGO_GEN, marginTop: 8, position: "relative" },
-  logo: {
-    width: LOGO_GEN,
-    height: LOGO_YUK,
-    borderRadius: 20,
-    borderWidth: 1
-  },
+  ustBar: { flexDirection: "row", justifyContent: "flex-end", marginTop: 4 },
+  ust: { width: LOGO_GEN, marginTop: 6 },
+  logo: { width: LOGO_GEN, height: LOGO_YUK },
   temaDugme: {
-    position: "absolute",
-    right: 10,
-    top: 10,
     width: 42,
     height: 42,
     borderRadius: 21,
