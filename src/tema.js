@@ -1,6 +1,9 @@
 /* Renkler ve olculer. Uygulama gece de aciliyor — asil kullanim vakti gece —
- * o yuzden koyu tema varsayilan, acik tema telefon ayarindan geliyor. */
+ * o yuzden koyu tema varsayilan. Kullanici Ayarlar'dan Sistem / Acik / Koyu
+ * secebiliyor; secim yapilmadiysa telefonun kendi ayarina uyulur. */
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { useColorScheme } from "react-native";
+import { temaTercihiAl, temaTercihiYaz } from "./depo";
 
 const KOYU = {
   zemin: "#0F141C",
@@ -34,8 +37,48 @@ export const OLCU = {
   yaricapKucuk: 10
 };
 
+/* Saglayici sarmalanmadan bir bilesen cizilirse uygulama patlamasin diye
+ * baglama makul bir varsayilan konuyor. */
+const TemaBaglam = createContext({
+  renk: KOYU,
+  koyuMu: true,
+  tercih: "sistem",
+  tercihiDegistir: () => {}
+});
+
+export function TemaSaglayici({ children }) {
+  const sistem = useColorScheme();
+  /* "sistem" | "acik" | "koyu" */
+  const [tercih, setTercih] = useState("sistem");
+
+  useEffect(() => {
+    let iptal = false;
+    (async () => {
+      const t = await temaTercihiAl();
+      if (!iptal) setTercih(t);
+    })();
+    return () => {
+      iptal = true;
+    };
+  }, []);
+
+  const koyuMu =
+    tercih === "koyu" ? true : tercih === "acik" ? false : sistem !== "light";
+  const renk = koyuMu ? KOYU : ACIK;
+
+  const tercihiDegistir = async (yeni) => {
+    setTercih(yeni);
+    await temaTercihiYaz(yeni);
+  };
+
+  const deger = useMemo(
+    () => ({ renk, koyuMu, tercih, tercihiDegistir }),
+    [renk, koyuMu, tercih]
+  );
+
+  return <TemaBaglam.Provider value={deger}>{children}</TemaBaglam.Provider>;
+}
+
 export function useTema() {
-  const sema = useColorScheme();
-  const renk = sema === "light" ? ACIK : KOYU;
-  return { renk, koyuMu: sema !== "light" };
+  return useContext(TemaBaglam);
 }

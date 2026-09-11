@@ -27,15 +27,13 @@ const EKRANLAR = [
     baslik: "Yazdıkların\ntelefonundan çıkmaz.",
     govde:
       "Yazdığın metin hiçbir sunucuya gönderilmiyor, kaydedilmiyor da — ekrandan çıkınca siliniyor. Hangi ayete denk düştüğü telefonunun içinde hesaplanıyor.",
-    alt:
-      "Liman hesap açtırmaz, internete bağlanmaz, hiçbir veri toplamaz. Kaydettiklerin yalnızca bu telefonda durur."
+    alt: null
   },
   {
     baslik: "Ayetleri\nbiz yazmadık.",
     govde:
       "Uygulamadaki hiçbir ayet ya da dua metni burada üretilmedi; hepsi kaynağından olduğu gibi alındı. Meal Elmalılı Hamdi Yazır'a ait ve uygulamadaki bütün dualar Kur'an'ın kendi duaları.",
-    alt:
-      "Liman dinî danışmanlık ya da fetva vermez; tıbbi veya psikolojik tedavinin yerine de geçmez."
+    alt: null
   }
 ];
 

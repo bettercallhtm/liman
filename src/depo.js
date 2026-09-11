@@ -9,7 +9,8 @@ const ANAHTAR = {
   favoriler: "dp.favoriler",
   gunluk: "dp.gunluk",
   ayarlar: "dp.ayarlar",
-  sonGosterilen: "dp.sonGosterilen"
+  sonGosterilen: "dp.sonGosterilen",
+  tema: "dp.tema"
 };
 
 async function oku(anahtar, varsayilan) {
@@ -110,6 +111,19 @@ export async function karsilamaGoruldu() {
 
 export async function karsilamayiIsaretle() {
   await yaz(ANAHTAR.karsilama, true);
+}
+
+/* ---- Tema tercihi ----
+ * "sistem" (telefonun ayari), "acik" ya da "koyu". Kullanici verisi degil,
+ * gorunum tercihi; "kayitlarimi sil" bunu silmez. */
+
+export async function temaTercihiAl() {
+  const t = await oku(ANAHTAR.tema, "sistem");
+  return t === "acik" || t === "koyu" ? t : "sistem";
+}
+
+export async function temaTercihiYaz(tercih) {
+  await yaz(ANAHTAR.tema, tercih);
 }
 
 /* ---- Son gosterilen kart ----

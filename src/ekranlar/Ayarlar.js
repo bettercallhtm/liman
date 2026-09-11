@@ -16,6 +16,12 @@ import { OLCU, useTema } from "../tema";
 
 const SAATLER = [7, 9, 12, 15, 18, 21, 23];
 
+const TEMALAR = [
+  { id: "sistem", ad: "Sistem" },
+  { id: "acik", ad: "Açık" },
+  { id: "koyu", ad: "Koyu" }
+];
+
 function Bolum({ baslik, children }) {
   const { renk } = useTema();
   return (
@@ -52,7 +58,7 @@ function AnahtarSatir({ baslik, alt, deger, onDegis, kapali = false }) {
 }
 
 export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
-  const { renk } = useTema();
+  const { renk, tercih, tercihiDegistir } = useTema();
 
   function saatiDegistir(saat) {
     onAyarDegis({ ...ayarlar, hatirlaticiSaat: saat, hatirlaticiDakika: 0 });
@@ -65,6 +71,41 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
       showsVerticalScrollIndicator={false}
     >
       <Text style={[stil.baslik, { color: renk.yazi }]}>Ayarlar</Text>
+
+      <Bolum baslik="GÖRÜNÜM">
+        <View style={stil.temaSerit}>
+          {TEMALAR.map((t) => {
+            const secili = tercih === t.id;
+            return (
+              <Pressable
+                key={t.id}
+                onPress={() => tercihiDegistir(t.id)}
+                accessibilityRole="button"
+                accessibilityState={{ selected: secili }}
+                style={[
+                  stil.temaDugme,
+                  {
+                    backgroundColor: secili ? renk.vurgu : renk.yuzeyIkincil,
+                    borderColor: secili ? renk.vurgu : renk.cizgi
+                  }
+                ]}
+              >
+                <Text
+                  style={[
+                    stil.temaMetin,
+                    { color: secili ? "#14100A" : renk.yaziSolgun }
+                  ]}
+                >
+                  {t.ad}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+        <Text style={[stil.temaAlt, { color: renk.yaziSilik }]}>
+          “Sistem” seçiliyken uygulama telefonunun açık/koyu ayarına uyar.
+        </Text>
+      </Bolum>
 
       <Bolum baslik="GÜNLÜK HATIRLATICI">
         <AnahtarSatir
@@ -143,7 +184,7 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
         </Text>
       </Bolum>
 
-      <Bolum baslik="SINIRLARIMIZ">
+      <Bolum baslik="ÖNEMLİ BİR NOT">
         <Text style={[stil.paragraf, { color: renk.yazi }]}>
           Bu uygulama dinî danışmanlık ya da fetva vermez. Ayet seçimleri
           kişisel bir derlemedir; bir ayetin bağlamını ve tefsirini öğrenmek
@@ -243,6 +284,17 @@ const stil = StyleSheet.create({
     marginBottom: 8
   },
   saatMetin: { fontSize: 13, fontWeight: "600" },
+  temaSerit: { flexDirection: "row" },
+  temaDugme: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingVertical: 11,
+    alignItems: "center",
+    marginRight: 8
+  },
+  temaMetin: { fontSize: 14, fontWeight: "600" },
+  temaAlt: { fontSize: 12, lineHeight: 18, marginTop: 12 },
   ayirac: { borderTopWidth: 1, marginVertical: 14 },
   paragraf: { fontSize: 14, lineHeight: 22 },
   satirDugmeler: { flexDirection: "row", marginTop: 14 },

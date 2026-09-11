@@ -7,7 +7,9 @@
  * sikintidayken acan kisi arayacagi seyi ilk ekranda buluyor, iyi gunde acan
  * kisi de kendine yer buluyor. */
 import React, { useMemo } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+
+const LOGO = require("../../assets/icon.png");
 
 import { HALLER, gununAyeti, haliBul } from "../icerik";
 import { bugununAnahtari } from "../depo";
@@ -111,10 +113,18 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
       contentContainerStyle={stil.govde}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={[stil.selam, { color: renk.yaziSolgun }]}>
-        {selamlama(new Date().getHours())}
-      </Text>
+      <View style={stil.ust}>
+        <Image
+          source={LOGO}
+          style={[stil.logo, { borderColor: renk.cizgi }]}
+          accessibilityLabel="Liman"
+        />
+        <Text style={[stil.selam, { color: renk.yaziSolgun }]}>
+          {selamlama(new Date().getHours())}
+        </Text>
+      </View>
       <Text style={[stil.baslik, { color: renk.yazi }]}>Bugün nasılsın?</Text>
+      <View style={[stil.vurguCizgi, { backgroundColor: renk.vurgu }]} />
 
       <Pressable
         onPress={onYaz}
@@ -131,8 +141,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
           Ne yaşadığını yaz
         </Text>
         <Text style={[stil.yazAlt, { color: renk.yaziSolgun }]}>
-          Başından geçeni anlat, sana uyan ayeti ve duayı bulayım. Yazdığın
-          telefonundan çıkmaz.
+          Başından geçeni anlat, sana uyan ayeti ve duayı bulayım.
         </Text>
       </Pressable>
 
@@ -147,7 +156,11 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
           }
         ]}
       >
-        <Text style={[stil.bolumBaslik, { color: renk.vurgu }]}>GÜNÜN AYETİ</Text>
+        <Text style={[stil.gununDekor, { color: renk.vurgu }]}>✦</Text>
+        <View style={stil.gununUst}>
+          <Text style={[stil.gununYildiz, { color: renk.vurgu }]}>✦</Text>
+          <Text style={[stil.bolumBaslik, { color: renk.vurgu }]}>GÜNÜN AYETİ</Text>
+        </View>
         <Text style={[stil.gununMeal, { color: renk.yazi }]} numberOfLines={4}>
           {ayet.meal}
         </Text>
@@ -186,8 +199,17 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 
 const stil = StyleSheet.create({
   govde: { padding: OLCU.bosluk, paddingBottom: 40 },
-  selam: { fontSize: 14, marginTop: 8 },
-  baslik: { fontSize: 28, fontWeight: "700", marginTop: 4, marginBottom: OLCU.bosluk },
+  ust: { flexDirection: "row", alignItems: "center", marginTop: 6 },
+  logo: { width: 40, height: 40, borderRadius: 11, borderWidth: 1 },
+  selam: { fontSize: 14, marginLeft: 12 },
+  baslik: { fontSize: 28, fontWeight: "700", marginTop: 14 },
+  vurguCizgi: {
+    width: 40,
+    height: 3,
+    borderRadius: 2,
+    marginTop: 10,
+    marginBottom: OLCU.bosluk
+  },
   yazGiris: {
     borderWidth: 1,
     borderRadius: OLCU.yaricap,
@@ -200,8 +222,18 @@ const stil = StyleSheet.create({
     borderWidth: 1,
     borderRadius: OLCU.yaricap,
     padding: OLCU.bosluk,
-    marginBottom: OLCU.bosluk + 8
+    marginBottom: OLCU.bosluk + 8,
+    overflow: "hidden"
   },
+  gununDekor: {
+    position: "absolute",
+    top: -18,
+    right: -6,
+    fontSize: 96,
+    opacity: 0.08
+  },
+  gununUst: { flexDirection: "row", alignItems: "center" },
+  gununYildiz: { fontSize: 11, marginRight: 6 },
   gununMeal: { fontSize: 15, lineHeight: 24, marginTop: 10 },
   gununKaynak: { fontSize: 12, marginTop: 10 },
   bolumBaslik: { fontSize: 11, letterSpacing: 1.6, fontWeight: "600" },

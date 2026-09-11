@@ -43,7 +43,7 @@ import {
   VARSAYILAN_AYARLAR
 } from "./src/depo";
 import { hatirlaticiyiKapat, hatirlaticiyiKur, hazirMi, izinIste } from "./src/hatirlatici";
-import { OLCU, useTema } from "./src/tema";
+import { OLCU, TemaSaglayici, useTema } from "./src/tema";
 
 const SEKMELER = [
   { id: "hal", ad: "Hâlim" },
@@ -53,6 +53,14 @@ const SEKMELER = [
 ];
 
 export default function App() {
+  return (
+    <TemaSaglayici>
+      <Uygulama />
+    </TemaSaglayici>
+  );
+}
+
+function Uygulama() {
   const { renk, koyuMu } = useTema();
 
   const [sekme, setSekme] = useState("hal");

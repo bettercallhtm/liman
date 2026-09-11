@@ -81,12 +81,7 @@ export default function Yaz({ onSonuc, onRisk, onHalSec }) {
           ]}
         />
 
-        <Text style={[stil.gizlilik, { color: renk.yaziSilik }]}>
-          Yazdıkların telefonundan çıkmıyor. Hiçbir yere gönderilmiyor,
-          kaydedilmiyor da — bu ekrandan çıkınca siliniyor.
-        </Text>
-
-        <View style={stil.dugmeSatiri}>
+        <View style={[stil.dugmeSatiri, { marginTop: OLCU.bosluk }]}>
           <Dugme
             metin="Bana bir dua bul"
             onPress={yeterli ? coz : () => {}}
@@ -151,7 +146,6 @@ const stil = StyleSheet.create({
     fontSize: 16,
     lineHeight: 24
   },
-  gizlilik: { fontSize: 12, lineHeight: 18, marginTop: 10, marginBottom: OLCU.bosluk },
   dugmeSatiri: { flexDirection: "row" },
   uyari: {
     borderLeftWidth: 3,
