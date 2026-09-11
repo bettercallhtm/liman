@@ -235,7 +235,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 const stil = StyleSheet.create({
   govde: { padding: OLCU.bosluk, paddingBottom: 40 },
   ustBar: { flexDirection: "row", justifyContent: "flex-end", marginTop: 4 },
-  ust: { width: LOGO_GEN, marginTop: 6 },
+  ust: { width: LOGO_GEN, marginTop: 6, alignSelf: "center" },
   logo: { width: LOGO_GEN, height: LOGO_YUK },
   temaDugme: {
     width: 42,
@@ -246,7 +246,7 @@ const stil = StyleSheet.create({
     justifyContent: "center"
   },
   temaIkon: { fontSize: 19 },
-  selam: { fontSize: 22, marginTop: 14 },
+  selam: { fontSize: 22, marginTop: 14, textAlign: "center" },
   baslik: { fontSize: 28, fontWeight: "700", marginTop: 16 },
   vurguCizgi: {
     width: 40,
