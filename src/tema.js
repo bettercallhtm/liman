@@ -15,7 +15,8 @@ const KOYU = {
   yaziSilik: "#63707F",
   vurgu: "#C9A961",
   vurguZemin: "#2A2418",
-  arapca: "#F1E7D0"
+  arapca: "#F1E7D0",
+  logo: "#E4C177"
 };
 
 const ACIK = {
@@ -28,7 +29,8 @@ const ACIK = {
   yaziSilik: "#8C97A3",
   vurgu: "#9A7B2E",
   vurguZemin: "#F5EEDC",
-  arapca: "#2B2415"
+  arapca: "#2B2415",
+  logo: "#9A7B2E"
 };
 
 export const OLCU = {

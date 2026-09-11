@@ -150,7 +150,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
       <View style={stil.ust}>
         <Image
           source={LOGO}
-          style={[stil.logo, { tintColor: renk.vurgu }]}
+          style={[stil.logo, { tintColor: renk.logo }]}
           resizeMode="contain"
           accessibilityLabel="Liman"
         />
