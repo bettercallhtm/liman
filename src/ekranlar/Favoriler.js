@@ -13,8 +13,7 @@ export default function Favoriler({ favoriler, onAc, onSil }) {
       <View style={[stil.bos, { backgroundColor: renk.zemin }]}>
         <Text style={[stil.bosBaslik, { color: renk.yazi }]}>Henüz kayıt yok</Text>
         <Text style={[stil.bosMetin, { color: renk.yaziSolgun }]}>
-          Bir kartı beğendiğinde "Kaydet" dersen burada birikiyor. Kayıtlar
-          yalnızca bu telefonda duruyor.
+          Bir kartı beğendiğinde "Kaydet" dersen burada birikiyor.
         </Text>
       </View>
     );

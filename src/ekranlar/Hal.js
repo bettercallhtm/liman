@@ -102,7 +102,7 @@ function SonYediGun({ gunluk, onGunSec }) {
 }
 
 export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
-  const { renk } = useTema();
+  const { renk, koyuMu, tercihiDegistir } = useTema();
   const ayet = gununAyeti();
   const zor = HALLER.filter((h) => h.grup === "zor");
   const iyi = HALLER.filter((h) => h.grup === "iyi");
@@ -119,10 +119,27 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
           style={[stil.logo, { borderColor: renk.cizgi }]}
           accessibilityLabel="Liman"
         />
-        <Text style={[stil.selam, { color: renk.yaziSolgun }]}>
-          {selamlama(new Date().getHours())}
-        </Text>
+        <Pressable
+          onPress={() => tercihiDegistir(koyuMu ? "acik" : "koyu")}
+          accessibilityRole="button"
+          accessibilityLabel={koyuMu ? "Açık moda geç" : "Koyu moda geç"}
+          style={({ pressed }) => [
+            stil.temaDugme,
+            {
+              backgroundColor: renk.yuzey,
+              borderColor: renk.cizgi,
+              opacity: pressed ? 0.7 : 1
+            }
+          ]}
+        >
+          <Text style={[stil.temaIkon, { color: renk.vurgu }]}>
+            {koyuMu ? "☀" : "☾"}
+          </Text>
+        </Pressable>
       </View>
+      <Text style={[stil.selam, { color: renk.yaziSolgun }]}>
+        {selamlama(new Date().getHours())}
+      </Text>
       <Text style={[stil.baslik, { color: renk.yazi }]}>Bugün nasılsın?</Text>
       <View style={[stil.vurguCizgi, { backgroundColor: renk.vurgu }]} />
 
@@ -199,10 +216,27 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 
 const stil = StyleSheet.create({
   govde: { padding: OLCU.bosluk, paddingBottom: 40 },
-  ust: { flexDirection: "row", alignItems: "center", marginTop: 6 },
-  logo: { width: 40, height: 40, borderRadius: 11, borderWidth: 1 },
-  selam: { fontSize: 14, marginLeft: 12 },
-  baslik: { fontSize: 28, fontWeight: "700", marginTop: 14 },
+  ust: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    justifyContent: "center",
+    marginTop: 8
+  },
+  logo: { width: 104, height: 104, borderRadius: 24, borderWidth: 1 },
+  temaDugme: {
+    position: "absolute",
+    right: 0,
+    top: 0,
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    borderWidth: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  temaIkon: { fontSize: 19 },
+  selam: { fontSize: 14, marginTop: 12, textAlign: "center" },
+  baslik: { fontSize: 28, fontWeight: "700", marginTop: 16 },
   vurguCizgi: {
     width: 40,
     height: 3,

@@ -102,9 +102,6 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
             );
           })}
         </View>
-        <Text style={[stil.temaAlt, { color: renk.yaziSilik }]}>
-          “Sistem” seçiliyken uygulama telefonunun açık/koyu ayarına uyar.
-        </Text>
       </Bolum>
 
       <Bolum baslik="GÜNLÜK HATIRLATICI">
@@ -294,7 +291,6 @@ const stil = StyleSheet.create({
     marginRight: 8
   },
   temaMetin: { fontSize: 14, fontWeight: "600" },
-  temaAlt: { fontSize: 12, lineHeight: 18, marginTop: 12 },
   ayirac: { borderTopWidth: 1, marginVertical: 14 },
   paragraf: { fontSize: 14, lineHeight: 22 },
   satirDugmeler: { flexDirection: "row", marginTop: 14 },
