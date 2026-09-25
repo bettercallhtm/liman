@@ -14,6 +14,9 @@ import {
 import Ikon from "../parcalar/Ikon";
 import { CEVIRI_ADI, KAYNAK_ADI } from "../icerik";
 import { OLCU, useTema } from "../tema";
+/* Surum numarasi tek yerden, app.json icinden: elle yazilan kopya bir
+ * surumde guncellenmeyi unutuyordu. */
+import { expo as UYGULAMA } from "../../app.json";
 
 const SAATLER = [7, 9, 12, 15, 18, 21, 23];
 
@@ -219,7 +222,7 @@ export default function Ayarlar({ ayarlar, onAyarDegis, bildirimVarMi }) {
       </Bolum>
 
       <Text style={[stil.dipnot, { color: renk.yaziSilik }]}>
-        Liman · Sürüm 1.0.0
+        Liman · Sürüm {UYGULAMA.version}
       </Text>
     </ScrollView>
   );

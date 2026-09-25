@@ -3,20 +3,25 @@
  * Gezinme icin kutuphane yok: bes ekran ve "hangisi acik" degiskenleri.
  * react-navigation eklemek bu kadar ekran icin paketi buyutmekten baska bir
  * ise yaramiyordu. Kart ve destek ekranlari sekmelerin ustune aciliyor, geri
- * tusu onlari kapatiyor. */
+ * tusu onlari kapatiyor.
+ *
+ * Guvenli alan react-native-safe-area-context'ten geliyor. Play'in istedigi
+ * API 36 ile Android uygulamayi durum ve gezinme cubugunun ALTINA da ciziyor
+ * (edge-to-edge); React Native'in kendi SafeAreaView'i Android'de hicbir sey
+ * yapmiyor, o yuzden alt sekmeler uc dugmeli gezinme cubugunun altinda
+ * kaliyordu. */
 import React, { useCallback, useEffect, useState } from "react";
 import {
   BackHandler,
   Platform,
   Pressable,
-  SafeAreaView,
   Share,
-  StatusBar as RNStatusBar,
   StyleSheet,
   Text,
   useWindowDimensions,
   View
 } from "react-native";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -65,6 +70,7 @@ function Cerceve({ children }) {
     <View style={[stil.kok, { backgroundColor: renk.zemin }]}>
       {genis ? <YildizOrgusu renk={renk.vurgu} opaklik={renk.koyu ? 0.05 : 0.07} aralik={56} /> : null}
       <SafeAreaView
+        edges={["top", "bottom", "left", "right"]}
         style={[
           stil.sutun,
           genis
@@ -86,9 +92,11 @@ function Cerceve({ children }) {
 
 export default function App() {
   return (
-    <TemaSaglayici>
-      <Uygulama />
-    </TemaSaglayici>
+    <SafeAreaProvider>
+      <TemaSaglayici>
+        <Uygulama />
+      </TemaSaglayici>
+    </SafeAreaProvider>
   );
 }
 
@@ -385,10 +393,7 @@ function Uygulama() {
 }
 
 const stil = StyleSheet.create({
-  kok: {
-    flex: 1,
-    paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight || 0 : 0
-  },
+  kok: { flex: 1 },
   sutun: { flex: 1, width: "100%", alignSelf: "center" },
   icerik: { flex: 1 },
   sekmeler: {

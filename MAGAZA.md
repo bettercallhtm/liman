@@ -54,16 +54,22 @@ ekrandan çıkınca siliniyor.
 İÇİNDEKİLER
 
 • Yazarak anlatma: başından geçeni yaz, sana uyan hâli bulsun
-• 27 farklı hâl, ikiye ayrılmış:
-  Zorlanıyorum — kaygı, üzüntü, korku, öfke, yalnızlık, pişmanlık,
-  umutsuzluk, hastalık, yas, bekleyiş, kararsızlık, sınav ve iş baskısı,
-  haksızlığa uğramak, maddi sıkıntı, ilişki sorunları, çocuk beklemek,
-  güvenin sarsılması, kıskanılma endişesi, özlem
-  İyi hissediyorum — şükür, sevinç, yeni bir başlangıç, sevdiklerim için,
-  yolculuk, affetmek, bir dileğim var, sakinleşmek
-• Her hâl için birden çok ayet — "Başka bir ayet" dedikçe yenisi geliyor
-• Kur'an'da geçen dualar: Hz. Musa'nın, Hz. Yunus'un, Hz. Eyyûb'un,
-  Hz. Zekeriya'nın duaları ve daha fazlası
+• 41 farklı hâl, üç grupta:
+  Zorlanıyorum — kaygı, üzüntü, korku, öfke, yalnızlık, umutsuzluk,
+  tükenmişlik, uykusuzluk, değersizlik hissi, hastalık, yas, bekleyiş,
+  kararsızlık, sınav ve iş baskısı, haksızlığa uğramak, maddi sıkıntı,
+  ilişki sorunları, çocuk beklemek, çocuğu için endişe, güvenin
+  sarsılması, kıskanılma endişesi, özlem
+  İyiyim — şükür, sevinç, başarı, güne başlarken, yeni bir başlangıç,
+  sevdiklerim için, yolculuk, affetmek, bir dileğim var, sakinleşmek,
+  hayırlı bir eş, bebek beklerken
+  Kalbim — imanım zayıfladı, ibadetlerim aksıyor, nefsimle mücadele,
+  kıskançlık, anlam arayışı, tefekkür, pişmanlık ve tövbe
+• 490 ayet; her hâl için en az 10 ayet — "Başka bir ayet" dedikçe yenisi
+  geliyor
+• Kur'an'da geçen dualar, her hâl için en az 7 tane: Hz. Musa'nın,
+  Hz. Yunus'un, Hz. Eyyûb'un, Hz. Zekeriya'nın, Hz. İbrahim'in duaları
+  ve daha fazlası
 • Arapça metin Amiri Quran yazı tipiyle, okunuşu ve Türkçe meali bir arada
 • Beğendiğin ayeti görsel olarak paylaş ya da metnini kopyala
 • Günün ayeti
@@ -98,7 +104,7 @@ geçmez. Zor bir andaysanız bir uygulamayla baş başa kalmayın: acil durumda
 112, sosyal destek için 183 Sosyal Destek Hattı 7/24 açık ve ücretsizdir.
 ```
 
-Yaklaşık 2100 karakter — sınırın altında, yer var.
+Yaklaşık 3000 karakter — 4000 sınırının altında.
 
 ---
 
@@ -241,7 +247,24 @@ görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
 
 ---
 
-## Sürüm notları (ilk sürüm)
+## Sürüm notları
+
+Play, "Bu sürümdeki yenilikler" alanında dil başına en fazla 500 karakter
+kabul ediyor. Console'a `<tr-TR>` etiketleriyle yapıştırılıyor.
+
+### 1.1.0 (versionCode 4)
+
+```
+<tr-TR>
+Yeni görünüm ve iki kat içerik:
+• 14 yeni hâl: tükenmişlik, uykusuzluk, değersizlik hissi, iman, ibadet, nefis, kıskançlık, anlam arayışı, tefekkür, başarı, güne başlarken, eş arayışı, bebek beklerken, çocuğu için endişe
+• 490 ayet; her hâlde en az 10 ayet ve Kur'an'dan 7 dua
+• Yenilenen tasarım, ayet sonu işaretli Arapça metin
+• Hâller üç grupta: Zorlanıyorum, İyiyim, Kalbim
+</tr-TR>
+```
+
+### 1.0.0 (ilk sürüm)
 
 ```
 İlk sürüm. Yaşadığını yazarak ya da 27 hâlden birini seçerek sana uyan
