@@ -31,16 +31,36 @@ export function grupBasligi(grup) {
 }
 
 /* Gunun ayeti: tarihe gore sabit. Ayni gun icinde uygulama kac kez acilirsa
- * acilsin ayni ayet gelir, ertesi gun degisir. */
+ * acilsin ayni ayet gelir, ertesi gun degisir.
+ *
+ * Tek tek ayetlerden degil, hallerin AYET gruplarindan seciliyor. Once tum
+ * ayetlerden seciliyordu ve "Hamd o alemlerin Rabbi," gibi bir grubun yarim
+ * kalmis ilk ayeti gunun ayeti olabiliyordu. Cok uzun gruplar (ana ekranda
+ * kirpilacak olanlar) listeye alinmiyor. */
 function gunSayisi(tarih = new Date()) {
   return Math.floor(
     Date.UTC(tarih.getFullYear(), tarih.getMonth(), tarih.getDate()) / 86400000
   );
 }
 
+const GUNUN_GRUPLARI = (() => {
+  const gorulen = new Set();
+  const liste = [];
+  for (const hal of HALLER) {
+    for (const grup of hal.ayetler) {
+      const anahtar = grup.join(",");
+      if (gorulen.has(anahtar)) continue;
+      gorulen.add(anahtar);
+      const uzunluk = grubuAl(grup).reduce((t, a) => t + a.meal.length, 0);
+      if (uzunluk <= 320) liste.push(grup);
+    }
+  }
+  return liste;
+})();
+
+/* Doner: bir ayet grubu, ornegin ["94:5", "94:6"]. */
 export function gununAyeti(tarih = new Date()) {
-  const refler = Object.keys(VERI.ayetler);
-  return VERI.ayetler[refler[gunSayisi(tarih) % refler.length]];
+  return GUNUN_GRUPLARI[gunSayisi(tarih) % GUNUN_GRUPLARI.length];
 }
 
 export function girisAyeti() {
@@ -99,12 +119,11 @@ export function paylasimMetni(kart) {
  * paylasma dugmeleri. Dua yerinde giris ayeti duruyor ("Bana dua edin, size
  * karsilik vereyim") — hangi ayet gelirse gelsin yanina uyan tek dua o. */
 export function gununKarti() {
-  const ayet = gununAyeti();
   return {
     halId: "gunun",
     halAdi: "Günün ayeti",
     renk: "#C9A961",
-    ayetGrup: [ayet.sure + ":" + ayet.ayet],
+    ayetGrup: gununAyeti(),
     duaGrup: [VERI.girisAyeti],
     soz: "Allah'ım, bugün okuduğumu kalbimde bırak. Anladığım kadarını yaşamayı nasip et.",
     oneriler: [

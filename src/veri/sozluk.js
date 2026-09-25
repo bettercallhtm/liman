@@ -28,7 +28,7 @@ export const SOZLUK = {
     "takinti", "icim daral|3", "icim sikis", "nefes alamiyorum|3",
     "kalbim carpiyor|3", "elim ayagim titri", "kotu bir sey olacak|3",
     "basima bir sey gelecek|3", "surekli dusunuyorum", "kafamda kuruyorum",
-    "uyuyamiyorum", "icim gitti|3", "kotu seyler geliyor aklima|3",
+    "icim gitti|3", "kotu seyler geliyor aklima|3",
     "kotuye gidiyor|3", "basedemiyorum|3"
   ],
 
@@ -69,9 +69,9 @@ export const SOZLUK = {
 
   umutsuzluk: [
     "umutsuz|3", "umidim yok|3", "umudum kalmadi|3", "caresiz|3",
-    "tukendim|3", "pes ettim|3", "bitti artik|3", "dayanamiyorum|3",
+    "pes ettim|3", "bitti artik|3", "dayanamiyorum|3",
     "yoruldum artik|3", "anlamsiz", "duzelmeyecek|3", "hicbir sey degismiyor|3",
-    "bosuna", "yorgunum", "cikis yok|3", "isik gorm"
+    "bosuna", "cikis yok|3", "isik gorm"
   ],
 
   hastalik: [
@@ -117,7 +117,7 @@ export const SOZLUK = {
   rizik: [
     "borc|3", "para|3", "maas|3", "kira|3", "fatura|3", "gecim|3",
     "iflas|3", "issiz|3", "isten cikar|3", "isten atil|3", "maddi|3",
-    "kredi|3", "taksit|3", "icra|3", "zam", "pahali", "yoksul",
+    "kredi|3", "taksit|3", "icra|3", "zam geld", "zamlar", "zam yap", "pahali", "yoksul",
     "param yok|3", "gecinemi|3", "ekonomik", "harclik|3", "burs|3",
     "ay sonunu getiremi|5", "senet|3", "haciz|5"
   ],
@@ -131,9 +131,9 @@ export const SOZLUK = {
 
   sevinc: [
     "sevincli|3", "sevindim|3", "cok mutluyum|3", "mutluyum|3", "mujde|3",
-    "kazandim|3", "basardim|3", "gectim|3", "kabul edildi|3",
+    "kazandim|3", "gectim|3", "kabul edildi|3",
     "ise girdim|3", "iyi haber|3", "harika", "muhtesem", "guzel haber|3",
-    "sevindirici", "hamile|3", "dogdu|3", "kabul aldim|5",
+    "sevindirici", "dogdu|3", "kabul aldim|5",
     "terfi|5", "atandim|5", "kazandi|3"
   ],
 
@@ -185,7 +185,7 @@ export const SOZLUK = {
     "cocuk istiyorum|5", "cocugumuz olmuyor|5", "cocugum olmuyor|5",
     "hamile kalamiyorum|5", "tup bebek|5", "kisirlik|5", "bebek istiyorum|5",
     "anne olmak istiyorum|5", "baba olmak istiyorum|5", "dusuk yaptim|5",
-    "cocugumuz yok|5", "asilama|3", "evlat|3", "nesil|3"
+    "cocugumuz yok|5", "asilama|3", "evlat isti|5", "nesil|3"
   ],
 
   guven: [
@@ -205,6 +205,100 @@ export const SOZLUK = {
     "ozledim|5", "ozluyorum|5", "ozlem|5", "hasret|5", "sila|5",
     "gurbet|3", "uzakta|3", "goremiyorum|3", "memleket|3",
     "yillardir gormedim|5", "sesini duymak|3"
+  ],
+
+  /* ---- 2026 Eylul genislemesi ---- */
+
+  yorgunluk: [
+    "tukendim|5", "tukenmis|5", "tukeniyorum|5", "yorgunum|3", "cok yoruldum|5",
+    "bitkin|5", "takatim|5", "gucum kalmadi|5", "enerjim yok|5", "burnout|5",
+    "hicbir seye yetisemiyorum|3", "dinlenemiyorum|3", "yoruluyorum|3"
+  ],
+
+  uykusuzluk: [
+    "uyuyami|5", "uyuyamad|5", "uykum kacti|5", "uykusuz|5", "gozume uyku|5",
+    "uyanip duruyorum|5", "sabaha kadar|3", "gece yarisi|3", "uyku|3",
+    "gece uyan|3", "insomnia|5", "yatakta donup|5"
+  ],
+
+  degersizlik: [
+    "degersiz|5", "yetersiz|5", "ise yaramaz|5", "beceriksiz|3",
+    "kendimi begenmiyorum|5", "kendimden nefret|5", "herkes benden iyi|5",
+    "basarisiz|3", "ezik|3", "ozguven|5", "kiyasliyorum|3",
+    "kendimi kucuk|5", "hicbir seyi beceremiyorum|5", "aptal gibi|3",
+    "yuk oluyorum|3"
+  ],
+
+  evlat: [
+    "cocugum icin endise|5", "cocugumdan endise|5", "cocugum icin kork|5",
+    "evladim|3", "evladimin|5", "ergen|3", "soz dinlemiyor|5",
+    "cocugumun gelecegi|5", "cocuk yetistir|3", "annelik|3", "babalik|3",
+    "cocuklarim|3", "cocugumu kaybetmekten|5", "kotu arkadas|3",
+    "okulda sorun|3"
+  ],
+
+  es: [
+    "evlenmek istiyorum|5", "es ariyorum|5", "esimi ariyorum|5",
+    "hayirli bir es|5", "hayirli bir kismet|5", "kismetim acil|5",
+    "evlenemiyorum|5", "bekar|3", "yuva kurmak|5", "gorucu|5", "evlilik|3",
+    "istemeye gel|3", "evde kal|3", "hayat arkadasi|5"
+  ],
+
+  bebek: [
+    "hamileyim|5", "hamile|3", "bebek bekliyor|5", "bebegimiz olacak|5",
+    "bebegim olacak|5", "anne olacagim|5", "baba olacagim|5",
+    "dogum yapacagim|5", "dogum|3", "gebelik|5", "karnimdaki|5", "lohusa|3"
+  ],
+
+  basari: [
+    "basardim|5", "basari|3", "hedefime ulastim|5", "derece yaptim|5",
+    "birinci oldum|5", "odul aldim|5", "emeklerimin karsilig|5",
+    "emegimin karsilig|5", "projemi bitirdim|3", "hak ettim|3",
+    "sampiyon|5", "rekor|3"
+  ],
+
+  sabah: [
+    "gunaydin|3", "sabah|3", "gune basl|5", "yeni gun|3", "uyandim|3",
+    "guzel bir gun|3", "bugune basl|5"
+  ],
+
+  iman: [
+    "imanim|5", "iman|3", "suphe|5", "allah var mi|5", "inancim|5",
+    "inanc|3", "dinden uzak|5", "kalbim kaskati|5", "kalbim kurudu|5",
+    "manevi|3", "maneviyat|3", "sorguluyorum|3", "ateist|3", "deist|3",
+    "allahtan uzak|5", "allah beni duymuyor|5"
+  ],
+
+  ibadet: [
+    "namaz|5", "ibadet|5", "kilamiyorum|3", "oruc|3", "zikir|3",
+    "kuran okumuyorum|5", "kuran okuyamiyorum|5", "camiye|3", "secde|3",
+    "tesbih|3", "ihmal|3", "kaza namaz|5", "husu|3"
+  ],
+
+  nefis: [
+    "nefsim|5", "nefis|5", "haram|5", "bagimli|5", "birakamiyorum|5",
+    "sigara|5", "alkol|5", "icki|3", "kumar|5", "porno|5", "mustehcen|5",
+    "harama bak|5", "kotu aliskanlik|5", "aliskanlik|3", "kendime hakim|5",
+    "tekrar dustum|5", "yine yaptim|5", "sehvet|5", "bahis|5", "irade|3"
+  ],
+
+  kiskanclik: [
+    "kiskaniyorum|5", "kiskandim|5", "kiskancligim|5", "gipta|5",
+    "haset ediyorum|7", "hased ediyorum|7", "imreniyorum|5",
+    "onun gibi olmak|3", "gozum kaldi|3", "benim de olsun|3",
+    "herkesin var|3"
+  ],
+
+  anlam: [
+    "hayatin anlami|5", "hayatimin anlami|5", "neden yasiyorum|5",
+    "ne icin yasiyorum|5", "neden buradayim|5", "amacsiz|5", "amacim|3",
+    "varolus|5", "her sey anlamsiz|5", "bir amacim yok|5", "yon bulamiyorum|3"
+  ],
+
+  tefekkur: [
+    "tefekkur|5", "yaratilis|5", "evren|5", "kainat|5", "yildiz|3",
+    "gokyuzu|3", "doga|3", "manzara|3", "hayran|3", "ne guzel yaratmis|5",
+    "gun batimi|3"
   ]
 };
 

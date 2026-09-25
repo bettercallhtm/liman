@@ -97,19 +97,32 @@ src/
   coz.js          yazılan metni hâle bağlar (cihazda, çevrimdışı)
   depo.js         telefonda saklanan her şey (favoriler, günlük, ayarlar)
   hatirlatici.js  günlük bildirim
-  tema.js         renkler
-  yazitipi.js     Arapça yazı tipi (Amiri Quran) yükleyici
+  tema.js         renkler, ölçüler, yazı tiplerinin (Lora + Amiri Quran) yüklenmesi
+  yazitipi.js     Arapça yazı tipi notları, ayet sonu rakamları
   ekranlar/       Karsilama, Hal, Yaz, Kart, Destek, Favoriler, Ayarlar
-  parcalar/       AyetBloku, Dugme, PaylasimKarti
+  parcalar/       AyetBloku, Dugme, Ikon, Desen, PaylasimKarti
+    Desen.js      lacivert degrade + sekiz köşeli yıldız örgüsü (SVG)
+    Ikon.js       bütün simgeler Ionicons'tan, tek kapıdan
+public/index.html web sayfasının şablonu (dil, açıklama, tema rengi)
   veri/sozluk.js    hâl başına kelime kökleri + risk listesi (elle yazılır)
   veri/icerik.json  ÜRETİLEN DOSYA — elle düzenleme
 ```
 
 ## İçerik ölçüleri
 
-27 hâl · 156 ayet · 152 ayet grubu · 162 not · 456 kart bileşimi.
+41 hâl · 490 ayet · 405 ayet/dua grubu · 123 “kendi sözlerinle” duası ·
+246 not.
 
-Her hâlde en az 5 ayet grubu, 3 dua ve 6 not var. Bunlar keyfi sayılar değil:
+Hâller üç grupta: **zor** (22), **iyi** (12) ve **kalp** (7 — iman, ibadet,
+nefis, kıskançlık, anlam, tefekkür, pişmanlık). Ana ekranda bir anda tek grup
+görünüyor.
+
+Her hâlde en az 10 ayet grubu, 7 dua, 3 “kendi sözlerinle” ve 6 not var.
+Eylül 2026 genişlemesinde eklenen her ayetin meali tek tek okunup hâline
+uyduğu kontrol edildi; uymayanlar (ör. mealine şerh eklenmiş 12:101, çok
+uzun 10:22 ve 22:5) listeye alınmadı.
+
+İlk sürümdeki ölçü en az 5 ayet grubu, 3 dua ve 6 nottu. Bunlar keyfi sayılar değil:
 "Başka bir ayet"e arka arkaya basan biri başa dönmeden en az beş kart
 görmeli, yoksa uygulama sığ hissettiriyor. Ayet/dua/not sayıları da bilerek
 aynı değil — 5, 3 ve 6 birlikte döndüğünde aynı üçlü çok daha geç tekrarlıyor.

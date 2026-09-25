@@ -64,9 +64,27 @@ const TESTLER = [
   ["Memleketimi özledim, gurbet çok ağır", "ozlem"],
   ["Annemi özlüyorum, yıllardır göremiyorum", "ozlem"],
 
+  /* 2026 Eylul genislemesi */
+  ["Tükendim, işte evde her şey bana kalıyor, gücüm kalmadı", "yorgunluk"],
+  ["Gece üç, hâlâ uyuyamıyorum, uykum kaçtı", "uykusuzluk"],
+  ["Kendimi değersiz hissediyorum, herkes benden iyi", "degersizlik"],
+  ["Oğlum ergenlikte, söz dinlemiyor, çocuğum için endişeliyim", "evlat"],
+  ["Hayırlı bir eş arıyorum, evlenmek istiyorum", "es"],
+  ["Hamileyim, bebeğimiz olacak", "bebek"],
+  ["Sonunda başardım, emeğimin karşılığını aldım", "basari"],
+  ["Günaydın, güne bir ayetle başlamak istiyorum", "sabah"],
+  ["İmanım zayıfladı, kafamda şüpheler var", "iman"],
+  ["Namazlarımı kılamıyorum, ibadetlerim aksıyor", "ibadet"],
+  ["Sigarayı bırakamıyorum, nefsime yeniliyorum", "nefis"],
+  ["Arkadaşımı kıskanıyorum, onun gibi olmak istiyorum", "kiskanclik"],
+  ["Hayatımın anlamı ne, neden buradayım bilmiyorum", "anlam"],
+  ["Gökyüzüne baktım, evren ne kadar büyük", "tefekkur"],
+  ["Evlat istiyoruz ama olmuyor", "cocuk"],
+  ["Son zamanlarda çok yoruldum, tükendim", "yorgunluk"],
+
   /* Olumsuzluk: eslesen kelimenin ardindan "yok" / "degil" gelirse sayilmaz */
   ["Kaygım yok ama param yok", "rizik"],
-  ["Hasta değilim, sadece çok yorgunum", "umutsuzluk"],
+  ["Hasta değilim, sadece çok yorgunum", "yorgunluk"],
 
   /* Risk */
   ["Ölmek istiyorum artık dayanamıyorum", "RISK"],

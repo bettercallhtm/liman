@@ -13,8 +13,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+import { Degrade, YildizOrgusu } from "./Desen";
 import { grubuAl, grupBasligi, CEVIRI_ADI } from "../icerik";
-import { useArapcaYaziTipi } from "../yazitipi";
+import { useTema } from "../tema";
+import { arapcaRakam } from "../yazitipi";
 
 export const GORSEL_EN = 360;
 export const GORSEL_BOY = 450;
@@ -28,12 +30,13 @@ function puntoHesapla(uzunluk) {
 }
 
 export default function PaylasimKarti({ grup, kartRef }) {
-  const arapcaAile = useArapcaYaziTipi();
+  const { yazi } = useTema();
+  const arapcaAile = yazi.arapca;
   const ayetler = grubuAl(grup);
   if (!ayetler.length) return null;
 
   const meal = ayetler.map((a) => a.meal).join(" ");
-  const arapca = ayetler.map((a) => a.arapca).join(" ");
+  const arapca = ayetler.map((a) => a.arapca + " ۝" + arapcaRakam(a.ayet)).join(" ");
   const { punto, satir } = puntoHesapla(meal.length);
   /* Uzun mealde Arapca satiri yer kaplamasin diye kisaliyor; cok uzunsa hic
    * gosterilmiyor, cunku kesilmis Arapca metin gostermek dogru degil. */
@@ -41,6 +44,8 @@ export default function PaylasimKarti({ grup, kartRef }) {
 
   return (
     <View ref={kartRef} collapsable={false} style={stil.kok}>
+      <Degrade bas="#0A2440" son="#15405F" />
+      <YildizOrgusu renk="#E4C177" opaklik={0.08} aralik={40} />
       <View style={stil.ustCizgi} />
 
       <View style={stil.orta}>
@@ -55,13 +60,23 @@ export default function PaylasimKarti({ grup, kartRef }) {
           </Text>
         ) : null}
 
-        <Text style={[stil.meal, { fontSize: punto, lineHeight: satir }]}>{meal}</Text>
+        <Text
+          style={[
+            stil.meal,
+            { fontSize: punto, lineHeight: satir },
+            yazi.serif ? { fontFamily: yazi.serif } : null
+          ]}
+        >
+          {meal}
+        </Text>
 
         <Text style={stil.kaynak}>{grupBasligi(grup)}</Text>
       </View>
 
       <View style={stil.alt}>
-        <Text style={stil.marka}>Liman</Text>
+        <Text style={[stil.marka, yazi.serifKalin ? { fontFamily: yazi.serifKalin, fontWeight: "normal" } : null]}>
+          Liman
+        </Text>
         <Text style={stil.meallik}>{CEVIRI_ADI} meali</Text>
       </View>
     </View>
@@ -72,7 +87,8 @@ const stil = StyleSheet.create({
   kok: {
     width: GORSEL_EN,
     height: GORSEL_BOY,
-    backgroundColor: "#0F141C",
+    backgroundColor: "#0A2440",
+    overflow: "hidden",
     padding: 30,
     justifyContent: "space-between"
   },
@@ -80,7 +96,7 @@ const stil = StyleSheet.create({
     width: 40,
     height: 3,
     borderRadius: 2,
-    backgroundColor: "#C9A961"
+    backgroundColor: "#E4C177"
   },
   orta: { flex: 1, justifyContent: "center" },
   arapca: {
@@ -91,9 +107,9 @@ const stil = StyleSheet.create({
     writingDirection: "rtl",
     marginBottom: 18
   },
-  meal: { color: "#E8EDF4" },
-  kaynak: { color: "#C9A961", fontSize: 12, marginTop: 16, letterSpacing: 0.4 },
+  meal: { color: "#F4EEDF" },
+  kaynak: { color: "#E4C177", fontSize: 12, marginTop: 16, letterSpacing: 0.4 },
   alt: { flexDirection: "row", alignItems: "baseline", justifyContent: "space-between" },
-  marka: { color: "#E8EDF4", fontSize: 15, fontWeight: "700", letterSpacing: 0.6 },
-  meallik: { color: "#63707F", fontSize: 10 }
+  marka: { color: "#E4C177", fontSize: 16, fontWeight: "700", letterSpacing: 0.6 },
+  meallik: { color: "#B9C6D6", fontSize: 10 }
 });

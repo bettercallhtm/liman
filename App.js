@@ -14,6 +14,7 @@ import {
   StatusBar as RNStatusBar,
   StyleSheet,
   Text,
+  useWindowDimensions,
   View
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
@@ -43,14 +44,45 @@ import {
   VARSAYILAN_AYARLAR
 } from "./src/depo";
 import { hatirlaticiyiKapat, hatirlaticiyiKur, hazirMi, izinIste } from "./src/hatirlatici";
+import Ikon from "./src/parcalar/Ikon";
+import { YildizOrgusu } from "./src/parcalar/Desen";
 import { OLCU, TemaSaglayici, useTema } from "./src/tema";
 
 const SEKMELER = [
-  { id: "hal", ad: "Hâlim" },
-  { id: "yaz", ad: "Yaz" },
-  { id: "favoriler", ad: "Kayıtlar" },
-  { id: "ayarlar", ad: "Ayarlar" }
+  { id: "hal", ad: "Hâlim", ikon: "home-outline", ikonSecili: "home" },
+  { id: "yaz", ad: "Yaz", ikon: "create-outline", ikonSecili: "create" },
+  { id: "favoriler", ad: "Kayıtlar", ikon: "bookmark-outline", ikonSecili: "bookmark" },
+  { id: "ayarlar", ad: "Ayarlar", ikon: "settings-outline", ikonSecili: "settings" }
 ];
+
+/* Genis ekranda (masaustu tarayici, tablet) uygulama ortada bir sutunda
+ * duruyor, iki yani desenli zemin. Telefonda bu cerceve gorunmuyor. */
+function Cerceve({ children }) {
+  const { renk } = useTema();
+  const { width } = useWindowDimensions();
+  const genis = width > OLCU.enGenis + 40;
+  return (
+    <View style={[stil.kok, { backgroundColor: renk.zemin }]}>
+      {genis ? <YildizOrgusu renk={renk.vurgu} opaklik={renk.koyu ? 0.05 : 0.07} aralik={56} /> : null}
+      <SafeAreaView
+        style={[
+          stil.sutun,
+          genis
+            ? {
+                maxWidth: OLCU.enGenis,
+                borderLeftWidth: 1,
+                borderRightWidth: 1,
+                borderColor: renk.cizgi,
+                backgroundColor: renk.zemin
+              }
+            : null
+        ]}
+      >
+        {children}
+      </SafeAreaView>
+    </View>
+  );
+}
 
 export default function App() {
   return (
@@ -211,12 +243,12 @@ function Uygulama() {
   /* Depodan okunana kadar hicbir sey cizme: karsilamayi bir an gosterip
    * kapatmak, ilk acilisin en kotu hali olurdu. */
   if (karsilamaLazim === null) {
-    return <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]} />;
+    return <Cerceve />;
   }
 
   if (karsilamaLazim) {
     return (
-      <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]}>
+      <Cerceve>
         <StatusBar style={koyuMu ? "light" : "dark"} />
         <Karsilama
           onBitti={async () => {
@@ -229,7 +261,7 @@ function Uygulama() {
             setKarsilamaLazim(false);
           }}
         />
-      </SafeAreaView>
+      </Cerceve>
     );
   }
 
@@ -301,7 +333,7 @@ function Uygulama() {
   const sekmeGizli = Boolean(kart || destek);
 
   return (
-    <SafeAreaView style={[stil.kok, { backgroundColor: renk.zemin }]}>
+    <Cerceve>
       <StatusBar style={koyuMu ? "light" : "dark"} />
       <View style={stil.icerik}>{govde}</View>
 
@@ -320,8 +352,21 @@ function Uygulama() {
                 onPress={() => setSekme(s.id)}
                 accessibilityRole="tab"
                 accessibilityState={{ selected: secili }}
+                accessibilityLabel={s.ad}
                 style={stil.sekme}
               >
+                <View
+                  style={[
+                    stil.sekmeIkon,
+                    { backgroundColor: secili ? renk.vurguZemin : "transparent" }
+                  ]}
+                >
+                  <Ikon
+                    ad={secili ? s.ikonSecili : s.ikon}
+                    boyut={21}
+                    renk={secili ? renk.vurgu : renk.yaziSilik}
+                  />
+                </View>
                 <Text
                   style={[
                     stil.sekmeMetin,
@@ -335,7 +380,7 @@ function Uygulama() {
           })}
         </View>
       )}
-    </SafeAreaView>
+    </Cerceve>
   );
 }
 
@@ -344,19 +389,27 @@ const stil = StyleSheet.create({
     flex: 1,
     paddingTop: Platform.OS === "android" ? RNStatusBar.currentHeight || 0 : 0
   },
+  sutun: { flex: 1, width: "100%", alignSelf: "center" },
   icerik: { flex: 1 },
   sekmeler: {
     flexDirection: "row",
     borderTopWidth: 1,
-    paddingTop: 8,
-    paddingBottom: Platform.OS === "ios" ? 4 : 10
+    paddingTop: 6,
+    paddingBottom: Platform.OS === "ios" ? 2 : 8
   },
   sekme: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 8,
-    minHeight: 44
+    paddingVertical: 4,
+    minHeight: 52
   },
-  sekmeMetin: { fontSize: 13, fontWeight: "600", letterSpacing: 0.3 }
+  sekmeIkon: {
+    width: 56,
+    height: 30,
+    borderRadius: 15,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  sekmeMetin: { fontSize: 11.5, fontWeight: "700", letterSpacing: 0.3, marginTop: 3 }
 });

@@ -10,17 +10,18 @@
  * dagitima izin veriyor; tek sart lisans metninin yaninda durmasi, o yuzden
  * OFL.txt depoda ve pakette.
  *
- * Yuklenene kadar `undefined` donuyor: o sirada metin sistem yazi tipiyle
- * ciziliyor. Uygulamayi bir yukleme ekraninin arkasinda bekletmektense ilk
- * karede sistem yazisiyla gostermek daha iyi — fark yalnizca Arapca satirda.
+ * Yukleme `tema.js` icinde, Lora ile birlikte tek seferde yapiliyor;
+ * bilesenler aile adini `useTema().yazi.arapca` ile aliyor. Yuklenene kadar
+ * `undefined` donuyor: o sirada metin sistem yazi tipiyle ciziliyor. Fark
+ * yalnizca Arapca satirda.
  */
-import { useFonts } from "expo-font";
 
-export const ARAPCA_AILE = "AmiriQuran";
-
-export function useArapcaYaziTipi() {
-  const [yuklendi] = useFonts({
-    [ARAPCA_AILE]: require("../assets/yazitipi/AmiriQuran-Regular.ttf")
-  });
-  return yuklendi ? ARAPCA_AILE : undefined;
+/* Arapca-Hint rakamlari: ayet sonu isaretinin (۝) yanina yaziliyor. Bu
+ * bir sayi gosterimi, metnin kendisine dokunmuyor. */
+const RAKAM = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
+export function arapcaRakam(sayi) {
+  return String(sayi)
+    .split("")
+    .map((r) => RAKAM[Number(r)] || r)
+    .join("");
 }

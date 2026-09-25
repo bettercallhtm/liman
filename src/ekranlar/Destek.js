@@ -10,10 +10,11 @@ import React from "react";
 import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import Dugme from "../parcalar/Dugme";
+import Ikon from "../parcalar/Ikon";
 import { OLCU, useTema } from "../tema";
 
 export default function Destek({ onDevam, onGeri }) {
-  const { renk } = useTema();
+  const { renk, yazi } = useTema();
 
   return (
     <ScrollView
@@ -21,7 +22,15 @@ export default function Destek({ onDevam, onGeri }) {
       contentContainerStyle={stil.govde}
       showsVerticalScrollIndicator={false}
     >
-      <Text style={[stil.baslik, { color: renk.yazi }]}>Bir dakika dur.</Text>
+      <Text
+        style={[
+          stil.baslik,
+          { color: renk.yazi },
+          yazi.serifKalin ? { fontFamily: yazi.serifKalin, fontWeight: "normal" } : null
+        ]}
+      >
+        Bir dakika dur.
+      </Text>
 
       <Text style={[stil.paragraf, { color: renk.yazi }]}>
         Yazdıklarında kendine zarar vermekle ilgili bir şey gördüm. Yanılıyor
@@ -39,7 +48,10 @@ export default function Destek({ onDevam, onGeri }) {
           onPress={() => Linking.openURL("tel:112")}
           style={[stil.hat, { borderBottomColor: renk.cizgi }]}
         >
-          <Text style={[stil.hatNumara, { color: renk.vurgu }]}>112</Text>
+          <View style={stil.hatUst}>
+            <Text style={[stil.hatNumara, { color: renk.vurgu }]}>112</Text>
+            <Ikon ad="call" boyut={20} renk={renk.vurgu} />
+          </View>
           <Text style={[stil.hatAd, { color: renk.yazi }]}>Acil Çağrı Merkezi</Text>
           <Text style={[stil.hatAlt, { color: renk.yaziSilik }]}>
             Hayati tehlike varsa. 7/24, ücretsiz.
@@ -47,7 +59,10 @@ export default function Destek({ onDevam, onGeri }) {
         </Pressable>
 
         <Pressable onPress={() => Linking.openURL("tel:183")} style={stil.hat}>
-          <Text style={[stil.hatNumara, { color: renk.vurgu }]}>183</Text>
+          <View style={stil.hatUst}>
+            <Text style={[stil.hatNumara, { color: renk.vurgu }]}>183</Text>
+            <Ikon ad="call" boyut={20} renk={renk.vurgu} />
+          </View>
           <Text style={[stil.hatAd, { color: renk.yazi }]}>Sosyal Destek Hattı</Text>
           <Text style={[stil.hatAlt, { color: renk.yaziSilik }]}>
             Konuşmak, danışmak, yönlendirilmek için. 7/24, ücretsiz.
@@ -81,6 +96,7 @@ const stil = StyleSheet.create({
     overflow: "hidden"
   },
   hat: { padding: OLCU.bosluk, borderBottomWidth: 1, borderBottomColor: "transparent" },
+  hatUst: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" },
   hatNumara: { fontSize: 30, fontWeight: "700", letterSpacing: 1 },
   hatAd: { fontSize: 15, fontWeight: "600", marginTop: 4 },
   hatAlt: { fontSize: 13, lineHeight: 19, marginTop: 4 },
