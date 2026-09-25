@@ -71,10 +71,37 @@ genişletirken `node` ile birkaç gerçek cümle deneyip sıralamaya bak.
 metin, ve isterse devam etme seçeneği. Bu listeyi daraltma — yanlış alarm
 vermek, kaçıran bir sistemden iyidir.
 
+## İnternet izni
+
+Uygulama internete hiç bağlanmıyor, ama bu tek başına izin istemediği
+anlamına gelmiyordu: Expo'nun Android şablonu ve kütüphaneler manifeste
+varsayılan olarak `INTERNET`, depolama (`READ`/`WRITE_EXTERNAL_STORAGE`) ve
+"diğer uygulamaların üzerinde göster" (`SYSTEM_ALERT_WINDOW`) izinlerini
+ekliyor. `app.json` içindeki `"permissions": []` bunları **kaldırmıyor**,
+yalnızca yeni izin eklemiyor. 1.0.0 (versionCode 3) bu izinlerle derlendi;
+mağaza metni ve gizlilik politikası "internet izni istemez" derken yanlıştı.
+
+1.1.1'den beri bu dört izin `android.blockedPermissions` ile manifestten
+siliniyor. Kontrol etmek için:
+
+```bash
+npx expo config --type introspect
+```
+
+çıktısında bu izinlerin yanında `"tools:node": "remove"` görünmeli.
+
+**Geliştirme derlemesi (development client) yapacaksan** `INTERNET`'i
+listeden geçici olarak çıkar: dev client JS paketini Metro'dan ağ üzerinden
+çekiyor, izin yoksa açılmıyor. Expo Go ve `npm run web` bundan etkilenmiyor.
+
 ## Cihazda test edilmesi gerekenler
 
-Ekranların çoğu `npm run web` ile doğrulanabiliyor ama **iki yol tarayıcıda
-çalışmıyor ve gerçek telefonda denenmeden bitmiş sayılmaz:**
+Ekranların çoğu `npm run web` ile doğrulanabiliyor ama **üç yol tarayıcıda
+denenemiyor ve gerçek telefonda denenmeden bitmiş sayılmaz:**
+
+- **İnternet izni olmadan açılış** (1.1.1'den beri). Uygulama açılıyor,
+  yazı tipleri ve simgeler geliyor, kart açılıyor mu — hepsi pakete gömülü
+  olduğu için gelmeli, ama ilk kez izinsiz derlenen sürüm bu.
 
 - **Görsel paylaşma** (`react-native-view-shot` + `expo-sharing`). Web'de
   `captureRef` yok, o yüzden `Kart.js` metin paylaşımına düşüyor. Telefonda

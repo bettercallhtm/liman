@@ -252,7 +252,11 @@ görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
 Play, "Bu sürümdeki yenilikler" alanında dil başına en fazla 500 karakter
 kabul ediyor. Console'a `<tr-TR>` etiketleriyle yapıştırılıyor.
 
-### 1.1.0 (versionCode 4)
+### 1.1.1 (versionCode 5)
+
+1.1.0 (versionCode 4) derlendi ama Play'e yüklenmedi: internet izniyle
+çıktığı fark edilince yerine bu sürüm hazırlandı. Notlar 1.0.0'dan bu yana
+değişenleri anlatıyor.
 
 ```
 <tr-TR>
@@ -261,6 +265,7 @@ Yeni görünüm ve iki kat içerik:
 • 490 ayet; her hâlde en az 10 ayet ve Kur'an'dan 7 dua
 • Yenilenen tasarım, ayet sonu işaretli Arapça metin
 • Hâller üç grupta: Zorlanıyorum, İyiyim, Kalbim
+• Uygulama artık internet ve depolama izni istemiyor
 </tr-TR>
 ```
 
