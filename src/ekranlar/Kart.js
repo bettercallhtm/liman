@@ -287,7 +287,7 @@ export default function Kart({
         ) : (
           <Dugme metin="Başka bir ayet" onPress={yenile} tur="dolu" ikon="refresh" genis />
         )}
-        <View style={{ width: 10 }} />
+        <View style={{ width: 8 }} />
         <Dugme
           tur="ikon"
           metin={favoriMi ? "Kayıtlardan çıkar" : "Kaydet"}

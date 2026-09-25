@@ -106,7 +106,9 @@ export async function ayarlariYaz(ayarlar) {
  * ile silinmiyor: kullanici verisi degil, uygulamanin kendi durumu. */
 
 export async function karsilamaGoruldu() {
-  return oku(ANAHTAR.karsilama, false) === true;
+  /* `await` sart: onsuz Promise `true` ile karsilastiriliyor, sonuc hep
+   * false oluyor ve karsilama ekrani her acilista yeniden cikiyordu. */
+  return (await oku(ANAHTAR.karsilama, false)) === true;
 }
 
 export async function karsilamayiIsaretle() {

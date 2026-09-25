@@ -3,6 +3,7 @@ import React from "react";
 import {
   Alert,
   Linking,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -53,6 +54,9 @@ function AnahtarSatir({ baslik, alt, deger, onDegis, kapali = false }) {
         onValueChange={onDegis}
         trackColor={{ true: renk.vurgu, false: renk.cizgi }}
         thumbColor={renk.yuzeyIkincil}
+        /* Web'de acik anahtarin topu varsayilan olarak yesil-mavi cikiyor;
+         * bu ozellik yalnizca react-native-web'de var. */
+        {...(Platform.OS === "web" ? { activeThumbColor: "#FFFFFF" } : null)}
       />
     </View>
   );

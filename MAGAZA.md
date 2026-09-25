@@ -252,29 +252,21 @@ görüntüler de kabul ediliyor ve uygulamayı olduğu gibi gösteriyor.
 Play, "Bu sürümdeki yenilikler" alanında dil başına en fazla 500 karakter
 kabul ediyor. Console'a `<tr-TR>` etiketleriyle yapıştırılıyor.
 
-### 1.1.1 (versionCode 5)
+### 1.1.2 (versionCode 6) — Play'e giden ilk sürüm
 
-1.1.0 (versionCode 4) derlendi ama Play'e yüklenmedi: internet izniyle
-çıktığı fark edilince yerine bu sürüm hazırlandı. Notlar 1.0.0'dan bu yana
-değişenleri anlatıyor.
+Liman Play Console'da ilk kez bu sürümle oluşturuldu; 1.0.0 (versionCode 3)
+hiç yüklenmemişti. Arada derlenen 1.1.0 (vc 4, internet izniyle çıktı) ve
+1.1.1 (vc 5, karşılama ekranı her açılışta çıkıyordu) de yüklenmedi.
+Kimse önceki bir sürümü görmediği için notlar "ilk sürüm" diye yazıldı.
 
 ```
 <tr-TR>
-Yeni görünüm ve iki kat içerik:
-• 14 yeni hâl: tükenmişlik, uykusuzluk, değersizlik hissi, iman, ibadet, nefis, kıskançlık, anlam arayışı, tefekkür, başarı, güne başlarken, eş arayışı, bebek beklerken, çocuğu için endişe
-• 490 ayet; her hâlde en az 10 ayet ve Kur'an'dan 7 dua
-• Yenilenen tasarım, ayet sonu işaretli Arapça metin
-• Hâller üç grupta: Zorlanıyorum, İyiyim, Kalbim
-• Uygulama artık internet ve depolama izni istemiyor
+İlk sürüm.
+• Yaşadığını yaz ya da 41 hâlden birini seç; sana uyan bir ayet ve Kur'an'dan bir dua gelsin
+• 490 ayet: her hâlde en az 10 ayet ve 7 dua
+• Günün ayeti, günlük hatırlatıcı, kayıtlar, koyu ve açık tema
+• İnternete bağlanmaz, internet izni istemez; yazdıkların telefonundan çıkmaz
 </tr-TR>
-```
-
-### 1.0.0 (ilk sürüm)
-
-```
-İlk sürüm. Yaşadığını yazarak ya da 27 hâlden birini seçerek sana uyan
-ayeti ve Kur'an'dan bir duayı bul. Günün ayeti, günlük hatırlatıcı,
-kayıtlar. Tamamen çevrimdışı — yazdıkların telefonundan çıkmıyor.
 ```
 
 ---

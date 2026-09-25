@@ -195,6 +195,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
   /* Icerik genisligi App'teki sinirla ayni: genis ekranda 760'i gecmiyor. */
   const icerikGen = Math.min(width, OLCU.enGenis);
   const sutun = icerikGen >= 600 ? 3 : 2;
+  const darEkran = icerikGen < 400;
   const aralik = 12;
   const hucreGen = Math.floor(
     (icerikGen - OLCU.bosluk * 2 - aralik * (sutun - 1)) / sutun
@@ -359,11 +360,16 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
                 secili ? [{ backgroundColor: renk.yuzey }, golge(renk, 0.4)] : null
               ]}
             >
-              <Ikon ad={g.ikon} boyut={15} renk={secili ? renk.vurgu : renk.yaziSilik} />
+              {/* Dar telefonda (360 dp) simgeyle birlikte "Zorlanıyorum"
+                  sigmiyor ve kirpiliyordu; orada yalnizca yazi kaliyor. */}
+              {darEkran ? null : (
+                <Ikon ad={g.ikon} boyut={15} renk={secili ? renk.vurgu : renk.yaziSilik} />
+              )}
               <Text
                 style={[
                   stil.sekmeMetin,
-                  { color: secili ? renk.yazi : renk.yaziSilik }
+                  { color: secili ? renk.yazi : renk.yaziSilik },
+                  darEkran ? { marginLeft: 0, fontSize: 13 } : null
                 ]}
                 numberOfLines={1}
               >

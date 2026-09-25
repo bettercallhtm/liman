@@ -70,7 +70,9 @@ export default function Dugme({
         {ikon ? (
           <Ikon ad={ikon} boyut={18} renk={yaziRengi} style={stil.solIkon} />
         ) : null}
-        <Text style={[stil.metin, { color: yaziRengi }]}>{metin}</Text>
+        <Text style={[stil.metin, { color: yaziRengi }]} numberOfLines={1}>
+          {metin}
+        </Text>
       </View>
     </Pressable>
   );
@@ -79,7 +81,7 @@ export default function Dugme({
 const stil = StyleSheet.create({
   dugme: {
     paddingVertical: 13,
-    paddingHorizontal: 18,
+    paddingHorizontal: 14,
     borderRadius: OLCU.yaricapKucuk + 2,
     borderWidth: 1,
     alignItems: "center",
@@ -90,7 +92,9 @@ const stil = StyleSheet.create({
   solIkon: { marginRight: 8 },
   metin: { fontSize: 15, fontWeight: "600", letterSpacing: 0.2 },
   ikonDugme: {
-    width: 50,
+    /* 46: kart ekraninin alt cubugunda uc simge dugmesiyle birlikte
+     * "Baska bir ayet" 360 dp genislikte tek satira sigsin diye. */
+    width: 46,
     height: 50,
     borderRadius: OLCU.yaricapKucuk + 2,
     borderWidth: 1,
