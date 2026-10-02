@@ -51,7 +51,7 @@ import {
 import { hatirlaticiyiKapat, hatirlaticiyiKur, hazirMi, izinIste } from "./src/hatirlatici";
 import Ikon from "./src/parcalar/Ikon";
 import { YildizOrgusu } from "./src/parcalar/Desen";
-import { OLCU, TemaSaglayici, useTema } from "./src/tema";
+import { OLCU, TemaSaglayici, useTema, odakGorunur } from "./src/tema";
 
 const SEKMELER = [
   { id: "hal", ad: "Hâlim", ikon: "home-outline", ikonSecili: "home" },
@@ -363,26 +363,40 @@ function Uygulama() {
                 accessibilityLabel={s.ad}
                 style={stil.sekme}
               >
-                <View
-                  style={[
-                    stil.sekmeIkon,
-                    { backgroundColor: secili ? renk.vurguZemin : "transparent" }
-                  ]}
-                >
-                  <Ikon
-                    ad={secili ? s.ikonSecili : s.ikon}
-                    boyut={21}
-                    renk={secili ? renk.vurgu : renk.yaziSilik}
-                  />
-                </View>
-                <Text
-                  style={[
-                    stil.sekmeMetin,
-                    { color: secili ? renk.vurgu : renk.yaziSilik }
-                  ]}
-                >
-                  {s.ad}
-                </Text>
+                {({ focused }) => (
+                  <>
+                    {/* Selected = filled icon + pill + bolder label, so the
+                        state doesn't rest on the gold colour alone. */}
+                    <View
+                      style={[
+                        stil.sekmeIkon,
+                        {
+                          backgroundColor: secili ? renk.vurguZemin : "transparent",
+                          borderColor: odakGorunur(focused) ? renk.vurgu : secili ? renk.vurguCizgi : "transparent"
+                        }
+                      ]}
+                    >
+                      <Ikon
+                        ad={secili ? s.ikonSecili : s.ikon}
+                        boyut={21}
+                        renk={secili ? renk.vurgu : renk.yaziSilik}
+                      />
+                    </View>
+                    <Text
+                      style={[
+                        stil.sekmeMetin,
+                        {
+                          color: secili ? renk.yazi : renk.yaziSilik,
+                          fontWeight: secili ? "700" : "600"
+                        }
+                      ]}
+                      numberOfLines={1}
+                      maxFontSizeMultiplier={1.3}
+                    >
+                      {s.ad}
+                    </Text>
+                  </>
+                )}
               </Pressable>
             );
           })}
@@ -391,7 +405,6 @@ function Uygulama() {
     </Cerceve>
   );
 }
-
 const stil = StyleSheet.create({
   kok: { flex: 1 },
   sutun: { flex: 1, width: "100%", alignSelf: "center" },
@@ -407,14 +420,15 @@ const stil = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingVertical: 4,
-    minHeight: 52
+    minHeight: 56
   },
   sekmeIkon: {
     width: 56,
     height: 30,
     borderRadius: 15,
+    borderWidth: 1,
     alignItems: "center",
     justifyContent: "center"
   },
-  sekmeMetin: { fontSize: 11.5, fontWeight: "700", letterSpacing: 0.3, marginTop: 3 }
+  sekmeMetin: { fontSize: 12, letterSpacing: 0.2, marginTop: 4 }
 });

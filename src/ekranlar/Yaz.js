@@ -20,7 +20,7 @@ import Dugme from "../parcalar/Dugme";
 import Ikon from "../parcalar/Ikon";
 import { metniCoz } from "../coz";
 import { HALLER } from "../icerik";
-import { OLCU, golge, saydam, useTema } from "../tema";
+import { OLCU, golge, saydam, useTema, odakGorunur } from "../tema";
 
 const ORNEKLER = [
   "Annem hastanede, yarın ameliyat olacak. Çok korkuyorum.",
@@ -85,7 +85,11 @@ export default function Yaz({ onSonuc, onRisk, onHalSec }) {
             golge(renk, 0.6),
             {
               backgroundColor: renk.yuzey,
-              borderColor: odak ? renk.vurgu : renk.cizgi
+              /* Focus = gold AND a thicker edge; the inner padding gives
+               * back the extra width so the text doesn't shift. */
+              borderColor: odak ? renk.vurgu : renk.cizgi,
+              borderWidth: odak ? 2 : 1,
+              padding: odak ? 0 : 1
             }
           ]}
         >
@@ -113,8 +117,14 @@ export default function Yaz({ onSonuc, onRisk, onHalSec }) {
               {metin.trim().length ? metin.trim().length + " karakter" : " "}
             </Text>
             {metin.length ? (
-              <Pressable onPress={() => setMetin("")} hitSlop={8}>
-                <Text style={[stil.temizle, { color: renk.yaziSilik }]}>Temizle</Text>
+              <Pressable
+                onPress={() => setMetin("")}
+                accessibilityRole="button"
+                hitSlop={6}
+                style={({ pressed }) => [stil.temizleDugme, { opacity: pressed ? 0.6 : 1 }]}
+              >
+                <Ikon ad="close-circle-outline" boyut={16} renk={renk.yaziSolgun} />
+                <Text style={[stil.temizle, { color: renk.yaziSolgun }]}>Temizle</Text>
               </Pressable>
             ) : null}
           </View>
@@ -154,6 +164,7 @@ export default function Yaz({ onSonuc, onRisk, onHalSec }) {
                 <Pressable
                   key={hal.id}
                   onPress={() => onHalSec(hal.id)}
+                  hitSlop={4}
                   style={({ pressed }) => [
                     stil.rozet,
                     {
@@ -178,11 +189,12 @@ export default function Yaz({ onSonuc, onRisk, onHalSec }) {
               <Pressable
                 key={ornek}
                 onPress={() => setMetin(ornek)}
-                style={({ pressed, hovered }) => [
+                accessibilityRole="button"
+                style={({ pressed, hovered, focused }) => [
                   stil.ornek,
                   {
                     backgroundColor: hovered ? renk.yuzey : saydam(renk.koyu ? "#FFFFFF" : "#000000", 0.025),
-                    borderColor: renk.cizgi,
+                    borderColor: odakGorunur(focused) ? renk.vurgu : renk.cizgi,
                     opacity: pressed ? 0.7 : 1
                   }
                 ]}
@@ -218,11 +230,10 @@ const stil = StyleSheet.create({
     paddingHorizontal: 11,
     marginTop: 8
   },
-  rozetUstMetin: { fontSize: 11, fontWeight: "700", letterSpacing: 1.4, marginLeft: 6 },
+  rozetUstMetin: { fontSize: 11.5, fontWeight: "700", letterSpacing: 1.4, marginLeft: 6 },
   baslik: { fontSize: 28, fontWeight: "700", marginTop: 14, lineHeight: 36 },
-  altBaslik: { fontSize: 15, lineHeight: 23, marginTop: 8, marginBottom: 20 },
+  altBaslik: { fontSize: 15, lineHeight: 23, marginTop: 6, marginBottom: 18 },
   kutuCerceve: {
-    borderWidth: 1.5,
     borderRadius: OLCU.yaricap,
     overflow: "hidden"
   },
@@ -237,11 +248,18 @@ const stil = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     borderTopWidth: 1,
-    paddingHorizontal: OLCU.bosluk,
-    paddingVertical: 10
+    paddingLeft: OLCU.bosluk,
+    paddingRight: 6,
+    minHeight: 48
   },
-  sayac: { fontSize: 12 },
-  temizle: { fontSize: 12.5, fontWeight: "600" },
+  sayac: { fontSize: 12.5 },
+  temizleDugme: {
+    flexDirection: "row",
+    alignItems: "center",
+    minHeight: 40,
+    paddingHorizontal: 10
+  },
+  temizle: { fontSize: 13, fontWeight: "600", marginLeft: 4 },
   dugmeSatiri: { flexDirection: "row" },
   uyari: {
     borderWidth: 1,
@@ -261,11 +279,12 @@ const stil = StyleSheet.create({
     paddingVertical: 7,
     paddingHorizontal: 12,
     marginRight: 8,
-    marginBottom: 8
+    marginBottom: 8,
+    minHeight: 40
   },
   rozetMetin: { fontSize: 13, fontWeight: "600" },
   ornekKutu: { marginTop: 28 },
-  ornekBaslik: { fontSize: 11, letterSpacing: 1.6, fontWeight: "700", marginBottom: 12 },
+  ornekBaslik: { fontSize: 11.5, letterSpacing: 1.4, fontWeight: "700", marginBottom: 12 },
   ornek: {
     flexDirection: "row",
     borderWidth: 1,

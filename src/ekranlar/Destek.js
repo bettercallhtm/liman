@@ -46,7 +46,14 @@ export default function Destek({ onDevam, onGeri }) {
       <View style={[stil.kutu, { backgroundColor: renk.yuzey, borderColor: renk.cizgi }]}>
         <Pressable
           onPress={() => Linking.openURL("tel:112")}
-          style={[stil.hat, { borderBottomColor: renk.cizgi }]}
+          accessibilityRole="button"
+          style={({ pressed, hovered }) => [
+            stil.hat,
+            {
+              borderBottomColor: renk.cizgi,
+              backgroundColor: pressed || hovered ? renk.yuzeyIkincil : "transparent"
+            }
+          ]}
         >
           <View style={stil.hatUst}>
             <Text style={[stil.hatNumara, { color: renk.vurgu }]}>112</Text>
@@ -58,7 +65,14 @@ export default function Destek({ onDevam, onGeri }) {
           </Text>
         </Pressable>
 
-        <Pressable onPress={() => Linking.openURL("tel:183")} style={stil.hat}>
+        <Pressable
+          onPress={() => Linking.openURL("tel:183")}
+          accessibilityRole="button"
+          style={({ pressed, hovered }) => [
+            stil.hat,
+            { backgroundColor: pressed || hovered ? renk.yuzeyIkincil : "transparent" }
+          ]}
+        >
           <View style={stil.hatUst}>
             <Text style={[stil.hatNumara, { color: renk.vurgu }]}>183</Text>
             <Ikon ad="call" boyut={20} renk={renk.vurgu} />

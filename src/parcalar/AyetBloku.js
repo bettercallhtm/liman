@@ -120,16 +120,20 @@ const stil = StyleSheet.create({
     padding: OLCU.bosluk + 4,
     marginBottom: OLCU.bosluk
   },
+  /* Wraps so a long label ("KUR'AN'DAN BİR DUA") and a long reference
+   * never squeeze each other on narrow screens or with a large font. */
   ust: {
     flexDirection: "row",
+    flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "space-between",
+    rowGap: 8,
     marginBottom: 14
   },
-  etiketSatir: { flexDirection: "row", alignItems: "center", flexShrink: 1 },
+  etiketSatir: { flexDirection: "row", alignItems: "center", flexShrink: 1, marginRight: 8 },
   etiket: {
-    fontSize: 11,
-    letterSpacing: 1.6,
+    fontSize: 11.5,
+    letterSpacing: 1.4,
     textTransform: "uppercase",
     fontWeight: "700",
     marginLeft: 6
@@ -138,10 +142,9 @@ const stil = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 999,
     paddingVertical: 3,
-    paddingHorizontal: 10,
-    marginLeft: 8
+    paddingHorizontal: 10
   },
-  kaynakMetin: { fontSize: 11.5, fontWeight: "600", letterSpacing: 0.2 },
+  kaynakMetin: { fontSize: 12, fontWeight: "600", letterSpacing: 0.2 },
   meal: {
     fontSize: 18.5,
     lineHeight: 31
@@ -164,8 +167,8 @@ const stil = StyleSheet.create({
     lineHeight: 60
   },
   okunus: {
-    fontSize: 13.5,
-    lineHeight: 22,
+    fontSize: 14,
+    lineHeight: 23,
     fontStyle: "italic",
     marginTop: 14
   }

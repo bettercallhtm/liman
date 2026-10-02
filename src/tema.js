@@ -21,12 +21,14 @@ const KOYU = {
   cizgi: "#253142",
   yazi: "#ECEFF4",
   yaziSolgun: "#A3AFBF",
-  yaziSilik: "#6C7A8B",
+  /* Small labels sit on both zemin and yuzey; this keeps them at 4.5:1. */
+  yaziSilik: "#7F8C9D",
   vurgu: "#D4B26A",
   vurguZemin: "#231E13",
   vurguCizgi: "#4A3E24",
   arapca: "#F3E6C8",
   logo: "#E4C177",
+  tehlike: "#E58C80",
   /* Ust bolumun degrade renkleri. Iki temada da lacivert: uygulamanin
    * simgesi ve acilis ekrani bu renkte. */
   heroBas: "#0A2440",
@@ -44,12 +46,15 @@ const ACIK = {
   cizgi: "#E5DDCF",
   yazi: "#18202A",
   yaziSolgun: "#56616E",
-  yaziSilik: "#8A94A0",
-  vurgu: "#9A7629",
+  /* Slightly deeper grey and gold than before: small labels on the cream
+   * background were below 4:1. */
+  yaziSilik: "#636C78",
+  vurgu: "#86661F",
   vurguZemin: "#F6EEDB",
   vurguCizgi: "#E6D5AE",
   arapca: "#2A2212",
   logo: "#9A7B2E",
+  tehlike: "#B23A2E",
   heroBas: "#0B2A4A",
   heroSon: "#1D5073",
   heroYazi: "#FBF6EA",
@@ -68,8 +73,44 @@ export const OLCU = {
   yaricapKucuk: 12,
   /* Genis ekranda (web, tablet) icerik bu genisligi gecmiyor: satirlar
    * okunamayacak kadar uzamasin. */
-  enGenis: 760
+  enGenis: 760,
+  /* Android's minimum touch target. */
+  dokunma: 48
 };
+
+/* Shared text roles so every screen titles and labels things the same way. */
+export const YAZI = {
+  ekranBaslik: { fontSize: 28, lineHeight: 36, fontWeight: "700" },
+  etiket: { fontSize: 11.5, lineHeight: 16, letterSpacing: 1.4, fontWeight: "700" }
+};
+
+/* react-native-web reports `focused` for mouse clicks too, which left a
+ * focus ring on whatever was last clicked. Track the last input modality
+ * and only draw rings for keyboard focus (like CSS :focus-visible). On
+ * native `focused` is never set, so this is always false there. */
+let klavyeModu = false;
+if (Platform.OS === "web" && typeof window !== "undefined") {
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Tab" || e.key.startsWith("Arrow")) klavyeModu = true;
+  }, true);
+  window.addEventListener("pointerdown", () => {
+    klavyeModu = false;
+  }, true);
+}
+export function odakGorunur(focused) {
+  return Boolean(focused) && klavyeModu;
+}
+
+/* Blends a colour toward white. Hal colours are mid-tones; on the dark
+ * background their icons need lifting to stay visible. */
+export function acikla(hex, oran) {
+  const h = hex.replace("#", "");
+  const kanal = (i) => {
+    const c = parseInt(h.slice(i, i + 2), 16);
+    return Math.round(c + (255 - c) * oran);
+  };
+  return "rgb(" + kanal(0) + "," + kanal(2) + "," + kanal(4) + ")";
+}
 
 /* "#5B7DB1" + 0.16 -> "rgba(91,125,177,0.16)". Hal renklerini zemine
  * gore yumusatmak icin. */

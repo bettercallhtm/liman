@@ -21,7 +21,7 @@ import Ikon from "../parcalar/Ikon";
 import { Degrade, Yildiz, YildizOrgusu } from "../parcalar/Desen";
 import { HALLER, grubuAl, grupBasligi, gununAyeti, haliBul } from "../icerik";
 import { bugununAnahtari } from "../depo";
-import { HERO_ALTIN, OLCU, golge, saydam, useTema } from "../tema";
+import { HERO_ALTIN, OLCU, YAZI, acikla, golge, saydam, useTema, odakGorunur } from "../tema";
 
 /* Yatay logo (kelime markasi). Kare simgeden yazi bandi kirpildi:
  * araclar/logo-banner-uret.js. Saydam maske; rengi tintColor veriyor. */
@@ -50,6 +50,15 @@ const GRUPLAR = [
 ];
 
 const GUN_KISA = ["Pz", "Pt", "Sa", "Ça", "Pe", "Cu", "Ct"];
+
+/* Rough widths (dp at font scale 1) a group tab needs so "Zorlanıyorum"
+ * fits on one line, with and without its icon. Below the second one the
+ * tabs stack vertically instead of shrinking or clipping the label. */
+const SEKME_IKONLU = 124;
+const SEKME_YALIN = 104;
+/* A two-column hal cell narrower than this (scaled by the font scale)
+ * starts breaking words; the grid falls back to one column. */
+const HUCRE_EN_DAR = 140;
 
 function selamlama(saat) {
   if (saat < 5) return "Hayırlı geceler";
@@ -88,33 +97,48 @@ function tarihler(simdi = new Date()) {
   return { miladi, hicri };
 }
 
-function Hucre({ hal, genislik, onPress }) {
+/* Hal colours are mid-tones picked for the light theme; on the dark
+ * background the icon is lifted toward white so it doesn't sink. */
+function ikonRengi(renk, halRengi) {
+  return renk.koyu ? acikla(halRengi, 0.35) : halRengi;
+}
+
+function Hucre({ hal, genislik, yatay, onPress }) {
   const { renk } = useTema();
   return (
     <Pressable
       onPress={() => onPress(hal.id)}
       accessibilityRole="button"
       accessibilityLabel={hal.ad + ". " + hal.ozet}
-      style={({ pressed, hovered }) => [
+      style={({ pressed, hovered, focused }) => [
         stil.hucre,
-        golge(renk, 0.5),
+        yatay ? stil.hucreYatay : null,
+        golge(renk, 0.4),
         {
           width: genislik,
           backgroundColor: renk.yuzey,
-          borderColor: pressed || hovered ? saydam(hal.renk, 0.7) : renk.cizgi,
-          transform: [{ scale: pressed ? 0.97 : 1 }]
+          borderColor: odakGorunur(focused)
+            ? renk.vurgu
+            : pressed || hovered
+              ? saydam(hal.renk, 0.7)
+              : renk.cizgi,
+          transform: [{ scale: pressed ? 0.98 : 1 }]
         }
       ]}
     >
-      <View style={[stil.hucreIkon, { backgroundColor: saydam(hal.renk, renk.koyu ? 0.22 : 0.14) }]}>
-        <Ikon ad={hal.ikon || "ellipse-outline"} boyut={20} renk={hal.renk} />
+      <View
+        style={[
+          stil.hucreIkon,
+          yatay ? stil.hucreIkonYatay : null,
+          { backgroundColor: saydam(hal.renk, renk.koyu ? 0.24 : 0.13) }
+        ]}
+      >
+        <Ikon ad={hal.ikon || "ellipse-outline"} boyut={19} renk={ikonRengi(renk, hal.renk)} />
       </View>
-      <Text style={[stil.hucreAd, { color: renk.yazi }]} numberOfLines={2}>
-        {hal.ad}
-      </Text>
-      <Text style={[stil.hucreOzet, { color: renk.yaziSilik }]} numberOfLines={2}>
-        {hal.ozet}
-      </Text>
+      <View style={yatay ? { flex: 1 } : null}>
+        <Text style={[stil.hucreAd, { color: renk.yazi }]}>{hal.ad}</Text>
+        <Text style={[stil.hucreOzet, { color: renk.yaziSolgun }]}>{hal.ozet}</Text>
+      </View>
     </Pressable>
   );
 }
@@ -143,8 +167,8 @@ function SonYediGun({ gunluk, onGunSec }) {
   if (!Object.keys(gunluk).length) return null;
 
   return (
-    <View style={[stil.seritKutu, { backgroundColor: renk.yuzey, borderColor: renk.cizgi }]}>
-      <Text style={[stil.bolumBaslik, { color: renk.yaziSilik }]}>SON YEDİ GÜN</Text>
+    <View style={[stil.seritKutu, { borderTopColor: renk.cizgi }]}>
+      <Text style={[YAZI.etiket, { color: renk.yaziSilik }]}>SON YEDİ GÜN</Text>
       <View style={stil.serit}>
         {gunler.map((gun) => {
           const hal = gun.halId ? haliBul(gun.halId) : null;
@@ -152,6 +176,8 @@ function SonYediGun({ gunluk, onGunSec }) {
             <Pressable
               key={gun.anahtar}
               onPress={() => (hal ? onGunSec(hal.id) : null)}
+              disabled={!hal}
+              accessibilityRole={hal ? "button" : undefined}
               accessibilityLabel={hal ? hal.ad : "Kayıt yok"}
               style={stil.seritGun}
             >
@@ -159,12 +185,15 @@ function SonYediGun({ gunluk, onGunSec }) {
                 style={[
                   stil.nokta,
                   {
-                    backgroundColor: hal ? saydam(hal.renk, 0.22) : "transparent",
-                    borderColor: hal ? hal.renk : renk.cizgi
+                    backgroundColor: hal ? saydam(hal.renk, renk.koyu ? 0.24 : 0.16) : "transparent",
+                    borderColor: hal ? saydam(hal.renk, 0.8) : saydam(renk.yaziSilik, 0.55),
+                    borderStyle: hal ? "solid" : "dashed"
                   }
                 ]}
               >
-                {hal ? <Ikon ad={hal.ikon || "ellipse"} boyut={14} renk={hal.renk} /> : null}
+                {hal ? (
+                  <Ikon ad={hal.ikon || "ellipse"} boyut={15} renk={ikonRengi(renk, hal.renk)} />
+                ) : null}
               </View>
               <Text
                 style={[
@@ -175,6 +204,13 @@ function SonYediGun({ gunluk, onGunSec }) {
               >
                 {gun.harf}
               </Text>
+              {/* Today is marked by weight and this dot, not by colour alone. */}
+              <View
+                style={[
+                  stil.bugunIsaret,
+                  { backgroundColor: gun.bugun ? renk.vurgu : "transparent" }
+                ]}
+              />
             </Pressable>
           );
         })}
@@ -185,7 +221,7 @@ function SonYediGun({ gunluk, onGunSec }) {
 
 export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
   const { renk, koyuMu, yazi, tercihiDegistir } = useTema();
-  const { width } = useWindowDimensions();
+  const { width, fontScale } = useWindowDimensions();
   const [grup, setGrup] = useState("zor");
 
   const gununGrup = gununAyeti();
@@ -194,16 +230,29 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 
   /* Icerik genisligi App'teki sinirla ayni: genis ekranda 760'i gecmiyor. */
   const icerikGen = Math.min(width, OLCU.enGenis);
-  const sutun = icerikGen >= 600 ? 3 : 2;
-  const darEkran = icerikGen < 400;
+  const olcek = Math.max(1, fontScale || 1);
   const aralik = 12;
-  const hucreGen = Math.floor(
-    (icerikGen - OLCU.bosluk * 2 - aralik * (sutun - 1)) / sutun
-  );
-  const logoGen = Math.min(icerikGen - 96, 300);
+  const kullanilir = icerikGen - OLCU.bosluk * 2;
+
+  let sutun = icerikGen >= 600 ? 3 : 2;
+  let hucreGen = Math.floor((kullanilir - aralik * (sutun - 1)) / sutun);
+  if (sutun === 2 && hucreGen < HUCRE_EN_DAR * olcek) {
+    sutun = 1;
+    hucreGen = kullanilir;
+  }
+
+  /* Group tabs: icon + label, label only, or stacked rows. */
+  const sekmeGen = (kullanilir - 10) / 3;
+  const sekmeDuzen =
+    sekmeGen >= SEKME_IKONLU * olcek ? "ikonlu" : sekmeGen >= SEKME_YALIN * olcek ? "yalin" : "dikey";
+
+  /* The logo used to take ~45% of a 360 dp screen and pushed the hal
+   * choice below the fold; it stays the brand mark, just smaller. */
+  const logoGen = Math.round(Math.min(icerikGen * 0.42, 180));
 
   const seciliGrup = GRUPLAR.find((g) => g.id === grup);
   const haller = HALLER.filter((h) => h.grup === grup);
+  const tarihSatiri = [miladi, hicri].filter(Boolean).join(" · ");
 
   return (
     <ScrollView
@@ -212,30 +261,37 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
       showsVerticalScrollIndicator={false}
     >
       {/* ---- ust bolum ---- */}
-      <View style={[stil.hero, golge(renk, 1.2)]}>
+      <View style={[stil.hero, golge(renk, 1)]}>
         <Degrade bas={renk.heroBas} son={renk.heroSon} />
-        <YildizOrgusu renk={HERO_ALTIN} opaklik={0.09} aralik={46} />
+        <YildizOrgusu renk={HERO_ALTIN} opaklik={0.06} aralik={46} />
 
         <View style={stil.heroUst}>
-          <View style={{ flex: 1 }}>
-            {miladi ? (
-              <Text style={[stil.tarih, { color: renk.heroYazi }]}>{miladi}</Text>
-            ) : null}
-            {hicri ? (
-              <Text style={[stil.hicri, { color: renk.heroSolgun }]}>{hicri}</Text>
+          <View style={{ flex: 1, paddingRight: 12 }}>
+            <Text style={[stil.selam, { color: renk.heroYazi }]}>
+              {selamlama(new Date().getHours())}
+            </Text>
+            {tarihSatiri ? (
+              <Text style={[stil.tarih, { color: renk.heroSolgun }]}>{tarihSatiri}</Text>
             ) : null}
           </View>
           <Pressable
             onPress={() => tercihiDegistir(koyuMu ? "acik" : "koyu")}
             accessibilityRole="button"
             accessibilityLabel={koyuMu ? "Açık moda geç" : "Koyu moda geç"}
-            hitSlop={8}
-            style={({ pressed }) => [stil.temaDugme, { opacity: pressed ? 0.7 : 1 }]}
+            style={({ pressed, focused }) => [
+              stil.temaDugme,
+              {
+                opacity: pressed ? 0.7 : 1,
+                borderColor: odakGorunur(focused) ? HERO_ALTIN : "rgba(228,193,119,0.35)"
+              }
+            ]}
           >
-            <Ikon ad={koyuMu ? "sunny-outline" : "moon-outline"} boyut={19} renk={HERO_ALTIN} />
+            <Ikon ad={koyuMu ? "sunny-outline" : "moon-outline"} boyut={20} renk={HERO_ALTIN} />
           </Pressable>
         </View>
 
+        {/* Logo sits in its own row under the date/theme row, so the theme
+            button never shifts it off the true horizontal centre. */}
         <Image
           source={LOGO}
           style={{
@@ -243,15 +299,12 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
             height: Math.round(logoGen / LOGO_ORAN),
             tintColor: HERO_ALTIN,
             alignSelf: "center",
-            marginTop: 2
+            marginTop: 6
           }}
           resizeMode="contain"
           accessibilityLabel="Liman"
         />
 
-        <Text style={[stil.selam, { color: renk.heroSolgun }]}>
-          {selamlama(new Date().getHours())}
-        </Text>
         <Text
           style={[
             stil.baslik,
@@ -266,12 +319,12 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
           onPress={onYaz}
           accessibilityRole="button"
           accessibilityLabel="Ne yaşadığını yaz"
-          style={({ pressed, hovered }) => [
+          style={({ pressed, hovered, focused }) => [
             stil.yazGiris,
             {
-              backgroundColor: hovered ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0.09)",
-              borderColor: "rgba(228,193,119,0.45)",
-              opacity: pressed ? 0.8 : 1
+              backgroundColor: hovered || pressed ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0.09)",
+              borderColor: odakGorunur(focused) ? HERO_ALTIN : "rgba(228,193,119,0.45)",
+              borderWidth: odakGorunur(focused) ? 2 : 1
             }
           ]}
         >
@@ -280,7 +333,7 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
           </View>
           <View style={{ flex: 1 }}>
             <Text style={[stil.yazBaslik, { color: renk.heroYazi }]}>Ne yaşadığını yaz</Text>
-            <Text style={[stil.yazAlt, { color: renk.heroSolgun }]} numberOfLines={2}>
+            <Text style={[stil.yazAlt, { color: renk.heroSolgun }]}>
               Başından geçeni anlat, sana uyan ayeti ve duayı bulayım.
             </Text>
           </View>
@@ -293,25 +346,23 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
         onPress={onGununAyeti}
         accessibilityRole="button"
         accessibilityLabel="Günün ayetini aç"
-        style={({ pressed, hovered }) => [
+        style={({ pressed, hovered, focused }) => [
           stil.gunun,
-          golge(renk, 0.6),
           {
             backgroundColor: renk.vurguZemin,
-            borderColor: hovered ? renk.vurgu : renk.vurguCizgi,
+            borderColor: hovered || odakGorunur(focused) ? renk.vurgu : renk.vurguCizgi,
             opacity: pressed ? 0.85 : 1
           }
         ]}
       >
         <View style={stil.gununDekor}>
-          <Yildiz boyut={120} renk={renk.vurgu} opaklik={0.14} kalinlik={1.4} />
+          <Yildiz boyut={96} renk={renk.vurgu} opaklik={0.1} kalinlik={1.2} />
         </View>
         <View style={stil.gununUst}>
           <Ikon ad="sparkles" boyut={13} renk={renk.vurgu} />
-          <Text style={[stil.bolumBaslik, { color: renk.vurgu, marginLeft: 6 }]}>
-            GÜNÜN AYETİ
-          </Text>
+          <Text style={[YAZI.etiket, { color: renk.vurgu, marginLeft: 6 }]}>GÜNÜN AYETİ</Text>
         </View>
+        {/* A preview; the full text opens on tap. */}
         <Text
           style={[
             stil.gununMeal,
@@ -329,8 +380,8 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
             </Text>
           </View>
           <View style={stil.oku}>
-            <Text style={[stil.okuMetin, { color: renk.yaziSolgun }]}>Oku</Text>
-            <Ikon ad="arrow-forward" boyut={14} renk={renk.yaziSolgun} />
+            <Text style={[stil.okuMetin, { color: renk.yazi }]}>Oku</Text>
+            <Ikon ad="arrow-forward" boyut={15} renk={renk.vurgu} />
           </View>
         </View>
       </Pressable>
@@ -346,7 +397,14 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
         Hâlini seç
       </Text>
 
-      <View style={[stil.sekmeKutu, { backgroundColor: renk.yuzeyIkincil, borderColor: renk.cizgi }]}>
+      <View
+        accessibilityRole="tablist"
+        style={[
+          stil.sekmeKutu,
+          sekmeDuzen === "dikey" ? stil.sekmeKutuDikey : null,
+          { backgroundColor: renk.yuzeyIkincil, borderColor: renk.cizgi }
+        ]}
+      >
         {GRUPLAR.map((g) => {
           const secili = g.id === grup;
           return (
@@ -355,26 +413,34 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
               onPress={() => setGrup(g.id)}
               accessibilityRole="tab"
               accessibilityState={{ selected: secili }}
-              style={[
+              style={({ focused }) => [
                 stil.sekme,
-                secili ? [{ backgroundColor: renk.yuzey }, golge(renk, 0.4)] : null
+                sekmeDuzen === "dikey" ? stil.sekmeDikey : null,
+                {
+                  borderColor: secili ? renk.vurguCizgi : odakGorunur(focused) ? renk.vurgu : "transparent"
+                },
+                secili ? [{ backgroundColor: renk.yuzey }, golge(renk, 0.3)] : null
               ]}
             >
-              {/* Dar telefonda (360 dp) simgeyle birlikte "Zorlanıyorum"
-                  sigmiyor ve kirpiliyordu; orada yalnizca yazi kaliyor. */}
-              {darEkran ? null : (
-                <Ikon ad={g.ikon} boyut={15} renk={secili ? renk.vurgu : renk.yaziSilik} />
+              {sekmeDuzen === "yalin" ? null : (
+                <Ikon ad={g.ikon} boyut={16} renk={secili ? renk.vurgu : renk.yaziSilik} />
               )}
               <Text
                 style={[
                   stil.sekmeMetin,
-                  { color: secili ? renk.yazi : renk.yaziSilik },
-                  darEkran ? { marginLeft: 0, fontSize: 13 } : null
+                  {
+                    color: secili ? renk.yazi : renk.yaziSolgun,
+                    fontWeight: secili ? "700" : "600",
+                    marginLeft: sekmeDuzen === "yalin" ? 0 : sekmeDuzen === "dikey" ? 10 : 6
+                  }
                 ]}
-                numberOfLines={1}
+                numberOfLines={sekmeDuzen === "dikey" ? undefined : 1}
               >
                 {g.ad}
               </Text>
+              {sekmeDuzen === "dikey" && secili ? (
+                <Ikon ad="checkmark" boyut={18} renk={renk.vurgu} style={{ marginLeft: "auto" }} />
+              ) : null}
             </Pressable>
           );
         })}
@@ -383,7 +449,13 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 
       <View style={[stil.izgara, { gap: aralik }]}>
         {haller.map((hal) => (
-          <Hucre key={hal.id} hal={hal} genislik={hucreGen} onPress={onHalSec} />
+          <Hucre
+            key={hal.id}
+            hal={hal}
+            genislik={hucreGen}
+            yatay={sutun === 1}
+            onPress={onHalSec}
+          />
         ))}
       </View>
 
@@ -393,43 +465,43 @@ export default function Hal({ gunluk, onHalSec, onGununAyeti, onYaz }) {
 }
 
 const stil = StyleSheet.create({
-  govde: { padding: OLCU.bosluk, paddingBottom: 48 },
+  govde: { padding: OLCU.bosluk, paddingBottom: 40 },
 
   hero: {
-    borderRadius: 26,
+    borderRadius: 24,
     overflow: "hidden",
-    padding: 20,
-    paddingBottom: 20,
+    paddingHorizontal: 18,
+    paddingTop: 16,
+    paddingBottom: 18,
     marginBottom: OLCU.bosluk
   },
-  heroUst: { flexDirection: "row", alignItems: "flex-start" },
-  tarih: { fontSize: 13, fontWeight: "600", letterSpacing: 0.3 },
-  hicri: { fontSize: 12, marginTop: 2, letterSpacing: 0.3 },
+  heroUst: { flexDirection: "row", alignItems: "center" },
+  selam: { fontSize: 15, fontWeight: "700", letterSpacing: 0.2 },
+  tarih: { fontSize: 12.5, lineHeight: 18, marginTop: 2, letterSpacing: 0.2 },
   temaDugme: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: OLCU.dokunma,
+    height: OLCU.dokunma,
+    borderRadius: OLCU.dokunma / 2,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "rgba(255,255,255,0.08)",
-    borderWidth: 1,
-    borderColor: "rgba(228,193,119,0.35)"
+    borderWidth: 1
   },
-  selam: { fontSize: 15, marginTop: 8, textAlign: "center", letterSpacing: 0.4 },
   baslik: {
-    fontSize: 30,
+    fontSize: 26,
     fontWeight: "700",
-    marginTop: 4,
+    marginTop: 8,
     textAlign: "center",
-    lineHeight: 40
+    lineHeight: 34
   },
   yazGiris: {
     flexDirection: "row",
     alignItems: "center",
-    borderWidth: 1,
     borderRadius: OLCU.yaricap,
-    padding: 14,
-    marginTop: 18
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    marginTop: 14,
+    minHeight: 64
   },
   yazIkon: {
     width: 40,
@@ -445,83 +517,94 @@ const stil = StyleSheet.create({
 
   gunun: {
     borderWidth: 1,
-    borderRadius: OLCU.yaricap + 4,
-    padding: 20,
+    borderRadius: OLCU.yaricap + 2,
+    padding: 18,
     marginBottom: 28,
     overflow: "hidden"
   },
-  gununDekor: { position: "absolute", top: -30, right: -30 },
+  gununDekor: { position: "absolute", top: -26, right: -26 },
   gununUst: { flexDirection: "row", alignItems: "center" },
-  gununMeal: { fontSize: 17, lineHeight: 28, marginTop: 12 },
+  gununMeal: { fontSize: 17, lineHeight: 28, marginTop: 10 },
   gununAlt: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    flexWrap: "wrap",
     marginTop: 14
   },
   kaynakHap: {
     borderWidth: 1,
     borderRadius: 999,
     paddingVertical: 4,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
+    marginRight: 8
   },
   kaynakHapMetin: { fontSize: 12, fontWeight: "600", letterSpacing: 0.3 },
-  oku: { flexDirection: "row", alignItems: "center" },
-  okuMetin: { fontSize: 13, fontWeight: "600", marginRight: 4 },
+  oku: { flexDirection: "row", alignItems: "center", minHeight: 32 },
+  okuMetin: { fontSize: 14, fontWeight: "700", marginRight: 4 },
 
-  bolumBuyuk: { fontSize: 22, fontWeight: "700", marginBottom: 12 },
-  bolumBaslik: { fontSize: 11, letterSpacing: 1.6, fontWeight: "700" },
+  bolumBuyuk: { fontSize: 22, lineHeight: 30, fontWeight: "700", marginBottom: 12 },
   sekmeKutu: {
     flexDirection: "row",
     borderRadius: 14,
     borderWidth: 1,
     padding: 4
   },
+  sekmeKutuDikey: { flexDirection: "column" },
   sekme: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 6,
     borderRadius: 10,
-    minHeight: 42
+    borderWidth: 1,
+    minHeight: OLCU.dokunma
   },
-  sekmeMetin: { fontSize: 13.5, fontWeight: "700", marginLeft: 6 },
-  grupAlt: { fontSize: 13, lineHeight: 19, marginTop: 10, marginBottom: 14 },
+  sekmeDikey: { flex: 0, justifyContent: "flex-start", paddingHorizontal: 12 },
+  sekmeMetin: { fontSize: 14 },
+  grupAlt: { fontSize: 13.5, lineHeight: 20, marginTop: 10, marginBottom: 14 },
 
   izgara: { flexDirection: "row", flexWrap: "wrap" },
   hucre: {
     borderWidth: 1,
     borderRadius: OLCU.yaricap,
     padding: 14,
-    minHeight: 128
+    minHeight: 120
+  },
+  hucreYatay: {
+    flexDirection: "row",
+    alignItems: "center",
+    minHeight: 72
   },
   hucreIkon: {
-    width: 38,
-    height: 38,
-    borderRadius: 12,
+    width: 36,
+    height: 36,
+    borderRadius: 11,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 12
+    marginBottom: 10
   },
+  hucreIkonYatay: { marginBottom: 0, marginRight: 12 },
   hucreAd: { fontSize: 15, fontWeight: "700", lineHeight: 20 },
-  hucreOzet: { fontSize: 12, lineHeight: 17, marginTop: 4 },
+  hucreOzet: { fontSize: 12.5, lineHeight: 18, marginTop: 3 },
 
   seritKutu: {
-    marginTop: 24,
-    borderWidth: 1,
-    borderRadius: OLCU.yaricap,
-    padding: 16
+    marginTop: 28,
+    paddingTop: 18,
+    borderTopWidth: 1
   },
-  serit: { flexDirection: "row", justifyContent: "space-between", marginTop: 14 },
-  seritGun: { alignItems: "center", flex: 1 },
+  serit: { flexDirection: "row", justifyContent: "space-between", marginTop: 12 },
+  seritGun: { alignItems: "center", flex: 1, minHeight: OLCU.dokunma },
   nokta: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: 34,
+    height: 34,
+    borderRadius: 17,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center"
   },
-  seritHarf: { fontSize: 11, marginTop: 6 }
+  seritHarf: { fontSize: 12, marginTop: 6 },
+  bugunIsaret: { width: 4, height: 4, borderRadius: 2, marginTop: 3 }
 });

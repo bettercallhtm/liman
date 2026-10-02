@@ -39,7 +39,7 @@ export default function Karsilama({ onBitti, onHatirlaticiIste }) {
       <ScrollView contentContainerStyle={stil.govde} showsVerticalScrollIndicator={false}>
         <View style={stil.hero}>
           <Degrade bas={renk.heroBas} son={renk.heroSon} />
-          <YildizOrgusu renk={HERO_ALTIN} opaklik={0.1} aralik={46} />
+          <YildizOrgusu renk={HERO_ALTIN} opaklik={0.06} aralik={46} />
           <Image
             source={LOGO}
             style={[stil.logo, { tintColor: HERO_ALTIN }]}
@@ -62,20 +62,26 @@ export default function Karsilama({ onBitti, onHatirlaticiIste }) {
           dokunan bir ayet ve Kur'an'ın kendi dualarından biri gelsin.
         </Text>
 
-        {NOKTALAR.map((n) => (
-          <View
-            key={n.baslik}
-            style={[stil.kutu, { backgroundColor: renk.yuzey, borderColor: renk.cizgi }]}
-          >
-            <View style={[stil.kutuIkon, { backgroundColor: renk.vurguZemin }]}>
-              <Ikon ad={n.ikon} boyut={18} renk={renk.vurgu} />
+        {/* Both notes in one card, split by a rule, rather than two boxes. */}
+        <View style={[stil.kutu, { backgroundColor: renk.yuzey, borderColor: renk.cizgi }]}>
+          {NOKTALAR.map((n, sira) => (
+            <View
+              key={n.baslik}
+              style={[
+                stil.nokta,
+                sira > 0 ? [stil.noktaAyrik, { borderTopColor: renk.cizgi }] : null
+              ]}
+            >
+              <View style={[stil.kutuIkon, { backgroundColor: renk.vurguZemin }]}>
+                <Ikon ad={n.ikon} boyut={18} renk={renk.vurgu} />
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={[stil.kutuBaslik, { color: renk.yazi }]}>{n.baslik}</Text>
+                <Text style={[stil.kutuMetin, { color: renk.yaziSolgun }]}>{n.metin}</Text>
+              </View>
             </View>
-            <View style={{ flex: 1 }}>
-              <Text style={[stil.kutuBaslik, { color: renk.yazi }]}>{n.baslik}</Text>
-              <Text style={[stil.kutuMetin, { color: renk.yaziSolgun }]}>{n.metin}</Text>
-            </View>
-          </View>
-        ))}
+          ))}
+        </View>
       </ScrollView>
 
       <View style={stil.alt}>
@@ -102,32 +108,33 @@ const stil = StyleSheet.create({
     flexGrow: 1,
     justifyContent: "center",
     padding: OLCU.bosluk + 4,
-    paddingTop: 28
+    paddingTop: 20
   },
   hero: {
     borderRadius: 26,
     overflow: "hidden",
-    paddingVertical: 30,
+    paddingVertical: 20,
     paddingHorizontal: 22,
     alignItems: "center",
-    marginBottom: 22
+    marginBottom: 20
   },
-  logo: { width: 220, height: 130 },
+  /* 180 / 1.698 keeps the banner's own proportions. */
+  logo: { width: 180, height: 106 },
   baslik: {
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: "700",
-    lineHeight: 38,
+    lineHeight: 35,
     textAlign: "center",
     marginTop: 10
   },
-  metin: { fontSize: 16, lineHeight: 26, marginBottom: 8, textAlign: "center" },
+  metin: { fontSize: 16, lineHeight: 25, marginBottom: 14, textAlign: "center" },
   kutu: {
-    flexDirection: "row",
     borderWidth: 1,
     borderRadius: OLCU.yaricap,
-    padding: OLCU.bosluk,
-    marginTop: 12
+    paddingHorizontal: OLCU.bosluk
   },
+  nokta: { flexDirection: "row", paddingVertical: 14 },
+  noktaAyrik: { borderTopWidth: 1 },
   kutuIkon: {
     width: 38,
     height: 38,
@@ -138,6 +145,6 @@ const stil = StyleSheet.create({
   },
   kutuBaslik: { fontSize: 15, fontWeight: "700", marginBottom: 4 },
   kutuMetin: { fontSize: 14, lineHeight: 21 },
-  alt: { padding: OLCU.bosluk + 4, paddingBottom: 24 },
+  alt: { paddingHorizontal: OLCU.bosluk + 4, paddingTop: 12, paddingBottom: 20 },
   satir: { flexDirection: "row" }
 });

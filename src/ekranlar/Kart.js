@@ -21,6 +21,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  useWindowDimensions,
   View
 } from "react-native";
 import * as Clipboard from "expo-clipboard";
@@ -33,7 +34,7 @@ import Ikon from "../parcalar/Ikon";
 import PaylasimKarti from "../parcalar/PaylasimKarti";
 import { Degrade, YildizOrgusu } from "../parcalar/Desen";
 import { CEVIRI_ADI, haliBul, paylasimMetni } from "../icerik";
-import { OLCU, golge, saydam, useTema } from "../tema";
+import { OLCU, golge, saydam, useTema, odakGorunur } from "../tema";
 
 function Kaynak({ kaynak, onHalSec }) {
   const { renk } = useTema();
@@ -65,6 +66,7 @@ function Kaynak({ kaynak, onHalSec }) {
                 <Pressable
                   key={hal.id}
                   onPress={() => onHalSec(hal.id)}
+                  hitSlop={4}
                   style={({ pressed }) => [
                     stil.rozet,
                     {
@@ -103,8 +105,16 @@ export default function Kart({
   const gorselRef = useRef(null);
   const kaydirma = useRef(null);
   const [kopyalandi, setKopyalandi] = useState(false);
+  const { width, fontScale } = useWindowDimensions();
 
   if (!kart) return null;
+
+  /* Bottom bar: the main action and three 48 dp icon buttons share one row
+   * when "Başka bir ayet" fits beside them; otherwise (narrow screen, large
+   * system font) the icons drop to a second row instead of clipping it. */
+  const barGen = Math.min(width, OLCU.enGenis) - OLCU.bosluk * 2;
+  const anaDugmeYeri = barGen - 3 * (OLCU.dokunma + 8);
+  const tekSatir = anaDugmeYeri >= 156 * Math.max(1, fontScale || 1);
 
   /* Eski kayitlarda tek bir "not" vardi; yeni yapida uc oneri ve bir de
    * "kendi sozlerinle" duasi var. Kaydedilmis eski kartlar acilmaya devam
@@ -178,16 +188,21 @@ export default function Kart({
             basOpak={renk.koyu ? 0.32 : 0.22}
             sonOpak={0}
           />
-          <YildizOrgusu renk={kart.renk} opaklik={renk.koyu ? 0.16 : 0.12} aralik={40} />
+          <YildizOrgusu renk={kart.renk} opaklik={renk.koyu ? 0.1 : 0.08} aralik={40} />
 
           <Pressable
             onPress={onGeri}
-            hitSlop={12}
+            hitSlop={4}
             accessibilityRole="button"
             accessibilityLabel="Geri"
-            style={({ pressed }) => [
+            style={({ pressed, focused }) => [
               stil.geri,
-              { backgroundColor: renk.yuzey, borderColor: renk.cizgi, opacity: pressed ? 0.7 : 1 }
+              {
+                backgroundColor: renk.yuzey,
+                borderColor: odakGorunur(focused) ? renk.vurgu : renk.cizgi,
+                borderWidth: odakGorunur(focused) ? 2 : 1,
+                opacity: pressed ? 0.7 : 1
+              }
             ]}
           >
             <Ikon ad="chevron-back" boyut={20} renk={renk.yazi} />
@@ -236,7 +251,7 @@ export default function Kart({
               <Text
                 style={[
                   stil.tirnak,
-                  { color: saydam(kart.renk, 0.35) },
+                  { color: saydam(kart.renk, renk.koyu ? 0.28 : 0.2) },
                   yazi.serifKalin ? { fontFamily: yazi.serifKalin, fontWeight: "normal" } : null
                 ]}
               >
@@ -281,29 +296,46 @@ export default function Kart({
         </View>
       </ScrollView>
 
-      <View style={[stil.altBar, { backgroundColor: renk.zemin, borderTopColor: renk.cizgi }]}>
-        {gunun ? (
-          <Dugme metin="Hâlimi seç" onPress={onGeri} tur="cizgi" ikon="apps-outline" genis />
-        ) : (
-          <Dugme metin="Başka bir ayet" onPress={yenile} tur="dolu" ikon="refresh" genis />
-        )}
-        <View style={{ width: 8 }} />
-        <Dugme
-          tur="ikon"
-          metin={favoriMi ? "Kayıtlardan çıkar" : "Kaydet"}
-          ikon={favoriMi ? "bookmark" : "bookmark-outline"}
-          secili={favoriMi}
-          onPress={onFavori}
-        />
-        <View style={{ width: 8 }} />
-        <Dugme tur="ikon" metin="Paylaş" ikon="share-social-outline" onPress={paylas} />
-        <View style={{ width: 8 }} />
-        <Dugme
-          tur="ikon"
-          metin={kopyalandi ? "Kopyalandı" : "Kopyala"}
-          ikon={kopyalandi ? "checkmark" : "copy-outline"}
-          onPress={kopyala}
-        />
+      <View
+        style={[
+          stil.altBar,
+          tekSatir ? null : stil.altBarIki,
+          { backgroundColor: renk.zemin, borderTopColor: renk.cizgi }
+        ]}
+      >
+        <View style={stil.altSatir}>
+          {gunun ? (
+            <Dugme metin="Hâlimi seç" onPress={onGeri} tur="cizgi" ikon="apps-outline" genis />
+          ) : (
+            <Dugme metin="Başka bir ayet" onPress={yenile} tur="dolu" ikon="refresh" genis />
+          )}
+        </View>
+        <View style={[stil.altSatir, tekSatir ? { marginLeft: 8, flexGrow: 0 } : { marginTop: 8 }]}>
+          <Dugme
+            tur="ikon"
+            metin={favoriMi ? "Kayıtlardan çıkar" : "Kaydet"}
+            ikon={favoriMi ? "bookmark" : "bookmark-outline"}
+            secili={favoriMi}
+            onPress={onFavori}
+            genis={!tekSatir}
+          />
+          <View style={{ width: 8 }} />
+          <Dugme
+            tur="ikon"
+            metin="Paylaş"
+            ikon="share-social-outline"
+            onPress={paylas}
+            genis={!tekSatir}
+          />
+          <View style={{ width: 8 }} />
+          <Dugme
+            tur="ikon"
+            metin={kopyalandi ? "Kopyalandı" : "Kopyala"}
+            ikon={kopyalandi ? "checkmark" : "copy-outline"}
+            onPress={kopyala}
+            genis={!tekSatir}
+          />
+        </View>
       </View>
     </View>
   );
@@ -320,9 +352,9 @@ const stil = StyleSheet.create({
     overflow: "hidden"
   },
   geri: {
-    width: 42,
-    height: 42,
-    borderRadius: 21,
+    width: 44,
+    height: 44,
+    borderRadius: 22,
     borderWidth: 1,
     alignItems: "center",
     justifyContent: "center",
@@ -338,7 +370,7 @@ const stil = StyleSheet.create({
     justifyContent: "center",
     marginRight: 14
   },
-  ustEtiket: { fontSize: 11, letterSpacing: 1.6, fontWeight: "700" },
+  ustEtiket: { fontSize: 11.5, letterSpacing: 1.4, fontWeight: "700" },
   halAdi: { fontSize: 26, fontWeight: "700", marginTop: 2, lineHeight: 34 },
 
   icerik: { paddingHorizontal: OLCU.bosluk },
@@ -351,12 +383,12 @@ const stil = StyleSheet.create({
   },
   kaynakUst: { flexDirection: "row", alignItems: "center", marginBottom: 8 },
   kaynakBaslik: {
-    fontSize: 11,
-    letterSpacing: 1.6,
+    fontSize: 11.5,
+    letterSpacing: 1.4,
     fontWeight: "700",
     marginLeft: 6
   },
-  kaynakMetin: { fontSize: 13, lineHeight: 20 },
+  kaynakMetin: { fontSize: 13.5, lineHeight: 21 },
   rozetler: { flexDirection: "row", flexWrap: "wrap", marginTop: 10 },
   rozet: {
     flexDirection: "row",
@@ -366,9 +398,10 @@ const stil = StyleSheet.create({
     paddingVertical: 7,
     paddingHorizontal: 12,
     marginRight: 8,
-    marginBottom: 8
+    marginBottom: 8,
+    minHeight: 40
   },
-  rozetMetin: { fontSize: 12.5, fontWeight: "600" },
+  rozetMetin: { fontSize: 13, fontWeight: "600" },
 
   soz: {
     borderWidth: 1,
@@ -381,14 +414,14 @@ const stil = StyleSheet.create({
     position: "absolute",
     right: 16,
     top: -8,
-    fontSize: 110,
-    lineHeight: 130,
+    fontSize: 96,
+    lineHeight: 116,
     fontWeight: "700"
   },
   sozUst: { flexDirection: "row", alignItems: "center", marginBottom: 12 },
   sozBaslik: {
-    fontSize: 11,
-    letterSpacing: 1.6,
+    fontSize: 11.5,
+    letterSpacing: 1.4,
     fontWeight: "700",
     marginLeft: 6
   },
@@ -400,8 +433,8 @@ const stil = StyleSheet.create({
     padding: OLCU.bosluk + 4
   },
   oneriBaslik: {
-    fontSize: 11,
-    letterSpacing: 1.6,
+    fontSize: 11.5,
+    letterSpacing: 1.4,
     fontWeight: "700",
     marginLeft: 6
   },
@@ -425,5 +458,7 @@ const stil = StyleSheet.create({
     padding: OLCU.bosluk,
     paddingTop: 12,
     borderTopWidth: 1
-  }
+  },
+  altBarIki: { flexDirection: "column", alignItems: "stretch" },
+  altSatir: { flexDirection: "row", flexGrow: 1, flexShrink: 1 }
 });
